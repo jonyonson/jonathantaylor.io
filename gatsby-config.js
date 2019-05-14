@@ -3,7 +3,7 @@ module.exports = {
     title: 'let foo, bar;',
     author: 'Jonathan Taylor',
     description: 'A starter blog demonstrating what Gatsby can do.',
-    siteUrl: 'https://gatsby-starter-blog-demo.netlify.com/',
+    siteUrl: 'https://jonyonson.netlify.com/',
     social: {
       twitter: 'jonyonson',
     },
