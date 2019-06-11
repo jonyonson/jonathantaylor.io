@@ -1,6 +1,8 @@
+@import '../../styles/variables';
+
 .header {
   background: black;
-  color:white;
+  color: white;
   padding-top: 1rem;
   padding-bottom: 1rem;
   margin-bottom: 1.5rem;
@@ -16,8 +18,18 @@
 }
 
 .header__title {
+  font-family: $header-font-family;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 1.1;
   padding-left: 1rem;
   margin: 0;
+  color: white;
+  text-decoration: none;
+
+  @media (max-width: 500px) {
+    font-size: 1.2rem;
+  }
 }
 
 .header nav {
@@ -25,8 +37,14 @@
 }
 .header__nav-link {
   font-size: 16px;
-  margin-left:15px;
+  margin-left: 15px;
   text-transform: uppercase;
   text-decoration: none;
-  /* padding-right: 1rem; */
+  text-shadow: none;
+  color: white;
+  background-image: none;
+
+  @media (max-width: 500px) {
+    font-size: 14px;
+  }
 }

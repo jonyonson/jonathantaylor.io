@@ -1,6 +1,6 @@
 import React from 'react';
-import './layout.css';
-
+import './layout.scss';
+import Header from '../header';
 // import 'typeface-space-mono';
 // import 'typeface-spectral';
 
@@ -57,13 +57,16 @@ class Layout extends React.Component {
     //   );
     // }
     return (
-      <div className="layout">
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with{' '}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
+      <>
+        <Header />
+        <div className="layout">
+          <main>{children}</main>
+          <footer>
+            © {new Date().getFullYear()}, Built with{' '}
+            <a href="https://www.gatsbyjs.org">Gatsby</a>
+          </footer>
+        </div>
+      </>
     );
   }
 }

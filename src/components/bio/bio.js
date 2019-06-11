@@ -8,7 +8,7 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import Image from 'gatsby-image';
-import './bio.css';
+import './bio.scss';
 // import { rhythm } from '../../utils/typography';
 
 function Bio() {
@@ -29,7 +29,7 @@ function Bio() {
               <span className="bio__hand" role="img" aria-label="a waving hand">
                 👋🏻
               </span>{' '}
-              Hi. My name is <strong>Jonthan Taylor</strong>. I am a{' '}
+              Hi. My name is <strong>Jonathan Taylor</strong>. I am a{' '}
               <a href={`https://github.com/${social.github}`}>
                 full-stack software engineer
               </a>{' '}

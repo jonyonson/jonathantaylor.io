@@ -3,7 +3,6 @@ import { Link, graphql } from 'gatsby';
 import Bio from '../components/bio/bio';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import Header from '../components/header';
 
 class BlogIndex extends React.Component {
   render() {
@@ -13,7 +12,6 @@ class BlogIndex extends React.Component {
 
     return (
       <>
-        <Header />
         <Layout location={this.props.location} title={siteTitle}>
           <SEO
             title="All posts"
