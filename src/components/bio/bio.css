@@ -1,0 +1,16 @@
+.bio {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.bio__avatar {
+  margin-right: .75rem;
+  margin-bottom: 0;
+  min-width: 65px;
+  min-height: 65px;
+  border-radius:100%;
+}
+
+.bio__hand {
+  font-size: 26px;
+}

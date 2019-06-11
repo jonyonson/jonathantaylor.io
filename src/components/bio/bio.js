@@ -8,8 +8,8 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import Image from 'gatsby-image';
-
-import { rhythm } from '../utils/typography';
+import './bio.css';
+// import { rhythm } from '../../utils/typography';
 
 function Bio() {
   return (
@@ -18,34 +18,25 @@ function Bio() {
       render={data => {
         const { author, social } = data.site.siteMetadata;
         return (
-          <div
-            style={{
-              display: `flex`,
-              marginBottom: rhythm(2.5),
-            }}
-          >
+          <div className="bio">
             <Image
+              className="bio__avatar"
               fixed={data.avatar.childImageSharp.fixed}
               alt={author}
-              style={{
-                marginRight: rhythm(1 / 2),
-                marginBottom: 0,
-                minWidth: 50,
-                borderRadius: `100%`,
-              }}
-              imgStyle={{
-                borderRadius: `50%`,
-              }}
             />
+
             <p>
-              Written by <strong>{author}</strong> who lives in North Alabama,
-              studies at Lambda School and enjoys{' '}
-              <a href="https://github.com/jonyonson/">building things</a> for
-              the web.
-              {` `}
-              <a href={`https://twitter.com/${social.twitter}`}>
-                Follow him on Twitter
-              </a>
+              <span className="bio__hand" role="img" aria-label="a waving hand">
+                👋🏻
+              </span>{' '}
+              Hi. My name is <strong>Jonthan Taylor</strong>. I am a{' '}
+              <a href={`https://github.com/${social.github}`}>
+                full-stack software engineer
+              </a>{' '}
+              currently attending{' '}
+              <a href="https://lambdaschool.com">Lambda School</a>.{' '}
+              <a href="/projects">Here are some things</a> I have been working
+              on lately.
             </p>
           </div>
         );
@@ -58,7 +49,7 @@ const bioQuery = graphql`
   query BioQuery {
     avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
       childImageSharp {
-        fixed(width: 50, height: 50) {
+        fixed(width: 65, height: 65) {
           ...GatsbyImageSharpFixed
         }
       }

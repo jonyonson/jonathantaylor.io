@@ -6,8 +6,11 @@ import funstonTheme from 'typography-theme-funston';
 funstonTheme.overrideThemeStyles = () => {
   return {
     'a.gatsby-resp-image-link': {
-      boxShadow: `none`,
+      boxShadow: 'none',
     },
+    // 'code[class*="language-"],pre[class*="language-"]': {
+    //   fontSize: '14px',
+    // },
   };
 };
 
@@ -17,7 +20,7 @@ funstonTheme.overrideThemeStyles = () => {
 const typography = new Typography(funstonTheme);
 
 // Hot reload typography in development.
-if (process.env.NODE_ENV !== `production`) {
+if (process.env.NODE_ENV !== 'production') {
   typography.injectStyles();
 }
 
