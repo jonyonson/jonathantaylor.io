@@ -1,11 +1,10 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
-
 import Bio from '../components/bio/bio';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import { rhythm } from '../utils/typography';
 import Header from '../components/header';
+
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props;
@@ -25,11 +24,7 @@ class BlogIndex extends React.Component {
             const title = node.frontmatter.title || node.fields.slug;
             return (
               <div key={node.fields.slug}>
-                <h3
-                  style={{
-                    marginBottom: rhythm(1 / 4),
-                  }}
-                >
+                <h3 style={{ marginBottom: '.35rem' }}>
                   <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
                     {title}
                   </Link>

@@ -11,7 +11,7 @@ class Layout extends React.Component {
   render() {
     // const { location, title, children } = this.props;
     const { children } = this.props;
-    const rootPath = '${__PATH_PREFIX__}/';
+    // const rootPath = `${__PATH_PREFIX__}`;
     // let header;
 
     // if (location.pathname === rootPath) {
@@ -58,7 +58,6 @@ class Layout extends React.Component {
     // }
     return (
       <div className="layout">
-        {/* <Header /> */}
         <main>{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with{' '}
