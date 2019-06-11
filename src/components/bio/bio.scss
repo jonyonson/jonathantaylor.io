@@ -3,6 +3,11 @@
 .bio {
   display: flex;
   margin-bottom: 2rem;
+  align-items: center;
+
+  p {
+    margin-bottom: 0;
+  }
 }
 
 .bio__avatar {
