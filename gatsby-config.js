@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'let foo, bar;',
+    title: 'jonathantaylor.io',
     author: 'Jonathan Taylor',
     description: 'A starter blog demonstrating what Gatsby can do.',
     siteUrl: 'https://jonyonson.netlify.com/',

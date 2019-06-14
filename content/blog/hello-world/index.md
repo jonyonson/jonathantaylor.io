@@ -18,40 +18,4 @@ Oh, and here's a great quote from this Wikipedia on
 > salted duck eggs have a briny aroma, a gelatin-like egg white and a
 > firm-textured, round yolk that is bright orange-red in color.
 
-```javascript
-function reducer(state = initialState, action) {
-  switch (action.type) {
-    case UPDATE_TITLE:
-      return {
-        ...state,
-        title: action.payload,
-      };
-    case ADD_MEMBER:
-      return {
-        ...state,
-        members: [
-          ...state.members,
-          { name: action.payload, dragonStatus: false, id: Date.now() },
-        ],
-      };
-
-    case TOGGLE_MEMBER:
-      return {
-        ...state,
-        members: state.members.map(member => {
-          if (member.id === action.payload) {
-            return {
-              ...member,
-              dragonStatus: !member.dragonStatus,
-            };
-          }
-          return member;
-        }),
-      };
-    default:
-      return state;
-  }
-}
-```
-
 ![Chinese Salty Egg](./salty_egg.jpg)

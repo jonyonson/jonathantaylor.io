@@ -1,7 +1,7 @@
 @import '../../styles/variables';
 
 .header {
-  background: black;
+  background: $black;
   color: white;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -18,9 +18,11 @@
 }
 
 .header__title {
-  font-family: $header-font-family;
-  font-weight: 600;
+  // font-family: $header-font-family;
+  // font-weight: 600;
+  font-weight: 400;
   font-size: 2rem;
+  font-size: 1rem;
   line-height: 1.1;
   padding-left: 1rem;
   margin: 0;
@@ -29,14 +31,25 @@
   text-shadow: none;
   background-image: none;
 
-  @media (max-width: 500px) {
-    font-size: 1.2rem;
+  &-bold {
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    font-family: $header-font-family;
+  }
+
+  &:hover {
+    border-bottom: none;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1rem;
   }
 }
 
 .header nav {
   padding-right: 1rem;
 }
+
 .header__nav-link {
   font-size: 16px;
   margin-left: 15px;
@@ -46,7 +59,11 @@
   color: white;
   background-image: none;
 
-  @media (max-width: 500px) {
+  &:hover {
+    border-bottom: none;
+    opacity: 0.8;
+  }
+  @media (max-width: 480px) {
     font-size: 14px;
   }
 }

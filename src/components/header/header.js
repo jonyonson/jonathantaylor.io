@@ -7,8 +7,10 @@ class Header extends React.Component {
     return (
       <header className="header">
         <div className="header__container">
-          <Link className="header__title">let foo, bar;</Link>
-          {/* <h1 className="header__title">let foo, bar;</h1> */}
+          <Link className="header__title" to="/">
+            jonathan<span className="header__title-bold">taylor</span>
+          </Link>
+
           <nav>
             <Link className="header__nav-link" to="/projects">
               Projects
