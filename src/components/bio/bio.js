@@ -9,7 +9,6 @@ import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import Image from 'gatsby-image';
 import './bio.scss';
-// import { rhythm } from '../../utils/typography';
 
 function Bio() {
   return (
@@ -59,6 +58,7 @@ const bioQuery = graphql`
         author
         social {
           twitter
+          github
         }
       }
     }

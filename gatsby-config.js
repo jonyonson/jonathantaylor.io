@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'jonathantaylor.io',
     author: 'Jonathan Taylor',
-    description: 'A starter blog demonstrating what Gatsby can do.',
+    description: "Jonathan Taylor's personal website and blog",
     siteUrl: 'https://jonyonson.netlify.com/',
     social: {
       twitter: 'jonyonson',
@@ -70,11 +70,5 @@ module.exports = {
     },
     'gatsby-plugin-offline',
     'gatsby-plugin-react-helmet',
-    {
-      resolve: 'gatsby-plugin-typography',
-      options: {
-        pathToConfigModule: 'src/utils/typography',
-      },
-    },
   ],
 };

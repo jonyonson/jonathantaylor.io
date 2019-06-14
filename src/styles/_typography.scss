@@ -1,3 +1,5 @@
+@import './variables';
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -495,7 +497,7 @@ blockquote {
   margin-bottom: 1.45rem;
   font-size: 1.1487rem;
   line-height: 1.45rem;
-  border-left: 0.54375rem solid #1ca086;
+  border-left: 0.54375rem solid $primary-color;
   color: hsla(0, 0%, 0%, 0.65);
   font-style: italic;
 }
@@ -674,7 +676,7 @@ td:last-child {
 }
 
 a {
-  color: #1ca086;
+  color: $primary-color;
   text-decoration: none;
   text-shadow: 0.03em 0 #fff, -0.03em 0 #fff, 0 0.03em #fff, 0 -0.03em #fff,
     0.06em 0 #fff, -0.06em 0 #fff, 0.09em 0 #fff, -0.09em 0 #fff, 0.12em 0 #fff,
@@ -683,8 +685,8 @@ a {
     to top,
     rgba(0, 0, 0, 0),
     rgba(0, 0, 0, 0) 1px,
-    #1ca086 1px,
-    #1ca086 2px,
+    $primary-color 1px,
+    $primary-color 2px,
     rgba(0, 0, 0, 0) 2px
   );
 }
@@ -721,14 +723,14 @@ blockquote cite:before {
   content: '— ';
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 500px) {
   html {
     font-size: 106.25%;
     line-height: 24.65px;
   }
 
   blockquote {
-    border-left: 0.27187rem solid #1ca086;
+    border-left: 0.27187rem solid $primary-color;
     color: hsla(0, 0%, 0%, 0.59);
     padding-left: 0.81563rem;
     font-style: italic;
