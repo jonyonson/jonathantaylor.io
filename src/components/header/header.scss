@@ -3,16 +3,14 @@
 .header {
   background: $black;
   color: white;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  margin-bottom: 1.5rem;
+  padding: 1rem;
 }
 
 .header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 670px;
+  max-width: $container-width;
   margin-left: auto;
   margin-right: auto;
 }
@@ -23,7 +21,6 @@
   font-size: 2rem;
   font-size: 1rem;
   line-height: 1.1;
-  padding-left: 1rem;
   margin: 0;
   color: white;
   text-decoration: none;
@@ -40,13 +37,9 @@
     border-bottom: none;
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 500px) {
     font-size: 1rem;
   }
-}
-
-.header nav {
-  padding-right: 1rem;
 }
 
 .header__nav-link {
@@ -63,7 +56,7 @@
     border-bottom: none;
     opacity: 0.8;
   }
-  @media (max-width: 480px) {
+  @media (max-width: 500px) {
     font-size: 14px;
   }
 }

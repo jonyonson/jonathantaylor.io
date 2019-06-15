@@ -678,23 +678,13 @@ td:last-child {
 a {
   color: $primary-color;
   text-decoration: none;
-  text-shadow: 0.03em 0 #fff, -0.03em 0 #fff, 0 0.03em #fff, 0 -0.03em #fff,
-    0.06em 0 #fff, -0.06em 0 #fff, 0.09em 0 #fff, -0.09em 0 #fff, 0.12em 0 #fff,
-    -0.12em 0 #fff, 0.15em 0 #fff, -0.15em 0 #fff;
-  background-image: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 0) 1px,
-    $primary-color 1px,
-    $primary-color 2px,
-    rgba(0, 0, 0, 0) 2px
-  );
 }
 
 a:hover,
 a:active {
   text-shadow: none;
   background-image: none;
+  border-bottom: 2px solid $primary-color;
 }
 
 h1,

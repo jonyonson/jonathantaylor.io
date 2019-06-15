@@ -2,25 +2,19 @@
 @import '../../styles/typography';
 
 .layout {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 670px;
-  padding: 0 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
-a {
-  background-image: none;
-  color: $primary-color;
+.layout-main {
+  flex-grow: 1;
+  padding: 0 1rem;
+
+  &__container {
+    max-width: $container-width;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
-
-a:hover {
-  border-bottom: 2px solid $primary-color;
-}
-
-/* code[class*="language-"],pre[class*="language-"] {
-  font-size: 14px;
-} */
-
-/* // .gatsby-highlight {
-//   font-size: 14px;
-// } */
