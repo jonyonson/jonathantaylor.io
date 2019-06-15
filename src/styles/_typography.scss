@@ -241,8 +241,8 @@ html {
 }
 
 body {
-  color: hsla(0, 0%, 0%, 0.8);
-  font-family: 'Quattrocento Sans', sans-serif;
+  color: $body-font-color;
+  font-family: $body-font-family;
   font-weight: 400;
   word-wrap: break-word;
   font-kerning: normal;
@@ -254,27 +254,17 @@ body {
 
 img {
   max-width: 100%;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
+  padding: 0;
+  margin: 0;
   margin-bottom: 1.45rem;
 }
 
 h1 {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
+  padding: 0;
+  margin: 0;
   margin-bottom: 1.45rem;
-  color: hsla(0, 0%, 0%, 0.9);
-  font-family: 'Work Sans', sans-serif;
+  color: $header-font-color;
+  font-family: $header-font-family;
   font-weight: 600;
   text-rendering: optimizeLegibility;
   font-size: 2rem;
@@ -282,16 +272,11 @@ h1 {
 }
 
 h2 {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
+  padding: 0;
+  margin: 0;
   margin-bottom: 1.45rem;
-  color: hsla(0, 0%, 0%, 0.9);
-  font-family: 'Work Sans', sans-serif;
+  color: $header-font-color;
+  font-family: $header-font-family;
   font-weight: 600;
   text-rendering: optimizeLegibility;
   font-size: 1.51572rem;
@@ -299,16 +284,11 @@ h2 {
 }
 
 h3 {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
+  padding: 0;
+  margin: 0;
   margin-bottom: 1.45rem;
-  color: hsla(0, 0%, 0%, 0.9);
-  font-family: 'Work Sans', sans-serif;
+  color: $header-font-color;
+  font-family: $header-font-family;
   font-weight: 600;
   text-rendering: optimizeLegibility;
   font-size: 1.31951rem;
@@ -316,33 +296,23 @@ h3 {
 }
 
 h4 {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
+  padding: 0;
+  margin: 0;
   margin-bottom: 1.45rem;
-  color: hsla(0, 0%, 0%, 0.9);
-  font-family: 'Work Sans', sans-serif;
+  color: $header-font-color;
+  font-family: $header-font-family;
   font-weight: 600;
-  text-rendering: optimizeLegibility;
   font-size: 1rem;
+  text-rendering: optimizeLegibility;
   line-height: 1.1;
 }
 
 h5 {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
+  padding: 0;
+  margin: 0;
   margin-bottom: 1.45rem;
-  color: hsla(0, 0%, 0%, 0.9);
-  font-family: 'Work Sans', sans-serif;
+  color: $header-font-color;
+  font-family: $header-font-family;
   font-weight: 600;
   text-rendering: optimizeLegibility;
   font-size: 0.87055rem;
@@ -350,16 +320,11 @@ h5 {
 }
 
 h6 {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
+  padding: 0;
+  margin: 0;
   margin-bottom: 1.45rem;
-  color: hsla(0, 0%, 0%, 0.9);
-  font-family: 'Work Sans', sans-serif;
+  color: $header-font-color;
+  font-family: $header-font-family;
   font-weight: 600;
   text-rendering: optimizeLegibility;
   font-size: 0.81225rem;
@@ -367,50 +332,32 @@ h6 {
 }
 
 hgroup {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
+  padding: 0;
+  margin: 0;
   margin-bottom: 1.45rem;
 }
 
 ul {
+  padding: 0;
+  margin: 0;
   margin-left: 1.45rem;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
   margin-bottom: 1.45rem;
   list-style-position: outside;
   list-style-image: none;
 }
 
 ol {
+  padding: 0;
+  margin: 0;
   margin-left: 1.45rem;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
   margin-bottom: 1.45rem;
   list-style-position: outside;
   list-style-image: none;
 }
 
 dl {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
+  padding: 0;
+  margin: 0;
   margin-bottom: 1.45rem;
 }
 
@@ -426,24 +373,14 @@ dd {
 }
 
 p {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
+  padding: 0;
+  margin: 0;
   margin-bottom: 1.45rem;
 }
 
 figure {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
+  padding: 0;
+  margin: 0;
   margin-bottom: 1.45rem;
 }
 
