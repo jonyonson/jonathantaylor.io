@@ -31,7 +31,8 @@
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
     "typeface-merriweather": "0.0.72",
-    "typeface-montserrat": "0.0.54"
+    "typeface-montserrat": "0.0.54",
+    "typeface-space-mono": "^0.0.71"
   },
   "devDependencies": {
     "prettier": "^1.17.0"

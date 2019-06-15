@@ -1,11 +1,12 @@
 import React from 'react';
 import './layout.scss';
 import Header from '../header';
-// import 'typeface-space-mono';
+import 'typeface-space-mono';
 // import 'typeface-spectral';
 
 import 'prismjs/themes/prism-solarizedlight.css';
 import 'prismjs/plugins/line-numbers/prism-line-numbers.css';
+import '../../styles/prism-styles.scss';
 
 class Layout extends React.Component {
   render() {
