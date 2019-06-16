@@ -7,8 +7,21 @@ class Footer extends Component {
     return (
       <footer className="footer">
         <div className="footer__container">
-          © {new Date().getFullYear()} Jonathan Taylor
-          {/* Built with <a href="https://www.gatsbyjs.org">Gatsby</a> */}
+          <div>© {new Date().getFullYear()} Jonathan Taylor</div>
+          <div className="footer__social">
+            <a
+              className="footer__social__link"
+              href="https://github.com/jonyonson"
+            >
+              GitHub
+            </a>
+            <a
+              className="footer__social__link"
+              href="https://twitter.com/jonyonson"
+            >
+              Twitter
+            </a>
+          </div>
         </div>
       </footer>
     );

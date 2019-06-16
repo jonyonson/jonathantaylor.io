@@ -27,8 +27,11 @@
   margin-bottom: 0;
   transition: all 0.2s ease;
 
+  .projects__link {
+    border-bottom: none;
+  }
   .projects__link:hover {
-    color: $primary-lighten;
+    color: $primary-darken;
     border-bottom: none;
     transition: all 0.2s ease;
   }
