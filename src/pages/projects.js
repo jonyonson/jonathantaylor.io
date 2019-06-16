@@ -29,11 +29,11 @@ class Projects extends Component {
         </div>
         <p>
           Stockly was built by a small team of developers during a{' '}
-          <a href="https://lambdaschool.com">Lambda School</a> build week.
-          Stockly is a web application that connects the user to historical
-          price information for any publicly traded stock. The user can also
-          track a stock's performance over time by adding it to their watchlist.
-          I was a front-end developer on the project.
+          <a href="https://lambdaschool.com">Lambda School</a> build week. I was
+          front-end developer on the project. Stockly is a web application that
+          connects the user to historical price information for any publicly
+          traded stock. The user can also track a stock's performance over time
+          by adding it to their watchlist.
         </p>
         <StaticQuery
           query={projectQuery}

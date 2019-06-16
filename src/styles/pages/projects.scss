@@ -27,7 +27,7 @@
   margin-bottom: 0;
   transition: all 0.2s ease;
 
-  .projects_link:hover {
+  .projects__link:hover {
     color: $primary-lighten;
     border-bottom: none;
     transition: all 0.2s ease;
@@ -38,4 +38,12 @@
   max-width: 670px;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 5px;
+}
+
+.projects__outro {
+  font-size: 24px;
+  line-height: 1.5;
+  @media (max-width: 500px) {
+    font-size: 22px;
+  }
 }
