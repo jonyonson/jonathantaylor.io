@@ -7,8 +7,8 @@ class Footer extends Component {
     return (
       <footer className="footer">
         <div className="footer__container">
-          © {new Date().getFullYear()}, Built with{' '}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          © {new Date().getFullYear()} Jonathan Taylor
+          {/* Built with <a href="https://www.gatsbyjs.org">Gatsby</a> */}
         </div>
       </footer>
     );
