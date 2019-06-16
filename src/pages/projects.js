@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import Layout from '../../components/layout';
-import SEO from '../../components/seo';
+import Layout from '../components/layout';
+import SEO from '../components/seo';
 import { StaticQuery, graphql } from 'gatsby';
 import Image from 'gatsby-image';
 import { GoMarkGithub as GithubIcon } from 'react-icons/go';
 
-import './projects.scss';
+import '../styles/pages/projects.scss';
 
 class Projects extends Component {
   render() {
