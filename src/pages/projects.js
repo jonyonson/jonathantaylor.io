@@ -76,7 +76,7 @@ class Projects extends Component {
 
 const projectQuery = graphql`
   query ProjectQuery {
-    stockly: file(absolutePath: { regex: "/stockly.png/" }) {
+    stockly: file(absolutePath: { regex: "/stockly-on-laptop.png/" }) {
       childImageSharp {
         fluid(maxWidth: 670) {
           ...GatsbyImageSharpFluid
