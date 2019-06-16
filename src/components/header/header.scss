@@ -9,6 +9,16 @@
   padding: 1rem;
 }
 
+.header a {
+  border-bottom: none;
+  color: white;
+
+  &:hover {
+    border-bottom: none;
+    color: white;
+  }
+}
+
 .header__container {
   display: flex;
   justify-content: space-between;
@@ -36,9 +46,10 @@
     font-weight: bold;
   }
 
-  &:hover {
-    border-bottom: none;
-  }
+  // &:hover {
+  //   border-bottom: none;
+  //   color: white;
+  // }
 
   @media (max-width: 500px) {
     font-size: 1.2rem;
@@ -53,7 +64,7 @@
   text-transform: uppercase;
   text-decoration: none;
   text-shadow: none;
-  color: white;
+  // color: white;
   background-image: none;
 
   &:hover {

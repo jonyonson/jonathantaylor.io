@@ -7,6 +7,7 @@ $primary-color: #06d6a0;
 $primary-color: #3f88c5;
 $primary-color: #fb4d3d;
 $primary-lighten: lighten($primary-color, 10%);
+$primary-darken: darken($primary-color, 10%);
 $black: #2d2d2a;
 $black: #393e41;
 $body-font-color: hsla(0, 0%, 0%, 0.8);
