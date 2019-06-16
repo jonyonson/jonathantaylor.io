@@ -79,7 +79,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         .concat(meta)}
     >
       <link
-        href="https://fonts.googleapis.com/css?family=Quattrocento+Sans|Work+Sans:600&display=swap"
+        href="https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700|Work+Sans:600&display=swap"
         rel="stylesheet"
       ></link>
     </Helmet>
