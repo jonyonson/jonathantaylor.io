@@ -30,7 +30,7 @@ class Contact extends Component {
           <label htmlFor="email">Email</label>
           <input id="email" type="text" />
           <label htmlFor="message">Message</label>
-          <textArea id="message" type="text" />
+          <textarea id="message" type="text" />
           <button type="submit">Submit</button>
           {this.state.error && (
             <div className="contact-error">
