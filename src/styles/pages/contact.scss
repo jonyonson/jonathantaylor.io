@@ -44,3 +44,15 @@
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
+.contact-error {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+
+  &-icon {
+    color: red;
+    font-size: 32px;
+    margin-right: 7px;
+  }
+}

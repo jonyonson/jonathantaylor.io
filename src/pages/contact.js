@@ -1,9 +1,21 @@
 import React, { Component } from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import { IoIosWarning } from 'react-icons/io';
 import '../styles/pages/contact.scss';
 
 class Contact extends Component {
+  state = {
+    error: null,
+  };
+
+  handleSubmit = e => {
+    e.preventDefault();
+    this.setState({
+      error:
+        "This form isn't functional just yet.  Try hitting me up on Twitter.",
+    });
+  };
   render() {
     return (
       <Layout>
@@ -12,7 +24,7 @@ class Contact extends Component {
           Say hi, hire me, tell me a joke, suggest a TV show, compliment me,
           roast me or toast me.
         </p>
-        <form className="form">
+        <form className="form" onSubmit={this.handleSubmit}>
           <label htmlFor="name">Name</label>
           <input id="name" type="text" />
           <label htmlFor="email">Email</label>
@@ -20,6 +32,13 @@ class Contact extends Component {
           <label htmlFor="message">Message</label>
           <textArea id="message" type="text" />
           <button type="submit">Submit</button>
+          {this.state.error && (
+            <div className="contact-error">
+              <IoIosWarning className="contact-error-icon" />
+
+              <div>{this.state.error}</div>
+            </div>
+          )}
         </form>
       </Layout>
     );
