@@ -1,41 +1,37 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
-import Bio from '../components/bio/bio';
-import Layout from '../components/layout';
+import Bio from '../components/bio';
 import SEO from '../components/seo';
 
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props;
-    const siteTitle = data.site.siteMetadata.title;
     const posts = data.allMarkdownRemark.edges;
 
     return (
-      <>
-        <Layout location={this.props.location} title={siteTitle}>
-          <SEO title="JT" />
-          <Bio />
-          <hr />
-          {posts.map(({ node }) => {
-            const title = node.frontmatter.title || node.fields.slug;
-            return (
-              <div key={node.fields.slug}>
-                <h3 style={{ marginBottom: '.35rem' }}>
-                  <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                    {title}
-                  </Link>
-                </h3>
-                <small>{node.frontmatter.date}</small>
-                <p
-                  dangerouslySetInnerHTML={{
-                    __html: node.frontmatter.description || node.excerpt,
-                  }}
-                />
-              </div>
-            );
-          })}
-        </Layout>
-      </>
+      <React.Fragment>
+        <SEO title="JT" />
+        <Bio />
+        <hr />
+        {posts.map(({ node }) => {
+          const title = node.frontmatter.title || node.fields.slug;
+          return (
+            <div key={node.fields.slug}>
+              <h3 style={{ marginBottom: '.35rem' }}>
+                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                  {title}
+                </Link>
+              </h3>
+              <small>{node.frontmatter.date}</small>
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: node.frontmatter.description || node.excerpt,
+                }}
+              />
+            </div>
+          );
+        })}
+      </React.Fragment>
     );
   }
 }

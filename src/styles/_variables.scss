@@ -4,10 +4,8 @@ $body-font-family: 'Quattrocento Sans', sans-serif;
 
 // Colors
 $primary-color: #fb4d3d;
-$primary-color: #06a69d;
 $primary-lighten: lighten($primary-color, 10%);
 $primary-darken: darken($primary-color, 20%);
-$black: #2d2d2a;
 $black: #393e41;
 $body-font-color: hsla(0, 0%, 0%, 0.8);
 $header-font-color: hsla(0, 0%, 0%, 0.9);

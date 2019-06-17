@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Layout from '../components/layout';
 import SEO from '../components/seo';
 import { StaticQuery, graphql } from 'gatsby';
 import Image from 'gatsby-image';
@@ -10,7 +9,7 @@ import '../styles/pages/projects.scss';
 class Projects extends Component {
   render() {
     return (
-      <Layout>
+      <React.Fragment>
         <SEO title="Projects" />
 
         <div className="projects__links">
@@ -69,7 +68,7 @@ class Projects extends Component {
           </p>
           <hr />
         </div>
-      </Layout>
+      </React.Fragment>
     );
   }
 }

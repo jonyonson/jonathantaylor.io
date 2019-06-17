@@ -49,10 +49,11 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
+    'gatsby-plugin-layout',
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
-        //trackingId: 'ADD YOUR TRACKING ID HERE',
+        trackingId: 'ADD YOUR TRACKING ID HERE',
       },
     },
     'gatsby-plugin-feed',

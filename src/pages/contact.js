@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Layout from '../components/layout';
 import SEO from '../components/seo';
 import { IoIosWarning } from 'react-icons/io';
 import '../styles/pages/contact.scss';
@@ -18,7 +17,7 @@ class Contact extends Component {
   };
   render() {
     return (
-      <Layout>
+      <React.Fragment>
         <SEO title="Contact Me" />
         <p className="contact-intro">
           Say hi, hire me, tell me a joke, suggest a TV show, compliment me,
@@ -40,7 +39,7 @@ class Contact extends Component {
             </div>
           )}
         </form>
-      </Layout>
+      </React.Fragment>
     );
   }
 }
