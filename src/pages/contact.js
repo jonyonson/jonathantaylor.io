@@ -9,8 +9,8 @@ class Contact extends Component {
       <Layout>
         <SEO title="Contact Me" />
         <p className="contact-intro">
-          Say hi, hire me, tell me a joke, suggest a TV show, say hello,
-          compliment me, roast me or toast me.
+          Say hi, hire me, tell me a joke, suggest a TV show, compliment me,
+          roast me or toast me.
         </p>
         <form className="form">
           <label htmlFor="name">Name</label>
