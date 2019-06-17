@@ -27,22 +27,28 @@
 .form input,
 .form textarea,
 .form button {
-  font-size: 24px;
+  font-size: 20px;
   padding: 5px;
   margin-bottom: 25px;
-  border: 1px solid black;
+  border: 1px solid $black-olive;
   border-radius: 4px;
 }
 
 .form button {
+  width: 50%;
   cursor: pointer;
   background: $primary-color;
   color: white;
   border: 2px solid transparent;
-  text-transform: uppercase;
-  margin-top: 25px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  align-self: center;
+  margin-top: 20px;
+  font-weight: 700;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: $primary-lighten;
+    transition: all 0.2s ease;
+  }
 }
 
 .contact-error {

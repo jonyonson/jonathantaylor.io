@@ -30,8 +30,8 @@ class Contact extends Component {
           <label htmlFor="email">Email</label>
           <input id="email" type="text" />
           <label htmlFor="message">Message</label>
-          <textarea id="message" type="text" />
-          <button type="submit">Submit</button>
+          <textarea id="message" type="text" rows="8" />
+          <button type="submit">Send Message</button>
           {this.state.error && (
             <div className="contact-error">
               <IoIosWarning className="contact-error-icon" />
