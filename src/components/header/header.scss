@@ -44,12 +44,7 @@
     font-weight: bold;
   }
 
-  // &:hover {
-  //   border-bottom: none;
-  //   color: white;
-  // }
-
-  @media (max-width: 500px) {
+  @media (max-width: $PHONE) {
     font-size: 1.2rem;
   }
 }
@@ -62,7 +57,6 @@
   text-transform: uppercase;
   text-decoration: none;
   text-shadow: none;
-  // color: white;
   background-image: none;
 
   &:hover {
