@@ -5,9 +5,10 @@ import Transition from '../components/transition.js';
 import 'typeface-space-mono';
 import './layout.scss';
 
-import 'prismjs/themes/prism-solarizedlight.css';
+// import 'prismjs/themes/prism-solarizedlight.css';
 // import 'prismjs/plugins/line-numbers/prism-line-numbers.css';
-import '../styles/prism-styles.scss';
+// import '../styles/prism-styles.scss';
+import '../styles/prism.scss';
 
 class Layout extends Component {
   render() {
