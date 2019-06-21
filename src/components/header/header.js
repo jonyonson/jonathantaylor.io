@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
+// import { FiMenu } from 'react-icons/fi';
 import './header.scss';
 
 class Header extends React.Component {
@@ -11,7 +12,7 @@ class Header extends React.Component {
             jonathan<span className="header__title-bold">taylor</span>
           </Link>
 
-          <nav>
+          <nav className="header__nav">
             <Link className="header__nav-link" to="/projects">
               Projects
             </Link>
@@ -19,6 +20,8 @@ class Header extends React.Component {
               Contact
             </Link>
           </nav>
+
+          {/* <FiMenu className="header__menu" /> */}
         </div>
       </header>
     );
