@@ -48,7 +48,7 @@ function reducer(state = initialState, action) {
 }
 ```
 
-```javascript
+```jsx
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 import Bio from '../components/bio';
@@ -88,4 +88,15 @@ class BlogIndex extends React.Component {
 }
 
 export default BlogIndex;
+```
+
+```html
+<html>
+  <head>
+    <title>Hello</title>
+  </head>
+  <body>
+    <h1>testing</h1>
+  </body>
+</html>
 ```
