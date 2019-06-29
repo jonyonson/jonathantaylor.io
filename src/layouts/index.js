@@ -4,12 +4,13 @@ import Footer from '../components/footer';
 import Transition from '../components/transition.js';
 import 'typeface-space-mono';
 import './layout.scss';
+import consoleMessage from '../utils/consoleMessage';
 
 // import 'prismjs/themes/prism-solarizedlight.css';
 // import 'prismjs/plugins/line-numbers/prism-line-numbers.css';
 // import '../styles/prism-styles.scss';
 import '../styles/prism.scss';
-
+console.log(consoleMessage());
 class Layout extends Component {
   render() {
     const { children, location } = this.props;
