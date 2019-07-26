@@ -16,5 +16,11 @@
     max-width: $container-width;
     margin-left: auto;
     margin-right: auto;
+
+    &--projects {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
   }
 }
+

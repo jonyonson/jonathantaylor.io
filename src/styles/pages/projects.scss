@@ -38,7 +38,8 @@
 }
 
 .projects__browser-screenshot {
-  max-width: 670px;
+  // max-width: 670px;
+  max-width: 50%;
   border-radius: 5px;
 }
 
@@ -48,4 +49,9 @@
   @media (max-width: 500px) {
     font-size: 22px;
   }
+}
+
+
+.project {
+  display: flex;
 }
