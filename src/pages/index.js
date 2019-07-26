@@ -13,6 +13,7 @@ class BlogIndex extends React.Component {
         <SEO title="JT" />
         <Bio />
         <hr />
+        <h2>Articles</h2>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug;
           return (
