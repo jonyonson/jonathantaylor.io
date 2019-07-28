@@ -37,7 +37,7 @@ const projectQuery = graphql`
   query ProjectQuery {
     stockly: file(absolutePath: { regex: "/stockly-on-laptop.png/" }) {
       childImageSharp {
-        fixed(width: 350) {
+        fixed(width: 400) {
           ...GatsbyImageSharpFixed
         }
       }
