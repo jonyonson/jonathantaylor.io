@@ -15,6 +15,10 @@ class Header extends React.Component {
             <Link className="header__nav-link" to="/contact">
               Contact
             </Link>
+
+            <Link className="header__nav-link" to="/projects">
+              Projects
+            </Link>
           </nav>
         </div>
       </header>
