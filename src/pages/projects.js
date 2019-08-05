@@ -13,21 +13,103 @@ class Projects extends Component {
         <SEO title="Projects" />
 
         <div className="project">
+          <a
+            href="https://github.com/jonyonson/build-stockly-frontend"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ marginTop: '25px' }}
+            className="projects__links--below-tablet"
+          >
+            <div className="projects__links">
+              <GithubIcon size={20} style={{ marginRight: '5px' }} />
+              <span style={{ fontSize: '18px' }}>Source Code</span>
+            </div>
+          </a>
+
           <StaticQuery
             query={projectQuery}
             render={data => (
               <Image
                 className="projects__browser-screenshot"
                 fixed={data.stockly.childImageSharp.fixed}
-                // fluid={data.stockly.childImageSharp.fluid}
                 alt="Stockly Screenshot"
               />
             )}
           />
-          <div>
-            <h2>Stockly</h2>
+          <div className="projects__info">
+            <div>
+              <h2 className="projects__title">Stockly</h2>
+              <p>
+                Stockly was built during a{' '}
+                <a href="https://lambdaschool.com">Lambda School</a> build week
+                and I was a front-end developer on the project. Stockly was
+                built with React and provides users with historical price
+                information and analysis for any publicly traded company.
+              </p>
+            </div>
+
+            <a
+              href="https://github.com/jonyonson/build-stockly-frontend"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="projects__links projects__links--tablet-up">
+                <GithubIcon size={20} style={{ marginRight: '5px' }} />
+                <span style={{ fontSize: '16px' }}>Source Code</span>
+              </div>
+            </a>
           </div>
         </div>
+
+        <hr />
+
+        <div className="project">
+          <a
+            href="https://github.com/jonyonson/build-stockly-frontend"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ marginTop: '25px' }}
+            className="projects__links--below-tablet"
+          >
+            <div className="projects__links">
+              <GithubIcon size={20} style={{ marginRight: '5px' }} />
+              <span style={{ fontSize: '18px' }}>Source Code</span>
+            </div>
+          </a>
+
+          <StaticQuery
+            query={projectQuery}
+            render={data => (
+              <Image
+                className="projects__browser-screenshot"
+                fixed={data.fylo.childImageSharp.fixed}
+                alt="Fylo Screenshot"
+              />
+            )}
+          />
+          <div className="projects__info">
+            <div>
+              <h2 className="projects__title">Fylo Landing Page</h2>
+              <p>
+                This project consisted of building a landing page for a
+                fictional company.
+              </p>
+            </div>
+
+            <a
+              href="https://github.com/jonyonson/fylo-landing-page"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="projects__links projects__links--tablet-up">
+                <GithubIcon size={20} style={{ marginRight: '5px' }} />
+                <span style={{ fontSize: '16px' }}>Source Code</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <hr />
       </React.Fragment>
     );
   }
@@ -36,6 +118,13 @@ class Projects extends Component {
 const projectQuery = graphql`
   query ProjectQuery {
     stockly: file(absolutePath: { regex: "/stockly-on-laptop.png/" }) {
+      childImageSharp {
+        fixed(width: 400) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    fylo: file(absolutePath: { regex: "/fylo-on-laptop.png/" }) {
       childImageSharp {
         fixed(width: 400) {
           ...GatsbyImageSharpFixed
@@ -109,3 +198,13 @@ export default Projects;
   <hr />
 </div>
 </React.Fragment> */
+
+/* <a
+className="projects__links__github"
+href="https://github.com/jonyonson/build-stockly-frontend"
+>
+<div className="test">
+   <GithubIcon /> <span>Source</span>
+  <GithubIcon />
+</div>
+</a> */
