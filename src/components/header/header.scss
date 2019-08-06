@@ -1,7 +1,7 @@
 @import '../../styles/variables';
 
 .header {
-  background: $black;
+  background: $header-black;
   color: white;
   color: $body-font-color;
   padding: 1rem;
@@ -50,6 +50,18 @@
   }
 }
 
+.header__nav {
+  display: flex;
+  align-items: center;
+
+  .toggle-dark-mode {
+    margin-left: 15px;
+    cursor: pointer;
+    font-size: 28px;
+    margin-top: 5px;
+  }
+}
+
 .header__nav-link {
   letter-spacing: 1px;
   font-family: $body-font-family;
@@ -68,3 +80,4 @@
     font-size: 13px;
   }
 }
+

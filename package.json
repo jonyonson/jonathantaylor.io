@@ -31,7 +31,8 @@
     "react-transition-group": "^4.2.2",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.75",
-    "typeface-space-mono": "^0.0.71"
+    "typeface-space-mono": "^0.0.71",
+    "use-dark-mode": "^2.3.1"
   },
   "devDependencies": {
     "prettier": "^1.18.2"

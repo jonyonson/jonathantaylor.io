@@ -69,8 +69,7 @@ const projectQuery = graphql`
 
 export default Projects;
 
-{
-  /* <p>
+/* <p>
   Stockly was built by a small team of developers during a{' '}
   <a href="https://lambdaschool.com">Lambda School</a> build week. I was
   a front-end developer on the project. Stockly is a web application
@@ -93,4 +92,3 @@ export default Projects;
   <a href="https://www.alphavantage.co/">Alpha Vantage API</a> was used
   to access realtime and historical stock data.
 </p> */
-}
