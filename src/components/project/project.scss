@@ -36,20 +36,21 @@
   }
 }
 
-.projects__title {
+.title {
   margin-top:0;
   margin-bottom: 20px;
 }
 
-.projects__browser-screenshot {
+.screenshot {
   margin-right: 30px;
 
   @media (max-width: $TABLET) {
     margin-right: 0;
+    margin-bottom: 25px;
   }
 }
 
-.projects__links {
+.links {
   display: flex;
   align-items: center;
 
@@ -64,9 +65,17 @@
       display: none;
     }
   }
+
+  span {
+    font-size: 16px;
+  }
 }
 
-.projects__info {
+.gh-icon {
+  margin-right: 5px;
+}
+
+.info {
   max-width: 440px;
   display: flex;
   flex-direction: column;
@@ -86,6 +95,7 @@
   }
 
   @media (max-width: $TABLET) {
+    width: 100%;
     max-width: 100%;
   }
 }
