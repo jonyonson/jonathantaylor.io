@@ -223,7 +223,7 @@ textarea {
 }
 
 html {
-  font: 125%/1.45 'Quattrocento Sans', sans-serif;
+  font: 125%/1.45 $body-font-family;
   box-sizing: border-box;
   overflow-y: scroll;
 }
