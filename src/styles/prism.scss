@@ -3,7 +3,8 @@
 $comment:       #b2b2b2;
 $char:          #d8dee9;
 $keyword:       #c5a5c5;
-$lineHighlight: #353b45; // colors.dark + extra lightness
+// $lineHighlight: #353b45; // colors.dark + extra lightness
+$lineHighlight: lighten($black, 10%);
 $primitive:     #5a9bcf;
 $string:        #8dc891;
 $variable:      #d7deea;
@@ -20,9 +21,10 @@ $operator:      #fc929e;
   color: white;
   border-radius: 10px;
   overflow: auto;
+  overflow-x: scroll;
   tab-size: 1.5em;
   -webkit-overflow-scrolling: touch;
-  margin-bottom: 1rem;
+  margin-bottom: 2.175rem;
 }
 
 
@@ -30,18 +32,17 @@ code[class*="language-"],
 pre[class*="language-"] {
   font-family: 'Space Mono', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono',
   monospace;
-  // font-size: 14px;
+  // font-size: 11px;
 }
 
 .gatsby-highlight > code[class*='language-'],
 .gatsby-highlight > pre[class*='language-'],
 .gatsby-highlight > pre.prism-code {
-
   height: auto !important;
   margin: 1rem;
-  font-size: 14;
-  line-height: 20px;
-  white-space: pre-wrap;
+  // font-size: 14px;
+  // line-height: 20px;
+  // white-space: pre-wrap;
   word-break: break-word;
 }
 

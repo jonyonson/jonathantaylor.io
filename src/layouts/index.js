@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import Transition from '../components/transition.js';
-import 'typeface-space-mono';
+// import 'typeface-space-mono';
 import './layout.scss';
 // import consoleMessage from '../utils/consoleMessage';
 
