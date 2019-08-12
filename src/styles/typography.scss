@@ -655,7 +655,7 @@ blockquote cite:before {
   content: '— ';
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: $PHONE) {
   html {
     font-size: 106.25%;
     line-height: 24.65px;
