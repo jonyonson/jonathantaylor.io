@@ -29,7 +29,7 @@ function Header() {
               className="toggle-dark-mode"
               onClick={darkMode.toggle}
             >
-              🌝
+              🌕
             </span>
           ) : (
             <span
@@ -38,7 +38,7 @@ function Header() {
               className="toggle-dark-mode"
               onClick={darkMode.toggle}
             >
-              🌛
+              🌒
             </span>
           )}
         </nav>
