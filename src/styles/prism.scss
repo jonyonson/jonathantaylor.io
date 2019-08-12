@@ -3,7 +3,6 @@
 $comment:       #b2b2b2;
 $char:          #d8dee9;
 $keyword:       #c5a5c5;
-// $lineHighlight: #353b45; // colors.dark + extra lightness
 $lineHighlight: lighten($black, 10%);
 $primitive:     #5a9bcf;
 $string:        #8dc891;
@@ -19,7 +18,7 @@ $operator:      #fc929e;
 .gatsby-highlight {
   background: $black;
   color: white;
-  border-radius: 10px;
+  border-radius: 5px;
   overflow: auto;
   overflow-x: scroll;
   tab-size: 1.5em;
@@ -30,9 +29,14 @@ $operator:      #fc929e;
 
 code[class*="language-"],
 pre[class*="language-"] {
-  font-family: 'Space Mono', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono',
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono',
   monospace;
-  // font-size: 11px;
+  font-size: 15px;
+  line-height:1.4;
+
+  @media screen and (max-width: $PHONE) {
+    font-size: 13px;
+  }
 }
 
 .gatsby-highlight > code[class*='language-'],
@@ -40,10 +44,10 @@ pre[class*="language-"] {
 .gatsby-highlight > pre.prism-code {
   height: auto !important;
   margin: 1rem;
+  word-break: break-word;
   // font-size: 14px;
   // line-height: 20px;
   // white-space: pre-wrap;
-  word-break: break-word;
 }
 
 .gatsby-highlight + .gatsby-highlight {
