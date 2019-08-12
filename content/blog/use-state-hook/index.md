@@ -61,13 +61,17 @@ function Theme() {
 }
 ```
 
+<p class="code-sandbox-link-wrap">
+  <a class="code-sandbox-link" href="https://codesandbox.io/s/usestate-l14g6" target="_blank">💻 Try it on Code Sandbox</a>
+</p>
+
 The first line within our `Theme` component example shows how we initialize a state value by calling `useState` and passing it the initial state value. We are also utilizing array destructuring to gain access to the two values returned by `useState`.
 
-In order to update the state value, we call the `setTheme()` function returned to us in `useState[1]`, which accepts an argument that represents our new state value. It should be noted that `theme` and `setTheme` could be called anything we would like, but naming these values `thing` and `setThing` is a widely used naming convention.
+In order to update the state value, we call the `setTheme()` updater function that was returned to us from `useState`. This updater function takes an argument that represents our new state value. It should be noted that `theme` and `setTheme` could be called anything we would like, but naming these values `thing` and `setThing` is a widely used naming convention.
 
 #### Functional Updates
 
-Just as <a href="https://reactjs.org/docs/faq-state.html#why-is-setstate-giving-me-the-wrong-value" target="_blank">calls to `setState` are asynchronous</a>, so too are updates to state using the `useState` hook. Whenever we are updating state based on the previous state, in order to ensure the value returned by `useState[0]` is up to date, you should pass a function to your updater function as shown in the line highlited in the example below.
+Just as <a href="https://reactjs.org/docs/faq-state.html#why-is-setstate-giving-me-the-wrong-value" target="_blank">calls to `setState` are asynchronous</a>, so too are updates to state using the `useState` hook. Whenever we are updating state based on the previous state, in order to ensure the value returned by `useState` is up to date, you should pass a function to your updater function as shown in the line highlited in the example below.
 
 ```jsx
 import React, { useState } from 'react';

@@ -696,3 +696,16 @@ body.dark-mode a > code {
   background: lighten($primary-color--dark, 28%);
   color: darken($primary-color--dark, 38%);
 }
+
+.code-sandbox-link {
+  font-weight: bold;
+  border-bottom: none;
+
+  &:hover {
+    border-bottom: none;
+  }
+}
+
+.code-sandbox-link-wrap {
+  margin-top: -1rem;
+}
