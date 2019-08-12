@@ -10,7 +10,7 @@ body.dark-mode {
   color: $body-font-color--dark;
   transition: background .2s ease;
 
-  h1, h2, h3, h4 {
+  h1, h2, h3, h4, h5, h6 {
     color: $header-font-color--dark;
   }
 }
@@ -28,6 +28,15 @@ body.dark-mode hr {
   background: rgba(255, 255, 255, 0.4);
 }
 
+body.dark-mode blockquote {
+  color: white;
+  // border-left:1px solid blue;
+  border-left: 0.54375rem solid $primary-color--dark;
+
+  @media only screen and (max-width: $PHONE) {
+    border-left: 0.27187rem solid $primary-color--dark;
+  }
+}
 
 // Dark Theme Header Styles
 // ===============================
