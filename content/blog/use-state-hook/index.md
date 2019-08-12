@@ -5,8 +5,6 @@ date: '2019-07-12'
 
 React introduced the Hooks API as of version 16.8 which gave us the ability to utilize (or "hook into") certain features of React within a functional component that previously required the use of a class component. React provides some built-in hooks as well as the ability to create our own "custom hooks". These custom hooks allow us to reuse some stateful logic between components. The focus of this post will be on the `useState` hook which allows us to make our functional components stateful.
 
-<!-- ## ~~Stateless~~ Functional Components -->
-
 ## State Management in React
 
 Traditionally in React, only class components had the ability to manage their own state. Function components were even often referred to as "stateless functional components". We were often encouraged to use functional components when state and lifecycle methods weren't necessary. This paradigm led to the annoyance of having to covert functional components to class components if it was ever determined that we needed to add state (or access lifecycle methods) in our component.
@@ -63,7 +61,7 @@ function Theme() {
 }
 ```
 
-The first line within our `Theme` component example shows how we initialize a state value by calling `useState` with that value. We are also utilizing array destructuring to gain access to the two values returned by `useState`.
+The first line within our `Theme` component example shows how we initialize a state value by calling `useState` and passing it the initial state value. We are also utilizing array destructuring to gain access to the two values returned by `useState`.
 
 In order to update the state value, we call the `setTheme()` function returned to us in `useState[1]`, which accepts an argument that represents our new state value. It should be noted that `theme` and `setTheme` could be called anything we would like, but naming these values `thing` and `setThing` is a widely used naming convention.
 
