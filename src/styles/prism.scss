@@ -20,7 +20,7 @@ $operator:      #fc929e;
   color: white;
   border-radius: 5px;
   overflow: auto;
-  overflow-x: scroll;
+  overflow-x: hidden;
   tab-size: 1.5em;
   -webkit-overflow-scrolling: touch;
   margin-bottom: 2.175rem;
@@ -44,10 +44,9 @@ pre[class*="language-"] {
 .gatsby-highlight > pre.prism-code {
   height: auto !important;
   margin: 1rem;
-  word-break: break-word;
-  // font-size: 14px;
   // line-height: 20px;
-  // white-space: pre-wrap;
+  white-space: pre-wrap;
+  word-break: break-word;
 }
 
 .gatsby-highlight + .gatsby-highlight {
