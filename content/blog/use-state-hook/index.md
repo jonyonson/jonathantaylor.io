@@ -67,7 +67,7 @@ In order to update the state value, we call the `setTheme()` function returned t
 
 #### Functional Updates
 
-Just as <a href="https://reactjs.org/docs/faq-state.html#why-is-setstate-giving-me-the-wrong-value" target="_blank">calls to `setState` are asynchronous</a>, so too are updates using the `useState` hook. Whenever we are updating state based on the previous state, in order to ensure the value returned by `useState[0]` is up to date, you should pass a function to your updater function as shown in the line highlited in the example below.
+Just as <a href="https://reactjs.org/docs/faq-state.html#why-is-setstate-giving-me-the-wrong-value" target="_blank">calls to `setState` are asynchronous</a>, so too are updates to state using the `useState` hook. Whenever we are updating state based on the previous state, in order to ensure the value returned by `useState[0]` is up to date, you should pass a function to your updater function as shown in the line highlited in the example below.
 
 ```jsx
 import React, { useState } from 'react';
