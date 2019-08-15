@@ -1,6 +1,6 @@
 ---
 title: A Gentle Introduction to React Hooks
-date: '2019-07-12'
+date: '2019-08-12'
 ---
 
 React introduced the Hooks API as of version 16.8 which gave us the ability to utilize (or "hook into") certain features of React within a functional component that previously required the use of a class component. React provides some built-in hooks as well as the ability to create our own "custom hooks". These custom hooks allow us to reuse some stateful logic between components. The focus of this post will be on the `useState` hook which allows us to make our functional components stateful.
