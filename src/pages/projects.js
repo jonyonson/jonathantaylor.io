@@ -8,7 +8,7 @@ const projects = {
     name: 'Stockly',
     github: 'https://github.com/jonyonson/build-stockly-frontend',
     description:
-      'Stockly was built during a Lambda School build week and I was a front-end developer on the project. Stockly was built with React and provides users with historical price information and analysis for any publicly traded company.',
+      'I was a front-end developer on this project which was built during a Lambda School build week. Stockly was built with React and provides users with historical price information and analysis for any publicly traded company.',
   },
   fylo: {
     name: 'Fylo Landing Page',
