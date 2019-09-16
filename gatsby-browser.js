@@ -2,4 +2,4 @@
 // import 'typeface-montserrat';
 // import 'typeface-merriweather';
 
-import './src/styles/globals.css';
+import './src/styles/_globals.css';

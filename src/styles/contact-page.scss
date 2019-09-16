@@ -1,4 +1,4 @@
-@import '../../styles/variables.scss';
+@import './variables.scss';
 
 .contact-intro {
   margin-top: 2.175rem;
@@ -7,9 +7,7 @@
 }
 
 .form {
-  // border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 4px;
-  // padding: 50px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -57,8 +55,6 @@
   align-items: center;
 
   &-icon {
-    color: #ee224a;
-    // color: #ee2524;
     color: #f05561;
     font-size: 32px;
     margin-right: 7px;

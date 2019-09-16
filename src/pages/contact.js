@@ -1,6 +1,6 @@
 import React from 'react';
 import SEO from '../components/seo';
-import '../styles/pages/contact.scss';
+import '../styles/contact-page.scss';
 import { navigate } from 'gatsby';
 
 function encode(data) {
