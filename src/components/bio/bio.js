@@ -7,6 +7,7 @@
 
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
+import { Link } from 'gatsby';
 import Image from 'gatsby-image';
 import './bio.scss';
 
@@ -28,13 +29,13 @@ function Bio() {
               <span className="bio__hand" role="img" aria-label="a waving hand">
                 👋🏻
               </span>{' '}
-              Hi, I'm <strong>Jonathan</strong>. I am a{' '}
+              <strong>Hi, I'm Jonathan</strong>. I am a{' '}
               <a href={`https://github.com/${social.github}`}>
                 full-stack software engineer
               </a>{' '}
               currently attending{' '}
-              <a href="https://lambdaschool.com">Lambda School</a>.{' '}
-              <a href="/projects">Here are some things</a> I have been working
+              <a href="https://lambdaschool.com">Lambda School</a>. Have a look
+              at some <Link to="/projects">projects</Link> I have been working
               on lately.
             </p>
           </div>
