@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import useDarkMode from 'use-dark-mode';
-
+import { FaSun, FaMoon } from 'react-icons/fa';
 import './header.scss';
 
 function Header() {
@@ -23,24 +23,30 @@ function Header() {
           </Link>
 
           {darkMode.value === true ? (
-            <span
-              role="img"
-              aria-label=""
-              className="toggle-dark-mode"
+            <FaSun
               onClick={darkMode.toggle}
-            >
-              🌕
-            </span>
+              className="toggle-dark-mode--true"
+            />
           ) : (
-            <span
-              role="img"
-              aria-label=""
-              className="toggle-dark-mode"
+            <FaMoon
               onClick={darkMode.toggle}
-            >
-              🌒
-            </span>
+              className="toggle-dark-mode--false"
+            />
           )}
+          {/* <div
+              // className="toggle-dark-mode"
+              onClick={darkMode.toggle}
+            > */}
+          {/* <FaRegSun /> */}
+          {/* </div> */}
+          {/* ) : ( */}
+          {/* <div
+              // className="toggle-dark-mode"
+              onClick={darkMode.toggle}
+            > */}
+          {/* <FaRegMoon /> */}
+          {/* </div> */}
+          {/* )} */}
         </nav>
       </div>
     </header>
