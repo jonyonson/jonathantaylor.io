@@ -33,20 +33,6 @@ function Header() {
               className="toggle-dark-mode--false"
             />
           )}
-          {/* <div
-              // className="toggle-dark-mode"
-              onClick={darkMode.toggle}
-            > */}
-          {/* <FaRegSun /> */}
-          {/* </div> */}
-          {/* ) : ( */}
-          {/* <div
-              // className="toggle-dark-mode"
-              onClick={darkMode.toggle}
-            > */}
-          {/* <FaRegMoon /> */}
-          {/* </div> */}
-          {/* )} */}
         </nav>
       </div>
     </header>
