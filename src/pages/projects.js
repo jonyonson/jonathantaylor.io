@@ -10,6 +10,12 @@ const projects = {
     description:
       'Stockly was built during a Lambda School build week and I was a front-end developer on the project. Stockly was built with React and provides users with historical price information and analysis for any publicly traded company.',
   },
+  restEasy: {
+    name: 'Rest Easy',
+    github:
+      'https://github.com/lambda-build-week-sleep-tracker/BE-Sleep-Tracker',
+    description: `I was the backend developer for Rest Easy, which is a web application designed to for parents to track the sleep of their children. This RESTful API was built with Node/Express, PostgreSQL and Knex.js and deployed to Heroku. `,
+  },
   fylo: {
     name: 'Fylo Landing Page',
     github: 'https://github.com/jonyonson/fylo-landing-page',
@@ -35,6 +41,13 @@ class Projects extends Component {
               />
 
               <Project
+                name={projects.restEasy.name}
+                image={data.restEasy.childImageSharp.fixed}
+                github={projects.restEasy.github}
+                description={projects.restEasy.description}
+              />
+
+              <Project
                 name={projects.fylo.name}
                 image={data.fylo.childImageSharp.fixed}
                 github={projects.fylo.github}
@@ -51,6 +64,13 @@ class Projects extends Component {
 const projectQuery = graphql`
   query ProjectQuery {
     stockly: file(absolutePath: { regex: "/stockly-on-laptop.png/" }) {
+      childImageSharp {
+        fixed(width: 400) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    restEasy: file(absolutePath: { regex: "/rest-easy-on-laptop.png/" }) {
       childImageSharp {
         fixed(width: 400) {
           ...GatsbyImageSharpFixed
