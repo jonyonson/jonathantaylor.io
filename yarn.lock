@@ -12666,20 +12666,20 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typeface-merriweather@0.0.72:
+typeface-quattrocento-sans@^0.0.72:
   version "0.0.72"
-  resolved "https://registry.yarnpkg.com/typeface-merriweather/-/typeface-merriweather-0.0.72.tgz#2b990f5293252052d51d170c82d3892319ff0555"
-  integrity sha512-gO0+fcZ1fTyKUsYY1ltYOOTI6FmBGeEdyIfeQg9NL8aInndk0feiJJVJsKHm/DiyYrnQEezraAQhz/KQoqMGtw==
-
-typeface-montserrat@0.0.75:
-  version "0.0.75"
-  resolved "https://registry.yarnpkg.com/typeface-montserrat/-/typeface-montserrat-0.0.75.tgz#b796d9c767ab8ed1343271985beb1e44b382b7b3"
-  integrity sha512-8ski20t3hdwu2T85pVfjK4jsDbwW8yWzd+LAKxYEmu+JVLVlB7G2yfmdKZz06pUwYCLVFvHvup+NYYulHDpE+w==
+  resolved "https://registry.yarnpkg.com/typeface-quattrocento-sans/-/typeface-quattrocento-sans-0.0.72.tgz#563dd4790ec06122eefb8cbe76d3aab91dd7ca37"
+  integrity sha512-M8hMDZ7eh4MtgDC8GsmyEyzpFp6wKoaNoldmzTgIR4gdVzGpCXJ29lBt9CB74gD/uaJOyW9p2dtMYv4lUZ7Gig==
 
 typeface-space-mono@0.0.71:
   version "0.0.71"
   resolved "https://registry.yarnpkg.com/typeface-space-mono/-/typeface-space-mono-0.0.71.tgz#19cf08b118a3e0042d6eb399f8fc72a3138c73da"
   integrity sha512-v5vMp/kIMPfnHjui3OxdchAdseXydcpZ3eh01xnU+JNA4tqKH/KK/7e+LWC/pscS96+pqgMgyIOrdXWzDjT8MA==
+
+typeface-work-sans@^0.0.72:
+  version "0.0.72"
+  resolved "https://registry.yarnpkg.com/typeface-work-sans/-/typeface-work-sans-0.0.72.tgz#2b40abbda07e2cf6d9fbd9d334bb8c3014c80e32"
+  integrity sha512-hJa+mh217r4qlEq0zK0Aqn7chyDzJYziObsd9nokEd0lMBKbGNf/10VHS3AqeVKDye3evfTvZ11tmj5WizIJrA==
 
 ua-parser-js@^0.7.18:
   version "0.7.20"
@@ -13638,6 +13638,11 @@ yargs@^9.0.0:
     which-module "^2.0.0"
     y18n "^3.2.1"
     yargs-parser "^7.0.0"
+
+yarn.lock@^0.0.1-security:
+  version "0.0.1-security"
+  resolved "https://registry.yarnpkg.com/yarn.lock/-/yarn.lock-0.0.1-security.tgz#8e7117924bfe916671b21f14212ba1bb49dfe0c7"
+  integrity sha512-ZRX6v5zGCJMI1T2aO+BQxJggy1vvorXEwonQhWXIC+brO7lkDB3zWelVNAti183ddH6FmJP8z4UDCJnJlioK4Q==
 
 yauzl@^2.4.2:
   version "2.10.0"
