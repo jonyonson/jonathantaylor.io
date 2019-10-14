@@ -1,21 +1,16 @@
 @import 'variables';
 
 body.light-mode {
-  transition: background 0.2s ease;
+  transition: background .2s ease;
 }
 
 body.dark-mode {
   background: $body-background--dark;
   background: $header-black--dark;
   color: $body-font-color--dark;
-  transition: background 0.2s ease;
+  transition: background .2s ease;
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  h1, h2, h3, h4, h5, h6 {
     color: $header-font-color--dark;
   }
 }
@@ -65,7 +60,7 @@ body.dark-mode .header__title:hover {
 // ===============================
 body.dark-mode .footer {
   background-color: $header-black--dark;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255,255,255,0.1);
   a {
     color: $body-font-color--dark;
 
@@ -86,7 +81,7 @@ body.dark-mode .form button {
 // Dark Theme Contact Page Styles
 // ===============================
 body.dark-mode .project {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255,255,255, 0.2);
 
   a {
     color: $body-font-color--dark;
@@ -94,11 +89,6 @@ body.dark-mode .project {
     &:hover {
       color: $primary-color--dark;
       border-bottom: none;
-    }
-
-    // prevent sticky hover on touch devices
-    @media (hover: none) {
-      color: $body-font-color--dark;
     }
   }
 
