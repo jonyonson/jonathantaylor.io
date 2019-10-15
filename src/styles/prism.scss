@@ -18,50 +18,78 @@ $operator: #fc929e;
 .gatsby-highlight {
   background: $black;
   color: white;
-  border-radius: 5px;
-  overflow: auto;
-  overflow-x: hidden;
   tab-size: 1.5em;
-  -webkit-overflow-scrolling: touch;
   margin-bottom: 2.175rem;
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+
+  @media screen and (max-width: $PHONE) {
+    margin: 0 -1rem;
+  }
 }
 
 code[class*='language-'],
 pre[class*='language-'] {
-  font-family: 'Space Mono', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono',
-    monospace;
-  // font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-  font-size: 15px;
+  font-family: $code-font-family;
+  font-size: 16px;
   line-height: 1.4;
 
   @media screen and (max-width: $PHONE) {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 
-.gatsby-highlight > code[class*='language-'],
-.gatsby-highlight > pre[class*='language-'],
-.gatsby-highlight > pre.prism-code {
-  height: auto !important;
-  margin: 1rem;
-  // line-height: 20px;
-  white-space: pre-wrap;
-  word-break: break-word;
+.gatsby-highlight pre[class='language-jsx']::before {
+  content: 'JSX';
+  color: #ffffff;
+  // background: rgb(0, 90, 156);
+  background: #79b6f2;
 }
 
-.gatsby-highlight + .gatsby-highlight {
-  margin-top: 1rem;
+.gatsby-highlight pre[class='language-css']::before {
+  content: 'CSS';
+  color: #ffffff;
+  // background: rgb(0, 90, 156);
+  background: #79b6f2;
+}
+
+.gatsby-highlight pre[class='language-js']::before {
+  content: 'JS';
+  color: #ffffff;
+  // background: rgb(0, 90, 156);
+  background: #79b6f2;
+}
+
+.gatsby-highlight pre[class*='language-'] {
+  padding: 1.5rem 1rem 1rem;
+}
+
+.gatsby-highlight pre[class*='language-']::before {
+  color: #232129;
+  font-size: 0.85rem;
+  font-family: $code-font-family;
+  letter-spacing: 0.075em;
+  line-height: 1;
+  position: absolute;
+  left: 1rem;
+  top: -10px;
+  text-align: right;
+  z-index: 1;
+  text-transform: uppercase;
+  padding: 0.35rem 0.6rem;
+  // border-radius: 0px 0px 4px 4px;
 }
 
 .gatsby-highlight-code-line {
   background-color: $lineHighlight;
   display: block;
-  margin: -0.125rem calc(-1rem - 15px);
+  margin: -0.125rem calc(-1rem);
   padding: 0.125rem calc(1rem + 15px);
 }
 
 .token.attr-name {
   color: $keyword;
+  font-style: italic;
 }
 
 .token.comment,
@@ -70,6 +98,7 @@ pre[class*='language-'] {
 .token.doctype,
 .token.cdata {
   color: $comment;
+  font-style: italic;
 }
 
 .token.property,

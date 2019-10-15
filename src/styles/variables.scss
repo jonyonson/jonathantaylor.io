@@ -1,6 +1,7 @@
 // Fonts
 $header-font-family: 'Work Sans', sans-serif;
 $body-font-family: 'Quattrocento Sans', sans-serif;
+$code-font-family: dm, Consolas, Monaco, 'Ubuntu Mono', monospace;
 
 // Font Sizes
 $h1-font-size: 2rem;
@@ -32,14 +33,9 @@ $header-black: $black;
 
 // Colors - Dark Theme
 $primary-color--dark: #f0e995;
-
-
 $primary-lighten--dark: lighten($primary-color--dark, 10%);
 $primary-darken--dark: darken($primary-color--dark, 20%);
 $header-black--dark: #202124;
 $body-background--dark: #323639;
 $body-font-color--dark: white;
 $header-font-color--dark: white;
-
-
-
