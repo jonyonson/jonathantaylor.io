@@ -10,7 +10,7 @@ class BlogIndex extends React.Component {
 
     return (
       <React.Fragment>
-        <SEO title="JT" />
+        <SEO title="👨‍💻" />
         <Bio />
         <hr />
         <h2>Articles</h2>
@@ -22,11 +22,8 @@ class BlogIndex extends React.Component {
                 <Link to={node.fields.slug}>{title}</Link>
               </h3>
               <small>{node.frontmatter.date}</small>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
-                }}
-              />
+              {/* <p dangerouslySetInnerHTML={{__html: node.frontmatter.description || node.excerpt}}/> */}
+              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
             </div>
           );
         })}
@@ -54,7 +51,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
-            description
+            # description
           }
         }
       }

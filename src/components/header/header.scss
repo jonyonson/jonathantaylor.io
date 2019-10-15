@@ -1,7 +1,7 @@
 @import '../../styles/variables';
 
 .header {
-  background: $black;
+  background: $header-black;
   color: white;
   color: $body-font-color;
   padding: 1rem;
@@ -50,6 +50,25 @@
   }
 }
 
+.header__nav {
+  display: flex;
+  align-items: center;
+
+  .toggle-dark-mode--true, .toggle-dark-mode--false {
+    margin-left: 15px;
+    cursor: pointer;
+    // font-size: 24px;
+  }
+
+  .toggle-dark-mode--true {
+    color:$header-font-color--dark;
+  }
+
+  .toggle-dark-mode--false {
+    color: $header-font-color--dark;
+  }
+}
+
 .header__nav-link {
   letter-spacing: 1px;
   font-family: $body-font-family;
@@ -68,3 +87,4 @@
     font-size: 13px;
   }
 }
+

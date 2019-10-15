@@ -223,7 +223,7 @@ textarea {
 }
 
 html {
-  font: 125%/1.45 'Quattrocento Sans', sans-serif;
+  font: 125%/1.45 $body-font-family;
   box-sizing: border-box;
   overflow-y: scroll;
 }
@@ -655,7 +655,7 @@ blockquote cite:before {
   content: '— ';
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: $PHONE) {
   html {
     font-size: 106.25%;
     line-height: 24.65px;
@@ -675,7 +675,31 @@ a.gatsby-resp-image-link {
   box-shadow: none;
 }
 
-// code[class*='language-'],
-// pre[class*='language-'] {
-//   font-size: 14px;
-// }
+.code-sandbox-link {
+  font-weight: bold;
+  border-bottom: none;
+
+  &:hover {
+    border-bottom: none;
+  }
+}
+
+.code-sandbox-link-wrap {
+  margin-top: -1rem;
+
+  @media only screen and (max-width: $PHONE) {
+    margin-top: -0.5rem;
+  }
+}
+
+code[class*='language-text'] {
+  border-radius: none;
+  padding: 1px 2px;
+  margin: 0px 2px;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+body.dark-mode code[class*='language-text'] {
+  background: rgba(255, 255, 255, 0.75);
+  color: $body-font-color;
+}

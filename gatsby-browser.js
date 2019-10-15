@@ -1,5 +1,6 @@
 // custom typefaces
-// import 'typeface-montserrat';
-// import 'typeface-merriweather';
+import 'typeface-quattrocento-sans';
+import 'typeface-work-sans';
 
-import './src/styles/globals.css';
+import './src/styles/_dank-mono.css';
+import './src/styles/_globals.css';

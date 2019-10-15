@@ -1,18 +1,41 @@
 // Fonts
 $header-font-family: 'Work Sans', sans-serif;
 $body-font-family: 'Quattrocento Sans', sans-serif;
+$code-font-family: dm, Consolas, Monaco, 'Ubuntu Mono', monospace;
+
+// Font Sizes
+$h1-font-size: 2rem;
+$h2-font-size: 1.51572rem;
+$h3-font-size: 1.31951rem;
+$h4-font-size: 1rem;
+$h5-font-size: 0.87055rem;
+$h6-font-size: 0.81225rem;
+
+// Widths
+$container-width: 670px;
+$container-width--wide: 1000px;
+$PHONE: 500px;
+$TABLET: 760px;
 
 // Colors
-$primary-color: #fb4d3d;
-$primary-lighten: lighten($primary-color, 10%);
-$primary-darken: darken($primary-color, 20%);
-$black: #393e41;
-$body-font-color: hsla(0, 0%, 0%, 0.8);
-$header-font-color: hsla(0, 0%, 0%, 0.9);
-
-$container-width: 670px;
-$PHONE: 500px;
-
 $tart-orange: #fb4d3d;
 $black-olive: #393e41;
 $isabelline: #f1f2eb;
+$black: #393e41;
+
+// Colors - Light Theme
+$primary-color: #fb4d3d;
+$primary-lighten: lighten($primary-color, 10%);
+$primary-darken: darken($primary-color, 20%);
+$body-font-color: hsla(0, 0%, 0%, 0.8);
+$header-font-color: hsla(0, 0%, 0%, 0.9);
+$header-black: $black;
+
+// Colors - Dark Theme
+$primary-color--dark: #f0e995;
+$primary-lighten--dark: lighten($primary-color--dark, 10%);
+$primary-darken--dark: darken($primary-color--dark, 20%);
+$header-black--dark: #202124;
+$body-background--dark: #323639;
+$body-font-color--dark: white;
+$header-font-color--dark: white;

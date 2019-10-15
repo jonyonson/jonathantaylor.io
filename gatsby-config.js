@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'jonathantaylor.io',
     author: 'Jonathan Taylor',
-    description: "Jonathan Taylor's personal website and blog",
+    description: "Jonathan Taylor's blog and portfolio",
     siteUrl: 'https://jonathantaylor.io/',
     social: {
       twitter: 'jonyonson',
@@ -34,12 +34,14 @@ module.exports = {
               maxWidth: 670,
             },
           },
+          'gatsby-remark-embed-video',
           {
             resolve: 'gatsby-remark-responsive-iframe',
             options: {
               wrapperStyle: 'margin-bottom: 1.0725rem',
             },
           },
+
           'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
@@ -53,11 +55,12 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: 'ADD YOUR TRACKING ID HERE',
+        trackingId: 'UA-69543893-1',
       },
     },
     'gatsby-plugin-feed',
     'gatsby-plugin-remove-serviceworker',
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-use-dark-mode',
   ],
 };

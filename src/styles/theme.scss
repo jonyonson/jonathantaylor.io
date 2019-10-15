@@ -1,0 +1,98 @@
+@import 'variables';
+
+body.light-mode {
+  transition: background .2s ease;
+}
+
+body.dark-mode {
+  background: $body-background--dark;
+  background: $header-black--dark;
+  color: $body-font-color--dark;
+  transition: background .2s ease;
+
+  h1, h2, h3, h4, h5, h6 {
+    color: $header-font-color--dark;
+  }
+}
+
+body.dark-mode a {
+  color: $primary-color--dark;
+
+  &:hover {
+    color: $primary-darken--dark;
+    border-bottom: 2px solid $primary-darken--dark;
+  }
+}
+
+body.dark-mode hr {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+body.dark-mode blockquote {
+  color: white;
+  // border-left:1px solid blue;
+  border-left: 0.54375rem solid $primary-color--dark;
+
+  @media only screen and (max-width: $PHONE) {
+    border-left: 0.27187rem solid $primary-color--dark;
+  }
+}
+
+// Dark Theme Header Styles
+// ===============================
+body.dark-mode header {
+  background: $header-black--dark;
+}
+
+body.dark-mode header a {
+  color: $body-font-color--dark;
+
+  &:hover {
+    border-bottom: none;
+  }
+}
+
+body.dark-mode .header__title:hover {
+  color: $body-font-color--dark;
+}
+
+// Dark Theme Footer Styles
+// ===============================
+body.dark-mode .footer {
+  background-color: $header-black--dark;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  a {
+    color: $body-font-color--dark;
+
+    &:hover {
+      border-bottom: none;
+      color: $primary-color--dark;
+    }
+  }
+}
+
+// Dark Theme Contact Page Styles
+// ===============================
+body.dark-mode .form button {
+  background: $primary-color--dark;
+  color: $body-background--dark;
+}
+
+// Dark Theme Contact Page Styles
+// ===============================
+body.dark-mode .project {
+  border-bottom: 1px solid rgba(255,255,255, 0.2);
+
+  a {
+    color: $body-font-color--dark;
+
+    &:hover {
+      color: $primary-color--dark;
+      border-bottom: none;
+    }
+  }
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+}
