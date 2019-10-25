@@ -1,7 +1,7 @@
 // Fonts
 $header-font-family: 'Work Sans', sans-serif;
 $body-font-family: 'Quattrocento Sans', sans-serif;
-$code-font-family: dm, Consolas, Monaco, 'Ubuntu Mono', monospace;
+$monospace-font-family: dm, Consolas, Monaco, 'Ubuntu Mono', monospace;
 
 // Font Sizes
 $h1-font-size: 2rem;
@@ -39,3 +39,7 @@ $header-black--dark: #202124;
 $body-background--dark: #323639;
 $body-font-color--dark: white;
 $header-font-color--dark: white;
+
+// Code Examples
+$code-block--light: $black-olive;
+$code-block--dark: $black-olive;

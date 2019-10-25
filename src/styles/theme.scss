@@ -30,7 +30,6 @@ body.dark-mode hr {
 
 body.dark-mode blockquote {
   color: white;
-  // border-left:1px solid blue;
   border-left: 0.54375rem solid $primary-color--dark;
 
   @media only screen and (max-width: $PHONE) {

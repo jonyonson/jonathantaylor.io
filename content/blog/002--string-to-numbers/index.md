@@ -1,6 +1,6 @@
 ---
 title: Converting a String to a Number in JavaScript
-date: '2019-07-05'
+date: '2019-09-05'
 ---
 
 There are several ways to convert a string to a number in JavaScript. Let's examine some of the caveats that come along with each.

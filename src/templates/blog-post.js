@@ -1,6 +1,10 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 import SEO from '../components/seo';
+import {
+  TiArrowRightOutline as FaArrowRight,
+  TiArrowLeftOutline as FaArrowLeft,
+} from 'react-icons/ti';
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -21,25 +25,38 @@ class BlogPostTemplate extends React.Component {
         <hr />
         <ul
           style={{
-            display: 'flex',
-            flexWrap: 'wrap',
-            justifyContent: 'space-between',
             listStyle: 'none',
             padding: 0,
             margin: 0,
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
           }}
         >
-          <li>
+          <li style={{ textAlign: 'center' }}>
             {previous && (
               <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
+                {/* ← {previous.frontmatter.title} */}
+                <div style={{ display: 'flex', alignItems: 'center' }}>
+                  <FaArrowLeft style={{ marginRight: '0.3rem' }} />{' '}
+                  {previous.frontmatter.title}
+                </div>
               </Link>
             )}
           </li>
-          <li>
+          <li style={{ textAlign: 'center' }}>
             {next && (
               <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
+                {/* {next.frontmatter.title} → */}
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                  }}
+                >
+                  {next.frontmatter.title}{' '}
+                  <FaArrowRight style={{ marginLeft: '0.3rem' }} />
+                </div>
               </Link>
             )}
           </li>
