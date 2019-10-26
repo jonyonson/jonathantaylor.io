@@ -12679,7 +12679,7 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typeface-quattrocento-sans@0.0.72:
+typeface-quattrocento-sans@^0.0.72:
   version "0.0.72"
   resolved "https://registry.yarnpkg.com/typeface-quattrocento-sans/-/typeface-quattrocento-sans-0.0.72.tgz#563dd4790ec06122eefb8cbe76d3aab91dd7ca37"
   integrity sha512-M8hMDZ7eh4MtgDC8GsmyEyzpFp6wKoaNoldmzTgIR4gdVzGpCXJ29lBt9CB74gD/uaJOyW9p2dtMYv4lUZ7Gig==
