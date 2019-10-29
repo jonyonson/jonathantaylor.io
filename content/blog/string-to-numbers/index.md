@@ -5,7 +5,7 @@ date: '2019-09-05'
 
 There are several ways to convert a string to a number in JavaScript. Let's examine some of the caveats that come along with each.
 
-## parseInt() and parseFLoat()
+## parseInt() and parseFloat()
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis repellat, at iste accusamus laudantium ad similique deserunt vero cum architecto minima dignissimos minus nam quidem quas adipisci accusantium neque debitis?
 
