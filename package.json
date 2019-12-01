@@ -36,12 +36,12 @@
     "use-dark-mode": "2.3.1"
   },
   "devDependencies": {
-    "babel-eslint": "^10.0.3",
-    "eslint": "^6.7.1",
-    "eslint-loader": "^3.0.2",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-react": "^7.17.0",
-    "gatsby-plugin-eslint": "^2.0.8",
+    "babel-eslint": "10.0.3",
+    "eslint": "6.7.2",
+    "eslint-loader": "3.0.2",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-react": "7.17.0",
+    "gatsby-plugin-eslint": "2.0.8",
     "prettier": "1.19.1"
   },
   "license": "MIT",
