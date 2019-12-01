@@ -29,7 +29,7 @@ function Bio() {
               <span className="bio__hand" role="img" aria-label="a waving hand">
                 👋🏻
               </span>{' '}
-              <strong>Hi, I'm Jonathan</strong>. I am a{' '}
+              <strong>Hi, I&#39;m Jonathan</strong>. I am a{' '}
               <a href={`https://github.com/${social.github}`}>
                 full-stack software engineer
               </a>{' '}
