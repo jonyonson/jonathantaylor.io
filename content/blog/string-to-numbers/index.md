@@ -3,7 +3,7 @@ title: Converting a String to a Number in JavaScript
 date: '2019-12-01'
 ---
 
-There are several ways to convert a string to a number in JavaScript. Let's examine some of the caveats that come along with a few of these solutions.
+There are several ways to convert a string to a number in JavaScript. Let's examine some of these solutions and some of their caveats.
 
 ## The Number object
 
