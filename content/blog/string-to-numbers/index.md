@@ -7,7 +7,7 @@ There are several ways to convert a string to a number in JavaScript. Let's exam
 
 ## The Number object
 
-The `Number` object is a wrapper object that is created using the `Number() constructor`, but it can also be used without the `new` keyword to convert numeric strings and null to numbers.
+The `Number` object is a wrapper object that is created using the `Number()` constructor, but it can also be used without the `new` keyword to convert numeric strings and null to numbers.
 
 ```javascript
 typeof new Number('100'); // object
