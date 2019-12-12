@@ -2,7 +2,10 @@ import { useState, useEffect, useCallback } from 'react';
 
 export default function useMedia(queries, values, defaultValue) {
   // Array containing a media query list for each query
-  const mediaQueryLists = queries.map((q) => window.matchMedia(q));
+  let mediaQueryLists;
+  if (typeof window !== 'undefined') {
+    mediaQueryLists = queries.map((q) => window.matchMedia(q));
+  }
 
   // Function that gets value based on matching media query
   // wrapped into its own useCallback() hook to prevent change on every render
