@@ -5,18 +5,18 @@ import { navigate } from 'gatsby';
 
 function encode(data) {
   return Object.keys(data)
-    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
     .join('&');
 }
 
 function Contact() {
   const [state, setState] = React.useState({});
 
-  const handleChange = e => {
+  const handleChange = (e) => {
     setState({ ...state, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     const form = e.target;
     fetch('/', {
@@ -25,7 +25,7 @@ function Contact() {
       body: encode({ 'form-name': form.getAttribute('name'), ...state }),
     })
       .then(() => navigate(form.getAttribute('action')))
-      .catch(error => console.log(error));
+      .catch((error) => console.log(error));
   };
 
   return (

@@ -35,7 +35,7 @@ class Transition extends React.PureComponent {
             exit: timeout,
           }}
         >
-          {status => (
+          {(status) => (
             <div style={{ ...getTransitionStyles[status] }}>{children}</div>
           )}
         </ReactTransition>

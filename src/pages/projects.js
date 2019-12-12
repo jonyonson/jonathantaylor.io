@@ -36,7 +36,7 @@ class Projects extends Component {
         <SEO title="Projects" />
         <StaticQuery
           query={projectQuery}
-          render={data => (
+          render={(data) => (
             <>
               <Project
                 name={projects.stockly.name}
