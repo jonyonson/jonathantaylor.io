@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import useDarkMode from 'use-dark-mode';
 import { FaSun, FaMoon } from 'react-icons/fa';
+import useDarkMode from '../../hooks/useDarkMode';
 import './header.scss';
 
 function Header() {
-  const darkMode = useDarkMode(false);
+  const [darkMode, setDarkMode] = useDarkMode();
   return (
     <header className="header">
       <div className="header__container">
@@ -22,14 +22,14 @@ function Header() {
             Projects
           </Link>
 
-          {darkMode.value === true ? (
+          {darkMode === true ? (
             <FaSun
-              onClick={darkMode.toggle}
+              onClick={() => setDarkMode(false)}
               className="toggle-dark-mode--true"
             />
           ) : (
             <FaMoon
-              onClick={darkMode.toggle}
+              onClick={() => setDarkMode(true)}
               className="toggle-dark-mode--false"
             />
           )}
