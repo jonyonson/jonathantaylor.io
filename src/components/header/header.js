@@ -1,12 +1,20 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'gatsby';
-// import { FaSun, FaMoon } from 'react-icons/fa';
-// import useDarkMode from '../../hooks/useDarkMode';
 import './header.scss';
-import { ThemeToggler } from 'gatsby-plugin-dark-mode';
+import Toggle from '../toggle';
+import sun from '../../assets/sun.png';
+import moon from '../../assets/moon.png';
 
 function Header() {
-  // const [darkMode, setDarkMode] = useDarkMode();
+  const [theme, setTheme] = useState(null);
+
+  useEffect(() => {
+    setTheme(window.__theme);
+    window.__onThemeChange = () => {
+      setTheme(window.__theme);
+    };
+  }, [theme]);
+
   return (
     <header className="header">
       <div className="header__container">
@@ -23,32 +31,36 @@ function Header() {
             Projects
           </Link>
 
-          <ThemeToggler>
-            {({ theme, toggleTheme }) => (
-              <label>
-                <input
-                  type="checkbox"
-                  onChange={(e) =>
-                    toggleTheme(e.target.checked ? 'dark' : 'light')
-                  }
-                  checked={theme === 'dark'}
-                />{' '}
-                Dark mode
-              </label>
-            )}
-          </ThemeToggler>
-
-          {/* {darkMode === true ? (
-            <FaSun
-              onClick={() => setDarkMode(false)}
-              className="toggle-dark-mode--true"
+          {theme !== null ? (
+            <Toggle
+              icons={{
+                checked: (
+                  <img
+                    src={moon}
+                    width="16"
+                    height="16"
+                    role="presentation"
+                    style={{ pointerEvents: 'none' }}
+                  />
+                ),
+                unchecked: (
+                  <img
+                    src={sun}
+                    width="16"
+                    height="16"
+                    role="presentation"
+                    style={{ pointerEvents: 'none' }}
+                  />
+                ),
+              }}
+              checked={theme === 'dark'}
+              onChange={(e) =>
+                window.__setPreferredTheme(e.target.checked ? 'dark' : 'light')
+              }
             />
           ) : (
-            <FaMoon
-              onClick={() => setDarkMode(true)}
-              className="toggle-dark-mode--false"
-            />
-          )} */}
+            <div style={{ height: '24px' }} />
+          )}
         </nav>
       </div>
     </header>

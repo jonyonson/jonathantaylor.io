@@ -4,7 +4,7 @@
  *   applied https://github.com/aaronshaf/react-toggle/pull/90
  **/
 
-import './toggle.css';
+import './toggle.scss';
 
 import React, { PureComponent } from 'react';
 
@@ -45,12 +45,19 @@ export default class Toggle extends PureComponent {
     };
   }
 
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     if ('checked' in nextProps) {
       this.setState({ checked: !!nextProps.checked });
       this.previouslyChecked = !!nextProps.checked;
     }
   }
+
+  // componentWillReceiveProps(nextProps) {
+  //   if ('checked' in nextProps) {
+  //     this.setState({ checked: !!nextProps.checked });
+  //     this.previouslyChecked = !!nextProps.checked;
+  //   }
+  // }
 
   handleClick(event) {
     const checkbox = this.input;
@@ -108,7 +115,8 @@ export default class Toggle extends PureComponent {
     }
   }
 
-  handleTouchCancel(event) {
+  // handleTouchCancel(event) {
+  handleTouchCancel() {
     if (this.startX != null) {
       this.touchStarted = false;
       this.startX = null;
@@ -153,6 +161,7 @@ export default class Toggle extends PureComponent {
   }
 
   render() {
+    // eslint-disable-next-line no-unused-vars
     const { className, icons: _icons, ...inputProps } = this.props;
     const classes =
       'react-toggle' +

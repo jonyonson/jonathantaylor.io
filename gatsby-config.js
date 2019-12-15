@@ -61,7 +61,6 @@ module.exports = {
     'gatsby-plugin-feed',
     'gatsby-plugin-remove-serviceworker',
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-dark-mode',
     'gatsby-plugin-eslint',
   ],
 };

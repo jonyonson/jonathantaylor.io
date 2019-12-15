@@ -4,6 +4,7 @@
 **/
 
 .react-toggle {
+  margin-left: 20px;
   touch-action: pan-x;
 
   display: inline-block;
@@ -96,9 +97,24 @@
 }
 
 .react-toggle--focus .react-toggle-thumb {
-  box-shadow: 0px 0px 2px 3px rgb(255, 167, 196);
+  box-shadow: 0px 0px 2px 3px #fb4d3d;
 }
 
 .react-toggle:active .react-toggle-thumb {
-  box-shadow: 0px 0px 5px 5px rgb(255, 167, 196);
+  box-shadow: 0px 0px 5px 5px#fb4d3d;
+}
+
+body.dark .react-toggle--focus .react-toggle-thumb {
+  box-shadow: 0px 0px 2px 3px #f0e995;
+}
+
+body.dark .react-toggle:active .react-toggle-thumb {
+  box-shadow: 0px 0px 5px 5px#f0e995;
+}
+
+//Temporary - don't display on phones
+@media (max-width: 375px) {
+  .react-toggle {
+    display: none;
+  }
 }
