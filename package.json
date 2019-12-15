@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Jonathan Taylor <jonyonson@icloud.com>",
   "dependencies": {
+    "babel-plugin-styled-components": "^1.10.6",
     "gatsby": "2.18.12",
     "gatsby-image": "2.2.36",
     "gatsby-plugin-feed": "2.3.25",
@@ -14,6 +15,7 @@
     "gatsby-plugin-remove-serviceworker": "1.0.0",
     "gatsby-plugin-sass": "2.1.26",
     "gatsby-plugin-sharp": "2.3.7",
+    "gatsby-plugin-styled-components": "^3.1.16",
     "gatsby-plugin-use-dark-mode": "1.1.2",
     "gatsby-remark-copy-linked-files": "2.1.33",
     "gatsby-remark-embed-video": "2.0.1",
@@ -31,6 +33,7 @@
     "react-helmet": "5.2.1",
     "react-icons": "3.8.0",
     "react-transition-group": "4.3.0",
+    "styled-components": "^4.4.1",
     "typeface-quattrocento-sans": "0.0.72",
     "typeface-work-sans": "0.0.72"
   },
