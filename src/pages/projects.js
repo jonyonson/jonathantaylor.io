@@ -14,12 +14,13 @@ const projects = {
     name: 'Rest Easy',
     github:
       'https://github.com/lambda-build-week-sleep-tracker/BE-Sleep-Tracker',
-    description: `I was the backend developer for Rest Easy, which is a web application designed to for parents to track the sleep of their children. This RESTful API was built with Node/Express, PostgreSQL and Knex.js and deployed to Heroku. `,
+    description: `Rest Easy is an application designed to allow parents to track the sleep of their children. This RESTful API was built with Node/Express, PostgreSQL and Knex.js and deployed to Heroku. `,
   },
   instagram: {
     name: 'Instagram Clone',
     github: 'https://github.com/jonyonson/instagram-clone',
-    description: 'An Instagram clone built with React.',
+    description:
+      'An Instagram clone built using React with search, like and comment functionality.',
   },
   fylo: {
     name: 'Fylo Landing Page',
