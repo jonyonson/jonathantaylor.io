@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import { Link } from 'gatsby';
+import { FaGithub, FaTwitter } from 'react-icons/fa';
 import './footer.scss';
 
 class Footer extends Component {
@@ -13,13 +13,14 @@ class Footer extends Component {
               className="footer__social__link"
               href="https://github.com/jonyonson"
             >
-              GitHub
+              <FaGithub size={24} />
             </a>
             <a
+              style={{ marginLeft: 24 }}
               className="footer__social__link"
               href="https://twitter.com/jonyonson"
             >
-              Twitter
+              <FaTwitter size={24} />
             </a>
           </div>
         </div>
