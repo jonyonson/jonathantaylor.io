@@ -698,7 +698,7 @@ code[class*='language-text'] {
   background: rgba(0, 0, 0, 0.15);
 }
 
-body.dark-mode code[class*='language-text'] {
+body.dark code[class*='language-text'] {
   background: rgba(255, 255, 255, 0.75);
   color: $body-font-color;
 }

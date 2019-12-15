@@ -1,10 +1,10 @@
 @import 'variables';
 
-body.light-mode {
+body.light {
   transition: background .2s ease;
 }
 
-body.dark-mode {
+body.dark {
   background: $body-background--dark;
   background: $header-black--dark;
   color: $body-font-color--dark;
@@ -15,7 +15,7 @@ body.dark-mode {
   }
 }
 
-body.dark-mode a {
+body.dark a {
   color: $primary-color--dark;
 
   &:hover {
@@ -24,11 +24,11 @@ body.dark-mode a {
   }
 }
 
-body.dark-mode hr {
+body.dark hr {
   background: rgba(255, 255, 255, 0.4);
 }
 
-body.dark-mode blockquote {
+body.dark blockquote {
   color: white;
   border-left: 0.54375rem solid $primary-color--dark;
 
@@ -39,11 +39,11 @@ body.dark-mode blockquote {
 
 // Dark Theme Header Styles
 // ===============================
-body.dark-mode header {
+body.dark header {
   background: $header-black--dark;
 }
 
-body.dark-mode header a {
+body.dark header a {
   color: $body-font-color--dark;
 
   &:hover {
@@ -51,13 +51,13 @@ body.dark-mode header a {
   }
 }
 
-body.dark-mode .header__title:hover {
+body.dark .header__title:hover {
   color: $body-font-color--dark;
 }
 
 // Dark Theme Footer Styles
 // ===============================
-body.dark-mode .footer {
+body.dark .footer {
   background-color: $header-black--dark;
   border-top: 1px solid rgba(255,255,255,0.1);
   a {
@@ -72,14 +72,14 @@ body.dark-mode .footer {
 
 // Dark Theme Contact Page Styles
 // ===============================
-body.dark-mode .form button {
+body.dark .form button {
   background: $primary-color--dark;
   color: $body-background--dark;
 }
 
 // Dark Theme Contact Page Styles
 // ===============================
-body.dark-mode .project {
+body.dark .project {
   border-bottom: 1px solid rgba(255,255,255, 0.2);
 
   a {
