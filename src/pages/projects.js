@@ -78,28 +78,28 @@ const projectQuery = graphql`
   query ProjectQuery {
     stockly: file(absolutePath: { regex: "/stockly-on-laptop.png/" }) {
       childImageSharp {
-        fixed(width: 400) {
+        fixed(width: 375) {
           ...GatsbyImageSharpFixed
         }
       }
     }
     restEasy: file(absolutePath: { regex: "/rest-easy-on-laptop.png/" }) {
       childImageSharp {
-        fixed(width: 400) {
+        fixed(width: 375) {
           ...GatsbyImageSharpFixed
         }
       }
     }
     instagram: file(absolutePath: { regex: "/instagram-on-laptop.png/" }) {
       childImageSharp {
-        fixed(width: 400) {
+        fixed(width: 375) {
           ...GatsbyImageSharpFixed
         }
       }
     }
     fylo: file(absolutePath: { regex: "/fylo-on-laptop.png/" }) {
       childImageSharp {
-        fixed(width: 400) {
+        fixed(width: 375) {
           ...GatsbyImageSharpFixed
         }
       }
