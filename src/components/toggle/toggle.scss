@@ -112,9 +112,3 @@ body.dark .react-toggle:active .react-toggle-thumb {
   box-shadow: 0px 0px 5px 5px#f0e995;
 }
 
-//Temporary - don't display on phones
-@media (max-width: 375px) {
-  .react-toggle {
-    display: none;
-  }
-}
