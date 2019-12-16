@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
-import { StyledMenu } from './Menu.styled';
+import { StyledMenu } from './menu.styled';
 
 const Menu = ({ open, dark, setOpen }) => {
   return (
