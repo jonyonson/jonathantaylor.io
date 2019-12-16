@@ -7,13 +7,13 @@ const Menu = ({ open, dark, setOpen }) => {
   return (
     <StyledMenu open={open} dark={dark}>
       <Link to="/" onClick={() => setOpen(!open)}>
-        Articles
+        📰 Articles
       </Link>
       <Link to="/contact" onClick={() => setOpen(!open)}>
-        Contact Me
+        📬 Contact
       </Link>
       <Link to="/projects" onClick={() => setOpen(!open)}>
-        Portfolio
+        💻 Projects
       </Link>
     </StyledMenu>
   );
