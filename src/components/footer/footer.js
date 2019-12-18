@@ -13,14 +13,14 @@ class Footer extends Component {
               className="footer__social__link"
               href="https://github.com/jonyonson"
             >
-              <FaGithub size={24} />
+              <FaGithub size={24} alt="github" />
             </a>
             <a
               style={{ marginLeft: 24 }}
               className="footer__social__link"
               href="https://twitter.com/jonyonson"
             >
-              <FaTwitter size={24} />
+              <FaTwitter size={24} alt="twitter" />
             </a>
           </div>
         </div>
