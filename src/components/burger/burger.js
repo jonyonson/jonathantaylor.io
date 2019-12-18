@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const Burger = ({ open, setOpen }) => {
   return (
-    <StyledBurger open={open} onClick={() => setOpen(!open)}>
+    <StyledBurger open={open} onClick={() => setOpen(!open)} aria-label="Menu">
       <div />
       <div />
       <div />
