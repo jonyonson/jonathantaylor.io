@@ -25,33 +25,36 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-mdx',
+      resolve: 'gatsby-plugin-mdx',
       options: {
-        extendsions: ['.mdx', '.md'],
-        plugins: [
+        extensions: ['.mdx', '.md'],
+        defaultLayouts: {
+          blog: require.resolve('./src/templates/blog-post.js'),
+        },
+        gatsbyRemarkPlugins: [
           {
             resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 670,
             },
           },
-          'gatsby-remark-embed-video',
           {
             resolve: 'gatsby-remark-responsive-iframe',
             options: {
               wrapperStyle: 'margin-bottom: 1.0725rem',
             },
           },
+          { resolve: 'gatsby-remark-embed-video' },
           { resolve: 'gatsby-remark-prismjs' },
           { resolve: 'gatsby-remark-copy-linked-files' },
-          { resove: 'gatsby-remark-smartypants' },
+          { resolve: 'gatsby-remark-smartypants' },
         ],
       },
     },
-    'gatsby-plugin-sass',
-    'gatsby-plugin-styled-components',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
+    'gatsby-plugin-sass',
+    'gatsby-plugin-styled-components',
     'gatsby-plugin-layout',
     {
       resolve: 'gatsby-plugin-google-analytics',
@@ -63,6 +66,5 @@ module.exports = {
     'gatsby-plugin-remove-serviceworker',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-eslint',
-    'gatsby-plugin-mdx',
   ],
 };

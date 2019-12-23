@@ -5,10 +5,11 @@ import {
   TiArrowRightOutline as FaArrowRight,
   TiArrowLeftOutline as FaArrowLeft,
 } from 'react-icons/ti';
+import { MDXRenderer } from 'gatsby-plugin-mdx';
 
 class BlogPostTemplate extends React.Component {
   render() {
-    const post = this.props.data.markdownRemark;
+    const post = this.props.data.mdx;
     const { previous, next } = this.props.pageContext;
 
     return (
@@ -21,7 +22,8 @@ class BlogPostTemplate extends React.Component {
         <p style={{ display: 'block', marginTop: '-0.5rem' }}>
           {post.frontmatter.date}
         </p>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <MDXRenderer>{post.body}</MDXRenderer>
+        {/* <div dangerouslySetInnerHTML={{ __html: post.html }} /> */}
         <hr />
         <ul
           style={{
@@ -76,10 +78,10 @@ export const pageQuery = graphql`
         author
       }
     }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    mdx(fields: { slug: { eq: $slug } }) {
       id
       excerpt(pruneLength: 160)
-      html
+      body
       frontmatter {
         title
         date(formatString: "MMMM D, YYYY")
