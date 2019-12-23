@@ -8,7 +8,7 @@ exports.createPages = ({ graphql, actions }) => {
   return graphql(
     `
       {
-        allMarkdownRemark(
+        allMdx(
           sort: { fields: [frontmatter___date], order: DESC }
           limit: 1000
         ) {
@@ -24,14 +24,14 @@ exports.createPages = ({ graphql, actions }) => {
           }
         }
       }
-    `
-  ).then(result => {
+    `,
+  ).then((result) => {
     if (result.errors) {
       throw result.errors;
     }
 
     // Create blog posts pages.
-    const posts = result.data.allMarkdownRemark.edges;
+    const posts = result.data.allMdx.edges;
 
     posts.forEach((post, index) => {
       const previous =
