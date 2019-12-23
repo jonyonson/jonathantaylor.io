@@ -62,7 +62,6 @@ module.exports = {
         trackingId: 'UA-69543893-1',
       },
     },
-    'gatsby-plugin-feed',
     'gatsby-plugin-remove-serviceworker',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-eslint',
