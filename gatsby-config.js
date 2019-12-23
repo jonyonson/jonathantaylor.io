@@ -63,5 +63,6 @@ module.exports = {
     'gatsby-plugin-remove-serviceworker',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-eslint',
+    'gatsby-plugin-mdx',
   ],
 };
