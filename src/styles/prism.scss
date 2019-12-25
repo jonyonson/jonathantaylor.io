@@ -34,6 +34,8 @@ pre[class*='language-'] {
   font-family: $monospace-font-family;
   font-size: 16px;
   line-height: 1.4;
+  overflow-x: scroll;
+
 
   @media screen and (max-width: $PHONE) {
     font-size: 14px;
