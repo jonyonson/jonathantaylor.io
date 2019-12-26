@@ -3,12 +3,12 @@
 .project {
   display: flex;
   justify-content: space-between;
-  // justify-content:space-around;
   margin-top: 70px;
-
   padding-bottom: 70px;
-  border-bottom: 1px solid rgba(0,0,0,0.3);
 
+  &:not(:last-of-type) {
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+  }
 
   a {
     border-bottom: none;
