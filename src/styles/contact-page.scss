@@ -1,35 +1,28 @@
 @import './variables.scss';
 
 .contact-intro {
-  margin-top: 2.175rem;
-  font-size: 24px;
-  line-height: 1.5;
+  margin-top: 1.5rem;
 }
 
 .form {
-  border-radius: 4px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  margin-top: 2.5rem;
   margin-bottom: 3rem;
 }
 
 .form label {
   text-transform: uppercase;
-  margin-bottom: 10px;
-  font-size: 18px;
+  margin-bottom: 5px;
   letter-spacing: 1px;
 }
 
 .form input,
 .form textarea,
 .form button {
-  font-size: 20px;
   padding: 5px;
-  margin-bottom: 25px;
+  margin-bottom: 1.5rem;
   border: 1px solid $black-olive;
-  border-radius: 4px;
 }
 
 .form button {
