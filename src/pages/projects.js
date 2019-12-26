@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import SEO from '../components/seo';
 import { StaticQuery, graphql } from 'gatsby';
 import Project from '../components/project';
@@ -33,12 +33,12 @@ const projects = {
 class Projects extends Component {
   render() {
     return (
-      <React.Fragment>
+      <Fragment>
         <SEO title="Projects" />
         <StaticQuery
           query={projectQuery}
           render={(data) => (
-            <>
+            <Fragment>
               <Project
                 name={projects.stockly.name}
                 image={data.stockly.childImageSharp.fixed}
@@ -66,10 +66,10 @@ class Projects extends Component {
                 github={projects.fylo.github}
                 description={projects.fylo.description}
               />
-            </>
+            </Fragment>
           )}
         />
-      </React.Fragment>
+      </Fragment>
     );
   }
 }
@@ -78,28 +78,28 @@ const projectQuery = graphql`
   query ProjectQuery {
     stockly: file(absolutePath: { regex: "/stockly-on-laptop.png/" }) {
       childImageSharp {
-        fixed(width: 400) {
+        fixed(width: 340) {
           ...GatsbyImageSharpFixed
         }
       }
     }
     restEasy: file(absolutePath: { regex: "/rest-easy-on-laptop.png/" }) {
       childImageSharp {
-        fixed(width: 400) {
+        fixed(width: 340) {
           ...GatsbyImageSharpFixed
         }
       }
     }
     instagram: file(absolutePath: { regex: "/instagram-on-laptop.png/" }) {
       childImageSharp {
-        fixed(width: 400) {
+        fixed(width: 340) {
           ...GatsbyImageSharpFixed
         }
       }
     }
     fylo: file(absolutePath: { regex: "/fylo-on-laptop.png/" }) {
       childImageSharp {
-        fixed(width: 400) {
+        fixed(width: 340) {
           ...GatsbyImageSharpFixed
         }
       }
@@ -108,27 +108,3 @@ const projectQuery = graphql`
 `;
 
 export default Projects;
-
-/* <p>
-  Stockly was built by a small team of developers during a{' '}
-  <a href="https://lambdaschool.com">Lambda School</a> build week. I was
-  a front-end developer on the project. Stockly is a web application
-  that connects the user to historical price information and analysis
-  for any publicly traded company. The user can also track a stock's
-  performance over time by adding it to their watchlist.
-</p>
-
-
-<h4>Technologies and Tools</h4>
-<p>
-  Stockly's front-end is a React app and uses Redux for state
-  management. Some of the more significant packages used for the project
-  include <a href="https://github.com/uber/react-vis">react-vis</a> for
-  the historical graphs and pie-charts and{' '}
-  <a href="https://github.com/moroshko/react-autosuggest">
-    react-autosuggest
-  </a>{' '}
-  for the autocomplete functionality in the search bar. The{' '}
-  <a href="https://www.alphavantage.co/">Alpha Vantage API</a> was used
-  to access realtime and historical stock data.
-</p> */
