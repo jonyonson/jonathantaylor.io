@@ -61,9 +61,7 @@ function Theme() {
 }
 ```
 
-<p class="code-sandbox-link-wrap">
-  <a class="code-sandbox-link" href="https://codesandbox.io/s/usestate-l14g6" target="_blank">💻 Try it on Code Sandbox</a>
-</p>
+<a class="code-sandbox-link" href="https://codesandbox.io/s/usestate-l14g6" target="_blank">💻 Try it on Code Sandbox</a>
 
 The first line within our `Theme` component example shows how we initialize a state value by calling `useState` and passing it the initial state value. We are also utilizing array destructuring to gain access to the two values returned by `useState`.
 
@@ -80,7 +78,7 @@ function Theme() {
   const [theme, setTheme] = useState('dark');
 
   // highlight-next-line
-  const toggleTheme = () => setTheme(theme => !theme);
+  const toggleTheme = () => setTheme((theme) => !theme);
 
   return (
     <div className={theme}>
