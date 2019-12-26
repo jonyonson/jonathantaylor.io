@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 import Bio from '../components/bio';
 import SEO from '../components/seo';
+import Container from '../components/container';
 
 class BlogIndex extends React.Component {
   render() {
@@ -9,7 +10,7 @@ class BlogIndex extends React.Component {
     const posts = data.allMdx.edges;
 
     return (
-      <React.Fragment>
+      <Container>
         <SEO title="👨‍💻" />
         <Bio />
         <hr />
@@ -27,7 +28,7 @@ class BlogIndex extends React.Component {
             </div>
           );
         })}
-      </React.Fragment>
+      </Container>
     );
   }
 }

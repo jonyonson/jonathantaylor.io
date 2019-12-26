@@ -3,8 +3,9 @@
 .project {
   display: flex;
   justify-content: space-between;
-  justify-content:space-around;
+  // justify-content:space-around;
   margin-top: 70px;
+
   padding-bottom: 70px;
   border-bottom: 1px solid rgba(0,0,0,0.3);
 
@@ -78,7 +79,9 @@
 
 .info {
   max-width: 440px;
+
   display: flex;
+  flex: 1;
   flex-direction: column;
   justify-content: space-between;
 
