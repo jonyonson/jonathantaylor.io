@@ -60,7 +60,6 @@ function Theme() {
   );
 }
 ```
-
 <a class="code-sandbox-link" href="https://codesandbox.io/s/usestate-l14g6" target="_blank">💻 Try it on Code Sandbox</a>
 
 The first line within our `Theme` component example shows how we initialize a state value by calling `useState` and passing it the initial state value. We are also utilizing array destructuring to gain access to the two values returned by `useState`.

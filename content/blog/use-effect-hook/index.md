@@ -13,13 +13,13 @@ import React, { Component } from 'react';
 class ResizableWindow extends Component {
   state = {
     width: window.innerWidth,
-    height: window.innerHeight
+    height: window.innerHeight,
   };
 
   updateDimensions = () => {
     this.setState({
       width: window.innerWidth,
-      height: window.innerHeight
+      height: window.innerHeight,
     });
   };
 
@@ -37,19 +37,17 @@ class ResizableWindow extends Component {
         <p>width: {this.state.width}px</p>
         <p>height: {this.state.height}px</p>
       </div>
-    )
+    );
   }
 }
 ```
-<p class="code-sandbox-link-wrap">
-  <a class="code-sandbox-link" href="https://codesandbox.io/s/use-effect-class-demo-dc5mk" target="_blank">💻 Try it on Code Sandbox</a>
-</p>
+<a class="code-sandbox-link" href="https://codesandbox.io/s/use-effect-class-demo-dc5mk" target="_blank">💻 Try it on Code Sandbox</a>
 
-In this class component we are are adding an event listener to the window object when the component mounts using `componentDidMount` and we are removing the event listener in `componentWillUnmount`. 
+In this class component we are are adding an event listener to the window object when the component mounts using `componentDidMount` and we are removing the event listener in `componentWillUnmount`.
 
 ### The Effect Hook
 
-The Hooks API combines the functionalities of these lifecycle methods into the `useEffect()` hook and gives us the ability to perform side effects in our function components. 
+The Hooks API combines the functionalities of these lifecycle methods into the `useEffect()` hook and gives us the ability to perform side effects in our function components.
 
 ```jsx
 import React, { useState, useEffect } from 'react';
@@ -78,26 +76,20 @@ function ResizableWindow() {
   );
 }
 ```
-<p class="code-sandbox-link-wrap">
-  <a class="code-sandbox-link" href="https://codesandbox.io/s/use-effect-functional-demo-3ki4d" target="_blank">💻 Try it on Code Sandbox</a>
-</p>
+<a class="code-sandbox-link" href="https://codesandbox.io/s/use-effect-functional-demo-3ki4d" target="_blank">💻 Try it on Code Sandbox</a>
 
 #### Effects Requiring Cleanup
 
-In the previous example, we add an event listener to the component that needs to be removed when the component unmounts. In our class example, we remove the event listener in `componentWillUnmount`. With the effect hook, if our effect requires a cleanup (code we would have previously run in `componentWillUnmount`), we simply return a function.  React will run the function when it is time to clean up.
+In the previous example, we add an event listener to the component that needs to be removed when the component unmounts. In our class example, we remove the event listener in `componentWillUnmount`. With the effect hook, if our effect requires a cleanup (code we would have previously run in `componentWillUnmount`), we simply return a function. React will run the function when it is time to clean up.
 
 ```jsx
-  useEffect(() => {
-    window.addEventListener('resize', updateDimensions);
-    // highlight-range{1-3}
-    return () => {
-      window.removeEventListener('resize', updateDimensions);
-    };
-  });
+useEffect(() => {
+  window.addEventListener('resize', updateDimensions);
+  // highlight-range{1-3}
+  return () => {
+    window.removeEventListener('resize', updateDimensions);
+  };
+});
 ```
 
 `useEffect()` takes two parameters. The first parameter is a function and the second parameter is an optional array that determines how often the function passed as the first parameter is executed. By default (without the second parameter), the function is run every time the component renders.
-
-
-
-
