@@ -6,7 +6,7 @@ import {
   TiArrowLeftOutline as FaArrowLeft,
 } from 'react-icons/ti';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
-import Container from '../components/Container';
+import Container from '../components/container';
 
 class BlogPostTemplate extends React.Component {
   render() {
