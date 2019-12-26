@@ -33,7 +33,6 @@
 }
 
 .form button {
-  width: 50%;
   cursor: pointer;
   background: $primary-color;
   color: white;
@@ -42,10 +41,15 @@
   margin-top: 20px;
   font-weight: 700;
   transition: all 0.2s ease;
+  padding: 5px 20px;
 
   &:hover {
     background: $primary-lighten;
     transition: all 0.2s ease;
+  }
+
+  @media (max-width: $PHONE) {
+    align-self: unset;
   }
 }
 

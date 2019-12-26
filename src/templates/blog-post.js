@@ -6,6 +6,7 @@ import {
   TiArrowLeftOutline as FaArrowLeft,
 } from 'react-icons/ti';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
+import Container from '../components/container';
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -13,7 +14,7 @@ class BlogPostTemplate extends React.Component {
     const { previous, next } = this.props.pageContext;
 
     return (
-      <React.Fragment>
+      <Container>
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
@@ -63,7 +64,7 @@ class BlogPostTemplate extends React.Component {
             )}
           </li>
         </ul>
-      </React.Fragment>
+      </Container>
     );
   }
 }

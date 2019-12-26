@@ -6,23 +6,11 @@ import './layout.scss';
 import '../styles/prism.scss';
 
 function Layout({ children, location }) {
-  return location.pathname === '/projects' ? (
+  return (
     <div className="layout">
       <Header />
-      <main className="layout-main">
-        <div className="layout-main__container--projects">
-          <Transition location={location}>{children}</Transition>
-        </div>
-      </main>
-      <Footer />
-    </div>
-  ) : (
-    <div className="layout">
-      <Header />
-      <main className="layout-main">
-        <div className="layout-main__container">
-          <Transition location={location}>{children}</Transition>
-        </div>
+      <main>
+        <Transition location={location}>{children}</Transition>
       </main>
       <Footer />
     </div>

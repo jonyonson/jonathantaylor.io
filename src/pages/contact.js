@@ -2,6 +2,7 @@ import React from 'react';
 import SEO from '../components/seo';
 import '../styles/contact-page.scss';
 import { navigate } from 'gatsby';
+import Container from '../components/container';
 
 function encode(data) {
   return Object.keys(data)
@@ -29,7 +30,7 @@ function Contact() {
   };
 
   return (
-    <>
+    <Container>
       <SEO title="Contact Me" />
       <p className="contact-intro">
         Say hi, hire me, tell me a joke, suggest a TV show, compliment me, roast
@@ -63,7 +64,7 @@ function Contact() {
 
         <button type="submit">Send Message</button>
       </form>
-    </>
+    </Container>
   );
 }
 
