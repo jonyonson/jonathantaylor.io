@@ -3,9 +3,7 @@ title: 'An Introduction to React Hooks: useEffect()'
 date: '2019-12-27'
 ---
 
-React introduced the Hooks API as of version 16.8 which gave us the ability to utilize (or "hook into") certain features of React within a functional component that previously required the use of a class component. I previously wrote about the [useState hook](/use-state-hook) which allows us to make stateful functional components.
-
-Now we are managing state in a functional component. Awesome! But what happens when we need to fetch some data or manually change the DOM. Traditionally, these "side effects" have been handled by React's lifecycle methods, which are only availabe inside of a class component, and allow us to run some code whenever a component mounts and unmounts.
+I previously wrote about the [useState hook](/use-state-hook) which allows us to make stateful functional components. So, we are now managing state in a functional component, but what happens when we need to fetch some data or manually change the DOM. Traditionally, these "side effects" have been handled by React's lifecycle methods, which are only availabe inside of a class component, and allow us to run some code whenever a component mounts and unmounts.
 
 ```jsx
 import React, { Component } from 'react';
@@ -93,7 +91,7 @@ useEffect(() => {
 ```
 #### Prevent Effects From Running on Each Update
 
-If we want to prevent an effect from running every time a component updates in a class component, we could check for an update in `componentDidUpdate`.
+In a class component, if we want to prevent an effect from running every time a component updates, we could check for an update in `componentDidUpdate`.
 
 ```jsx
 componentDidUpdate(prevProps, prevState) {
@@ -103,7 +101,7 @@ componentDidUpdate(prevProps, prevState) {
 }
 ```
 
-The Effect Hook takes two arguments. The first argument is a function and the second is an optional array that determines how often that function is executed. By default (without the second argument), the function is run after the first render and then after every update. React will avoid running the effect on any update where the value listed in the array provided as the second argument has not changed.
+The `useEffect` Hook API has a built-in way of handling these comparisons. The Effect Hook takes two arguments. The first argument is a function and the second is an optional array that determines how often that function is executed. By default (without the second argument), the function is run after the first render and then after every update. React will avoid running the effect on any update where the value listed in the array provided as the second argument has not changed.
 
 ```jsx
   useEffect(() => {
@@ -112,7 +110,7 @@ The Effect Hook takes two arguments. The first argument is a function and the se
   }, [name])
 ```
 
-The dependency array takes multiple values and the effect will only run when any one of the values gets updated.
+This dependency array can hold multiple values and the effect will only run when any one of these values gets updated.
 
 ```jsx
   useEffect(() => {
@@ -120,7 +118,7 @@ The dependency array takes multiple values and the effect will only run when any
   }, [name, messages])
 ```
 
-We can also prevent the effect from running on subsequent updates and only have it run once after the initial render. Passing an empty array as the second argument to `useEffect()` tells React that this effect does not depend on props or state and does not need to re-run.
+We can also prevent the effect from running on any subsequent updates and have it only run once after the initial render. Passing an empty array as the second argument to `useEffect()` tells React that this effect does not depend on props or state and does not need to re-run.
 
 ```jsx
   useEffect(() => {
