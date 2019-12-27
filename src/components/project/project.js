@@ -15,7 +15,7 @@ function Project(props) {
       />
       <div className="info">
         <div>
-          <h2 className="title">{props.name}</h2>
+          <h3 className="title">{props.name}</h3>
           <p>{props.description}</p>
         </div>
         <ProjectLinks github={props.github} viewport={'large'} />
