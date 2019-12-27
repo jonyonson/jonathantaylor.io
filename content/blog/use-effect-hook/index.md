@@ -1,6 +1,6 @@
 ---
 title: 'An Introduction to React Hooks: useEffect()'
-date: '2019-12-26'
+date: '2019-12-27'
 ---
 
 React introduced the Hooks API as of version 16.8 which gave us the ability to utilize (or "hook into") certain features of React within a functional component that previously required the use of a class component. I previously wrote about the [useState hook](/use-state-hook) which allows us to make stateful functional components.
@@ -91,5 +91,45 @@ useEffect(() => {
   };
 });
 ```
+#### Prevent Effects From Running on Each Update
 
-`useEffect()` takes two parameters. The first parameter is a function and the second parameter is an optional array that determines how often the function passed as the first parameter is executed. By default (without the second parameter), the function is run every time the component renders.
+If we want to prevent an effect from running every time a component updates in a class component, we could check for an update in `componentDidUpdate`.
+
+```jsx
+componentDidUpdate(prevProps, prevState) {
+  if (prevState.name !== this.state.name) {
+    document.title = `Welcome, ${this.state.name}!`;
+  }
+}
+```
+
+The Effect Hook takes two arguments. The first argument is a function and the second is an optional array that determines how often that function is executed. By default (without the second argument), the function is run after the first render and then after every update. React will avoid running the effect on any update where the value listed in the array provided as the second argument has not changed.
+
+```jsx
+  useEffect(() => {
+    document.title = `Welcome, ${name}!`;
+  // highlight-next-line
+  }, [name])
+```
+
+The dependency array takes multiple values and the effect will only run when any one of the values gets updated.
+
+```jsx
+  useEffect(() => {
+    document.title = `Welcome, ${name}! You have ${messages} unread messages.`
+  }, [name, messages])
+```
+
+We can also prevent the effect from running on subsequent updates and only have it run once after the initial render. Passing an empty array as the second argument to `useEffect()` tells React that this effect does not depend on props or state and does not need to re-run.
+
+```jsx
+  useEffect(() => {
+    axios
+      .get("http://localhost:5000/api/messages")
+      .then(res => {
+        setMessages(res.data);
+      })
+      .catch(err => setError(err.message));
+  // highlight-next-line
+  }, []); // will only run once after the initial render
+```
