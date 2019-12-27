@@ -16,11 +16,9 @@
   &:first-of-type {
     margin-right: 0.5rem;
   }
+
   &:last-of-type {
     margin-left: 0.5rem;
-  }
-  &:hover {
-
   }
 
   div {
@@ -36,6 +34,7 @@
     }
 
     p:last-of-type {
+      font-size: 90%;
       margin: 0;
       color: inherit;
     }
@@ -43,11 +42,6 @@
 }
 
 body.dark .post-link {
-  // &:hover {
-  //   background: $black-olive;
-  // }
-
-  div {
     p {
       color: $body-font-color--dark;
     }
@@ -55,5 +49,4 @@ body.dark .post-link {
     p:last-of-type {
       color: inherit;
     }
-  }
 }
