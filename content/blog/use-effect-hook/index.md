@@ -1,5 +1,5 @@
 ---
-title: 'An Introduction to React Hooks: useEffect()'
+title: "An Introduction to the useEffect() Hook"
 date: '2019-12-27'
 ---
 
