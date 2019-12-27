@@ -13,6 +13,8 @@ main {
   flex-grow: 1;
   padding: 0 1rem;
   margin: 0 auto;
-  max-width: $container-width--wide;
+  // max-width: $container-width--wide;
+  width: $container-width--wide;
+  max-width: 100%;
 }
 

@@ -8,5 +8,7 @@ function Container({ children }) {
 export default Container;
 
 const StyledContainer = styled.div`
-  max-width: 670px;
+  width: 670px;
+  max-width: 100%;
+  margin: 0 auto;
 `;
