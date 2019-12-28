@@ -38,7 +38,7 @@ The unary plus operator will attempt to convert any string it precedes into a nu
 
 ## parseInt() and parseFloat()
 
-Strings can be converted to integers by calling the `parseInt()` function with two parameters. The first parameter is the string to convert and the second parameter is the radix. The radix is an iteger between 2 and 36 that represents the base in mathematical numeral systems. If a radix is not provided, JavaScript will make some assumptions that can lead to unreliable behavior.
+Strings can be converted to integers by calling the `parseInt()` function with two parameters. The first parameter is the string to convert and the second parameter is the radix. The radix is an integer between 2 and 36 that represents the base in mathematical numeral systems. If a radix is not provided, JavaScript will make some assumptions that can lead to unreliable behavior.
 
 ```javascript
 parseInt('200.8', 10); // 200
