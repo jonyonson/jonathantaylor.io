@@ -6085,7 +6085,7 @@ gatsby-remark-images@3.1.42:
     unist-util-select "^1.5.0"
     unist-util-visit-parents "^2.1.2"
 
-gatsby-remark-katex@^3.1.23:
+gatsby-remark-katex@3.1.23:
   version "3.1.23"
   resolved "https://registry.yarnpkg.com/gatsby-remark-katex/-/gatsby-remark-katex-3.1.23.tgz#0e939861749078b200a993d7eb094726f317d963"
   integrity sha512-gNC98LO/OtWOrVRmjYvgc7ZzPNL71vP8XbJAm4UDRBD35rZX20EfRh6AUfo2mMSIoDztS3d+I0Nlw9+cXVugPQ==
@@ -8262,7 +8262,7 @@ jsx-ast-utils@^2.2.1, jsx-ast-utils@^2.2.3:
     array-includes "^3.0.3"
     object.assign "^4.1.0"
 
-katex@^0.11.1:
+katex@0.11.1:
   version "0.11.1"
   resolved "https://registry.yarnpkg.com/katex/-/katex-0.11.1.tgz#df30ca40c565c9df01a466a00d53e079e84ffaa2"
   integrity sha512-5oANDICCTX0NqYIyAiFCCwjQ7ERu3DQG2JFHLbYOf+fXaMoH8eg/zOq5WSYJsKMi/QebW+Eh3gSM+oss1H/bww==
