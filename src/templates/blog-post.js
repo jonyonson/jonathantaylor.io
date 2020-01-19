@@ -5,6 +5,8 @@ import SEO from '../components/seo';
 import Container from '../components/container';
 import './blog-post.scss';
 
+import 'katex/dist/katex.min.css';
+
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.mdx;
