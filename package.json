@@ -38,7 +38,7 @@
     "react-helmet": "5.2.1",
     "react-icons": "3.9.0",
     "react-transition-group": "4.3.0",
-    "styled-components": "5.0.0",
+    "styled-components": "5.0.1",
     "typeface-quattrocento-sans": "0.0.72",
     "typeface-work-sans": "0.0.72"
   },
@@ -47,7 +47,7 @@
     "eslint": "6.8.0",
     "eslint-loader": "3.0.3",
     "eslint-plugin-import": "2.20.1",
-    "eslint-plugin-react": "7.18.2",
+    "eslint-plugin-react": "7.18.3",
     "gatsby-plugin-eslint": "2.0.8",
     "prettier": "1.19.1"
   },
