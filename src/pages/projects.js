@@ -6,7 +6,7 @@ import Project from '../components/project';
 const projects = {
   stockly: {
     name: 'Stockly',
-    github: 'https://github.com/jonyonson/build-stockly-frontend',
+    github: 'https://github.com/lambda-stockly/build-stockly-frontend',
     demo: 'https://app.getstockly.com/',
     description:
       'Stockly was built during a Lambda School build week and I was a front-end developer on the project. Stockly was built with React and provides users with historical price information and analysis for any publicly traded company.',
