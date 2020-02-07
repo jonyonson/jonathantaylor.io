@@ -7,8 +7,16 @@ const projects = {
   stockly: {
     name: 'Stockly',
     github: 'https://github.com/jonyonson/build-stockly-frontend',
+    demo: 'https://app.getstockly.com/',
     description:
       'Stockly was built during a Lambda School build week and I was a front-end developer on the project. Stockly was built with React and provides users with historical price information and analysis for any publicly traded company.',
+  },
+  wasteland: {
+    name: 'Digital Wasteland',
+    github: 'https://github.com/django-adventure',
+    demo: 'https://wasteland.netlify.com/',
+    description:
+      'Digital Wasteland is a take on the early text based multi-user dungeon games and was built during a hackathon by myself and three other developers. Tech stack includes React, Django and PostgreSQL. We used Pusher for the real time chat and in-room player awareness.',
   },
   restEasy: {
     name: 'Rest Easy',
@@ -43,7 +51,16 @@ class Projects extends Component {
                 name={projects.stockly.name}
                 image={data.stockly.childImageSharp.fixed}
                 github={projects.stockly.github}
+                demo={projects.stockly.demo}
                 description={projects.stockly.description}
+              />
+
+              <Project
+                name={projects.wasteland.name}
+                image={data.wasteland.childImageSharp.fixed}
+                github={projects.wasteland.github}
+                demo={projects.wasteland.demo}
+                description={projects.wasteland.description}
               />
 
               <Project
@@ -77,6 +94,13 @@ class Projects extends Component {
 const projectQuery = graphql`
   query ProjectQuery {
     stockly: file(absolutePath: { regex: "/stockly-on-laptop.png/" }) {
+      childImageSharp {
+        fixed(width: 340) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    wasteland: file(absolutePath: { regex: "/wasteland-on-laptop.png/" }) {
       childImageSharp {
         fixed(width: 340) {
           ...GatsbyImageSharpFixed

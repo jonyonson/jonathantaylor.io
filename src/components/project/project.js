@@ -7,7 +7,11 @@ import './project.scss';
 function Project(props) {
   return (
     <div className="project">
-      <ProjectLinks github={props.github} viewport={'small'} />
+      <ProjectLinks
+        github={props.github}
+        demo={props.demo}
+        viewport={'small'}
+      />
       <Image
         className="screenshot"
         fixed={props.image}
@@ -18,7 +22,11 @@ function Project(props) {
           <h3 className="title">{props.name}</h3>
           <p>{props.description}</p>
         </div>
-        <ProjectLinks github={props.github} viewport={'large'} />
+        <ProjectLinks
+          github={props.github}
+          demo={props.demo}
+          viewport={'large'}
+        />
       </div>
     </div>
   );
