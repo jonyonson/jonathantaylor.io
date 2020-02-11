@@ -1,11 +1,14 @@
-html, body, #___gatsby {
+html,
+body,
+#___gatsby,
+#gatsby-focus-wrapper {
   height: 100%;
 }
+
+/* div[role='group'][tabindex] {
+  height: 100%;
+} */
 
 body {
   margin: 0px;
-}
-
-div[role="group"][tabindex] {
-  height: 100%;
 }
