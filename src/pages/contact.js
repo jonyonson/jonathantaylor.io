@@ -1,8 +1,7 @@
 import React from 'react';
-import SEO from '../../components/seo';
-// import '../styles/contact-page.scss';
 import { navigate } from 'gatsby';
-import Container from '../../components/container';
+import SEO from '../components/seo';
+import Container from '../components/container';
 import './contact.scss';
 
 function encode(data) {
@@ -70,3 +69,50 @@ function Contact() {
 }
 
 export default Contact;
+
+// const StyledText = styled.p`
+//   margin-top: 1.5rem;
+// `;
+
+// const StyledForm = styled.form`
+//   display: flex;
+//   flex-direction: column;
+//   margin: 0 auto;
+//   margin-bottom: 3rem;
+
+//   label {
+//     text-transform: uppercase;
+//     margin-bottom: 5px;
+//     letter-spacing: 1px;
+//   }
+
+//   input,
+//   textarea,
+//   button {
+//     padding: 5px;
+//     margin-bottom: 1.5rem;
+//     /* border: 1px solid $black-olive; */
+//     border: 1px solid black;
+//   }
+
+//   button {
+//     cursor: pointer;
+//     background: $primary-color;
+//     color: white;
+//     border: 2px solid transparent;
+//     align-self: center;
+//     margin-top: 20px;
+//     font-weight: 700;
+//     transition: all 0.2s ease;
+//     padding: 5px 20px;
+
+//     &:hover {
+//       background: $primary-lighten;
+//       transition: all 0.2s ease;
+//     }
+
+//     @media (max-width: 576px) {
+//       align-self: unset;
+//     }
+//   }
+// `;

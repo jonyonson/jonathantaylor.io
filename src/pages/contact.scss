@@ -1,4 +1,4 @@
-@import '../../styles/variables.scss';
+@import '../styles/variables.scss';
 
 .contact-intro {
   margin-top: 1.5rem;
@@ -46,14 +46,14 @@
   }
 }
 
-.contact-error {
-  margin-top: 15px;
-  display: flex;
-  align-items: center;
+// .contact-error {
+//   margin-top: 15px;
+//   display: flex;
+//   align-items: center;
 
-  &-icon {
-    color: #f05561;
-    font-size: 32px;
-    margin-right: 7px;
-  }
-}
+//   &-icon {
+//     color: #f05561;
+//     font-size: 32px;
+//     margin-right: 7px;
+//   }
+// }
