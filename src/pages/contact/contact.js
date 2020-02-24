@@ -1,8 +1,9 @@
 import React from 'react';
-import SEO from '../components/seo';
-import '../styles/contact-page.scss';
+import SEO from '../../components/seo';
+// import '../styles/contact-page.scss';
 import { navigate } from 'gatsby';
-import Container from '../components/container';
+import Container from '../../components/container';
+import './contact.scss';
 
 function encode(data) {
   return Object.keys(data)
