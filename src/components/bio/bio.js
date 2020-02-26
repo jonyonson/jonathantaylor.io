@@ -31,12 +31,11 @@ function Bio() {
               </span>{' '}
               <strong>Hi, I&#39;m Jonathan</strong>. I am a{' '}
               <a href={`https://github.com/${social.github}`}>
-                full-stack software engineer
+                software developer
               </a>{' '}
-              currently attending{' '}
-              <a href="https://lambdaschool.com">Lambda School</a>. Have a look
-              at some <Link to="/projects">projects</Link> I have been working
-              on lately.
+              that enjoys making cool things for the web. . Take a look at some{' '}
+              <Link to="/projects">projects</Link> I have been working on
+              lately.
             </p>
           </div>
         );
