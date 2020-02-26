@@ -33,7 +33,7 @@ function Bio() {
               <a href={`https://github.com/${social.github}`}>
                 software developer
               </a>{' '}
-              that enjoys making cool things for the web. . Take a look at some{' '}
+              that enjoys making cool things for the web. Take a look at some{' '}
               <Link to="/projects">projects</Link> I have been working on
               lately.
             </p>
