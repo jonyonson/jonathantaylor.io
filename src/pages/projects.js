@@ -16,7 +16,7 @@ const projects = {
     github: 'https://github.com/django-adventure',
     demo: 'https://wasteland.netlify.com/',
     description:
-      'Digital Wasteland is a take on the early text based multi-user dungeon games. It consists of 100 procedurally generated rooms that the player can traverse while interacting with other players through live chat (and other shenanigans). The project was built for a Lambda School proect by a team of four developers. Tech stack includes Django and PostgreSQL on the backend and a React front-end. Pusher was used for the realtime communication and player awareness.',
+      'Digital Wasteland is a take on the early text based multi-user dungeon games. It consists of 100 procedurally generated rooms that the player can traverse while interacting with other players through live chat (and other shenanigans). The project was built for a Lambda School project by a team of four developers. Tech stack includes Django and PostgreSQL on the backend and a React front-end. Pusher was used for the realtime communication and player awareness.',
   },
   restEasy: {
     name: 'Rest Easy',
