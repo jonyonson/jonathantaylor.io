@@ -12,22 +12,24 @@ class BlogIndex extends React.Component {
     return (
       <Container>
         <SEO title="👨‍💻" />
-        <Bio truncated={true} />
+        <Bio />
         <hr />
-        <h2>Articles</h2>
-        {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug;
-          return (
-            <div key={node.fields.slug}>
-              <h3 style={{ marginBottom: '.35rem' }}>
-                <Link to={node.fields.slug}>{title}</Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-              {/* <p dangerouslySetInnerHTML={{__html: node.frontmatter.description || node.excerpt}}/> */}
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-            </div>
-          );
-        })}
+        <div style={{ marginBottom: '2rem' }}>
+          <h2>Articles</h2>
+          {posts.map(({ node }) => {
+            const title = node.frontmatter.title || node.fields.slug;
+            return (
+              <div key={node.fields.slug}>
+                <h3 style={{ marginBottom: '.35rem' }}>
+                  <Link to={node.fields.slug}>{title}</Link>
+                </h3>
+                <small>{node.frontmatter.date}</small>
+                {/* <p dangerouslySetInnerHTML={{__html: node.frontmatter.description || node.excerpt}}/> */}
+                <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+              </div>
+            );
+          })}
+        </div>
       </Container>
     );
   }
