@@ -36,10 +36,6 @@ function Header() {
               Contact
             </Link>
 
-            <Link className="header__nav-link" to="/about">
-              About
-            </Link>
-
             {theme !== null ? (
               <Toggle
                 icons={{
