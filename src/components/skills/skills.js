@@ -61,6 +61,7 @@ const SkillsContainer = styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: -1rem;
+  margin-bottom: 2rem;
 `;
 
 const LogoContainer = styled.div`
