@@ -12,57 +12,56 @@ import graphqlLogo from './logos/graphql.svg';
 
 function Skills() {
   return (
-    <div className="skills">
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'space-between',
-          flexWrap: 'wrap',
-        }}
-      >
-        <LogoContainer>
-          <span>HTML</span>
-          <img src={htmlLogo} alt="" />
-        </LogoContainer>
+    <SkillsContainer>
+      <LogoContainer>
+        <span>HTML</span>
+        <img src={htmlLogo} alt="" />
+      </LogoContainer>
 
-        <LogoContainer>
-          <span>JavaScript</span>
-          <img src={jsLogo} alt="" />
-        </LogoContainer>
+      <LogoContainer>
+        <span>JavaScript</span>
+        <img src={jsLogo} alt="" />
+      </LogoContainer>
 
-        <LogoContainer>
-          <span>React</span>
-          <img src={reactLogo} alt="" />
-        </LogoContainer>
+      <LogoContainer>
+        <span>React</span>
+        <img src={reactLogo} alt="" />
+      </LogoContainer>
 
-        <LogoContainer>
-          <span>PostgreSQL</span>
-          <img src={pgLogo} alt="" />
-        </LogoContainer>
+      <LogoContainer>
+        <span>PostgreSQL</span>
+        <img src={pgLogo} alt="" />
+      </LogoContainer>
 
-        <LogoContainer>
-          <span>CSS</span>
-          <img src={cssLogo} alt="" />
-        </LogoContainer>
+      <LogoContainer>
+        <span>CSS</span>
+        <img src={cssLogo} alt="" />
+      </LogoContainer>
 
-        <LogoContainer>
-          <span>Node.js</span>
-          <img src={nodeLogo} alt="" />
-        </LogoContainer>
+      <LogoContainer>
+        <span>Node.js</span>
+        <img src={nodeLogo} alt="" />
+      </LogoContainer>
 
-        <LogoContainer>
-          <span>GraphQL</span>
-          <img src={graphqlLogo} alt="" />
-        </LogoContainer>
+      <LogoContainer>
+        <span>GraphQL</span>
+        <img src={graphqlLogo} alt="" />
+      </LogoContainer>
 
-        <LogoContainer>
-          <span>Python</span>
-          <img src={pythonLogo} alt="" />
-        </LogoContainer>
-      </div>
-    </div>
+      <LogoContainer>
+        <span>Python</span>
+        <img src={pythonLogo} alt="" />
+      </LogoContainer>
+    </SkillsContainer>
   );
 }
+
+const SkillsContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: -1rem;
+`;
 
 const LogoContainer = styled.div`
   display: flex;
