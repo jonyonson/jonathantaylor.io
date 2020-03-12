@@ -1,16 +1,10 @@
-/**
- * Bio component that queries for data
- * with Gatsby's StaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/static-query/
- */
-
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
-// import { Link } from 'gatsby';
 import Skills from '../skills';
 import Image from 'gatsby-image';
 import './bio.scss';
+
+// https://www.gatsbyjs.org/docs/static-query/
 
 function Bio() {
   return (
@@ -42,19 +36,10 @@ function Bio() {
                 that enjoys solving interesting problems and making cool things
                 for the web.
                 <br />
-                {/* Take a look at some{' '}
-                <Link to="/projects">projects</Link> I have been working on
-                lately. */}
                 <br />I have experience working with various tools and
                 technologies and I enjoy learning knew things, but these are
                 some of my gotos.
               </p>
-
-              {/* <p style={{ margin: '1rem 0 0' }}>
-                I have experience working with various tools and technologies
-                and I enjoy learning knew things, but these are some of my
-                gotos.
-              </p> */}
             </div>
             <Skills />
           </>
