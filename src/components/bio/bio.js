@@ -12,8 +12,7 @@ import Skills from '../skills';
 import Image from 'gatsby-image';
 import './bio.scss';
 
-function Bio({ truncated }) {
-  console.log('truncated', truncated);
+function Bio() {
   return (
     <StaticQuery
       query={bioQuery}
@@ -42,15 +41,20 @@ function Bio({ truncated }) {
                 </a>{' '}
                 that enjoys solving interesting problems and making cool things
                 for the web.
+                <br />
                 {/* Take a look at some{' '}
                 <Link to="/projects">projects</Link> I have been working on
                 lately. */}
-                <p style={{ margin: '1rem 0 0' }}>
-                  I have experience working with various tools and technologies
-                  and I enjoy learning knew things, but these are some of my
-                  gotos.
-                </p>
+                <br />I have experience working with various tools and
+                technologies and I enjoy learning knew things, but these are
+                some of my gotos.
               </p>
+
+              {/* <p style={{ margin: '1rem 0 0' }}>
+                I have experience working with various tools and technologies
+                and I enjoy learning knew things, but these are some of my
+                gotos.
+              </p> */}
             </div>
             <Skills />
           </>
