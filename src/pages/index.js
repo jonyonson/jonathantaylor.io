@@ -12,7 +12,7 @@ class BlogIndex extends React.Component {
     return (
       <Container>
         <SEO title="👨‍💻" />
-        <Bio />
+        <Bio truncated={true} />
         <hr />
         <h2>Articles</h2>
         {posts.map(({ node }) => {

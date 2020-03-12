@@ -7,11 +7,12 @@
 
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
-import { Link } from 'gatsby';
+// import { Link } from 'gatsby';
 import Image from 'gatsby-image';
 import './bio.scss';
 
-function Bio() {
+function Bio({ truncated }) {
+  console.log('truncated', truncated);
   return (
     <StaticQuery
       query={bioQuery}
@@ -33,9 +34,16 @@ function Bio() {
               <a href={`https://github.com/${social.github}`}>
                 software developer
               </a>{' '}
-              that enjoys making cool things for the web. Take a look at some{' '}
-              <Link to="/projects">projects</Link> I have been working on
-              lately.
+              that enjoys solving interesting problems and making cool things
+              for the web.{' '}
+              {/* {truncated && (
+                <>
+                  <Link to="/about">Read more...</Link>
+                  or take a
+                  look at some <Link to="/projects">projects</Link> I have been
+                  working on lately.
+                </>
+              )} */}
             </p>
           </div>
         );

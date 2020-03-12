@@ -28,12 +28,16 @@ function Header() {
 
         <div>
           <nav className="header__nav">
+            <Link className="header__nav-link" to="/projects">
+              Projects
+            </Link>
+
             <Link className="header__nav-link" to="/contact">
               Contact
             </Link>
 
-            <Link className="header__nav-link" to="/projects">
-              Projects
+            <Link className="header__nav-link" to="/about">
+              About
             </Link>
 
             {theme !== null ? (
