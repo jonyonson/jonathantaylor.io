@@ -1,20 +1,18 @@
 import React from 'react';
-import Bio from '../components/bio';
 import styled from 'styled-components';
 
-import cssLogo from '../assets/logos/css.png';
-import htmlLogo from '../assets/logos/html.png';
-import jsLogo from '../assets/logos/javascript.svg';
-import nodeLogo from '../assets/logos/node.png';
-import pgLogo from '../assets/logos/postgres.svg';
-import pythonLogo from '../assets/logos/python.png';
-import reactLogo from '../assets/logos/react.png';
-import graphqlLogo from '../assets/logos/graphql.svg';
+import cssLogo from './logos/css.png';
+import htmlLogo from './logos/html.png';
+import jsLogo from './logos/javascript.svg';
+import nodeLogo from './logos/node.png';
+import pgLogo from './logos/postgres.svg';
+import pythonLogo from './logos/python.png';
+import reactLogo from './logos/react.png';
+import graphqlLogo from './logos/graphql.svg';
 
-function AboutPage() {
+function Skills() {
   return (
     <div className="skills">
-      <Bio />
       <div
         style={{
           display: 'flex',
@@ -84,4 +82,4 @@ const LogoContainer = styled.div`
   }
 `;
 
-export default AboutPage;
+export default Skills;
