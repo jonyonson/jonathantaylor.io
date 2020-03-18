@@ -2,6 +2,8 @@
 import 'typeface-quattrocento-sans';
 import 'typeface-work-sans';
 
-// import 'prismjs/plugins/command-line/prism-command-line.css';
+// monospace font
 import './src/styles/_dank-mono.css';
+
+// global styles
 import './src/styles/_globals.css';
