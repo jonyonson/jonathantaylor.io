@@ -11,6 +11,8 @@ const projects = {
     demo: 'https://snapstockapp.com/',
     description:
       'Snapstock is a full-stack web application that provides up-to-date business news and real-time stock data. Users can track stocks over time, save them to their watchlist and add them to their portfolio. Snapstock is built with a React front-end and Node.js/PostgreSQL on the backend. A separate Flask server is utilized to scrape some data not available from the external API.',
+    info:
+      'Snapstock is a work in progress and will contain some some bugs and placeholders.',
   },
   wasteland: {
     name: 'Digital Wasteland',
@@ -62,6 +64,7 @@ class Projects extends Component {
                 githubBackEnd={projects.snapstock.githubBackEnd}
                 demo={projects.snapstock.demo}
                 description={projects.snapstock.description}
+                info={projects.snapstock.info}
               />
 
               <Project
