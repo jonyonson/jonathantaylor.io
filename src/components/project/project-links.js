@@ -16,9 +16,27 @@ function ProjectLinks(props) {
       >
         <div className="links">
           <GithubIcon size={20} className="gh-icon" />
-          <span>Source Code</span>
+          {props.githubBackEnd ? (
+            <span>FE Source</span>
+          ) : (
+            <span>Source Code</span>
+          )}
         </div>
       </a>
+
+      {props.githubBackEnd && (
+        <a
+          href={props.githubBackEnd}
+          className={className}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="links">
+            <GithubIcon size={20} className="gh-icon-be" />
+            <span>BE Source</span>
+          </div>
+        </a>
+      )}
 
       {props.demo && (
         <Fragment>

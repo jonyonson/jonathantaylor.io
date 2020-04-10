@@ -4,12 +4,13 @@ import { StaticQuery, graphql } from 'gatsby';
 import Project from '../components/project';
 
 const projects = {
-  stockly: {
-    name: 'Stockly',
-    github: 'https://github.com/lambda-stockly/build-stockly-frontend',
-    demo: 'https://app.getstockly.com/',
+  snapstock: {
+    name: 'Snapstock',
+    github: 'https://github.com/jonyonson/snapstock-fe',
+    githubBackEnd: 'https://github.com/jonyonson/snapstock-be',
+    demo: 'https://snapstockapp.com/',
     description:
-      'Stockly was built during a Lambda School build week and I was a front-end developer on the project. Stockly was built with React and provides users with historical price information and analysis for any publicly traded company.',
+      'Snapstock is a full-stack web application that provides up-to-date business news and real-time stock data. Users can track stocks over time, save them to their watchlist and add them to their portfolio. Snapstock is built with a React front-end and Node.js/PostgreSQL on the backend. A separate Flask server is utilized to scrape some data not available from the external API.',
   },
   wasteland: {
     name: 'Digital Wasteland',
@@ -18,8 +19,15 @@ const projects = {
     description:
       'Digital Wasteland is a take on the early text based multi-user dungeon games. It consists of 100 procedurally generated rooms that the player can traverse while interacting with other players through live chat (and other shenanigans). The project was built for a Lambda School project by a team of four developers. Tech stack includes Django and PostgreSQL on the backend and a React front-end. Pusher was used for the realtime communication and player awareness.',
   },
+  stockly: {
+    name: 'Stockly',
+    github: 'https://github.com/lambda-stockly/build-stockly-frontend',
+    demo: 'https://app.getstockly.com/',
+    description:
+      'Stockly was built during a Lambda School build week and I was a front-end developer on the project. Stockly was built with React and provides users with historical price information and analysis for any publicly traded company.',
+  },
   restEasy: {
-    name: 'Rest Easy',
+    name: 'Rest Easy (REST API)',
     github:
       'https://github.com/lambda-build-week-sleep-tracker/BE-Sleep-Tracker',
     description: `Rest Easy is an application designed to allow parents to track the sleep of their children. This RESTful API was built with Node/Express, PostgreSQL and Knex.js and deployed to Heroku. `,
@@ -30,12 +38,12 @@ const projects = {
     description:
       'An Instagram clone built using React with search, like and comment functionality.',
   },
-  fylo: {
-    name: 'Fylo Landing Page',
-    github: 'https://github.com/jonyonson/fylo-landing-page',
-    description:
-      'This project consisted of building a landing page for a fictional company.',
-  },
+  // fylo: {
+  //   name: 'Fylo Landing Page',
+  //   github: 'https://github.com/jonyonson/fylo-landing-page',
+  //   description:
+  //     'This project consisted of building a landing page for a fictional company.',
+  // },
 };
 
 class Projects extends Component {
@@ -48,11 +56,12 @@ class Projects extends Component {
           render={(data) => (
             <Fragment>
               <Project
-                name={projects.stockly.name}
-                image={data.stockly.childImageSharp.fixed}
-                github={projects.stockly.github}
-                demo={projects.stockly.demo}
-                description={projects.stockly.description}
+                name={projects.snapstock.name}
+                image={data.snapstock.childImageSharp.fixed}
+                github={projects.snapstock.github}
+                githubBackEnd={projects.snapstock.githubBackEnd}
+                demo={projects.snapstock.demo}
+                description={projects.snapstock.description}
               />
 
               <Project
@@ -61,6 +70,14 @@ class Projects extends Component {
                 github={projects.wasteland.github}
                 demo={projects.wasteland.demo}
                 description={projects.wasteland.description}
+              />
+
+              <Project
+                name={projects.stockly.name}
+                image={data.stockly.childImageSharp.fixed}
+                github={projects.stockly.github}
+                demo={projects.stockly.demo}
+                description={projects.stockly.description}
               />
 
               <Project
@@ -76,13 +93,13 @@ class Projects extends Component {
                 github={projects.instagram.github}
                 description={projects.instagram.description}
               />
-
+              {/*
               <Project
                 name={projects.fylo.name}
                 image={data.fylo.childImageSharp.fixed}
                 github={projects.fylo.github}
                 description={projects.fylo.description}
-              />
+              /> */}
             </Fragment>
           )}
         />
@@ -93,6 +110,13 @@ class Projects extends Component {
 
 const projectQuery = graphql`
   query ProjectQuery {
+    snapstock: file(absolutePath: { regex: "/snapstock.png/" }) {
+      childImageSharp {
+        fixed(width: 340) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
     stockly: file(absolutePath: { regex: "/stockly-on-laptop.png/" }) {
       childImageSharp {
         fixed(width: 340) {

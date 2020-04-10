@@ -5,10 +5,15 @@ import ProjectLinks from './project-links';
 import './project.scss';
 
 function Project(props) {
+  Project.defaultProps = {
+    githubBackEnd: null,
+  };
+
   return (
     <div className="project">
       <ProjectLinks
         github={props.github}
+        githubBackEnd={props.githubBackEnd}
         demo={props.demo}
         viewport={'small'}
       />
@@ -24,6 +29,7 @@ function Project(props) {
         </div>
         <ProjectLinks
           github={props.github}
+          githubBackEnd={props.githubBackEnd}
           demo={props.demo}
           viewport={'large'}
         />
