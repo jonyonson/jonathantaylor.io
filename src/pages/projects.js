@@ -64,7 +64,7 @@ class Projects extends Component {
                 githubBackEnd={projects.snapstock.githubBackEnd}
                 demo={projects.snapstock.demo}
                 description={projects.snapstock.description}
-                info={projects.snapstock.info}
+                // info={projects.snapstock.info}
               />
 
               <Project
