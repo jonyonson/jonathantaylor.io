@@ -32,9 +32,14 @@ function Contact() {
   return (
     <Container>
       <SEO title="Contact Me" />
+      <h2>Contact Me</h2>
       <p className="contact-intro">
-        Say hi, hire me, tell me a joke, suggest a TV show, compliment me, roast
-        me or toast me.
+        Need to get in touch? You can find me on{' '}
+        <a href="https://twitter.com/jonyonson">Twitter</a> or{' '}
+        <a href="https://www.linkedin.com/in/jonathan-craig-taylor/">
+          LinkedIn
+        </a>{' '}
+        or drop me a note below.
       </p>
       <form
         className="form"
