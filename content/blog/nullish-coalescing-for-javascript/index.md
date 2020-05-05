@@ -41,3 +41,8 @@ const message = props.message ?? "default message"; // ""
 const delay = props.delay ?? 200; // 0
 ```
 
+### Other Resources
+
+- [tc39.es/proposal-nullish-coalescing](https://tc39.es/proposal-nullish-coalescing/)
+-   [babel-plugin-proposal-nullish-coalescing-operator](https://babeljs.io/docs/en/babel-plugin-proposal-nullish-coalescing-operator)
+
