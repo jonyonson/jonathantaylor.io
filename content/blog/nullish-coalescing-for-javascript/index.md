@@ -22,10 +22,10 @@ const props = {
 };
 
 const message = props.message || "default message"; // "default message"
-const count = props.count || 200; // 200
+const delay = props.delay || 200; // 200
 ```
 
-Since `props.message` and `props.count` are both falsy values (expressions that can be converted to false), the `||` operator returns the right-hand side expression. Examples of expressions that can be converted to false are `null`, `NaN`, `0`, `""` and `undefined`.
+Since `props.message` and `props.delay` are both falsy values (expressions that can be converted to false), the `||` operator returns the right-hand side expression. Examples of expressions that can be converted to false are `null`, `NaN`, `0`, `""` and `undefined`.
 
 ## The Nullish Coalescing Operator
 
@@ -38,6 +38,6 @@ const props = {
 };
 
 const message = props.message ?? "default message"; // ""
-const count = props.count ?? 200; // 0
+const delay = props.delay ?? 200; // 0
 ```
 
