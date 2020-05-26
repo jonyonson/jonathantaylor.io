@@ -9,7 +9,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
-import card from '../assets/website-card.png';
 
 function SEO({ description, lang, meta, keywords, title }) {
   const { site } = useStaticQuery(
@@ -49,7 +48,8 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           property: 'og:image',
-          content: card,
+          content:
+            'https://jonathan-taylor-images.s3.amazonaws.com/jonathnataylor-io-card.png',
         },
         {
           property: 'og:type',
@@ -70,10 +70,6 @@ function SEO({ description, lang, meta, keywords, title }) {
         {
           name: 'twitter:description',
           content: metaDescription,
-        },
-        {
-          name: 'twitter:image',
-          content: card,
         },
       ]
         .concat(
