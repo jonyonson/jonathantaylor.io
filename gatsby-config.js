@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'jonathantaylor.io',
+    title: 'Jonathan Taylor',
     author: 'Jonathan Taylor',
     description: 'The Homepage of Jonathan Taylor',
     siteUrl: 'https://jonathantaylor.io/',
@@ -34,9 +34,7 @@ module.exports = {
         gatsbyRemarkPlugins: [
           {
             resolve: 'gatsby-remark-images',
-            options: {
-              maxWidth: 670,
-            },
+            options: { maxWidth: 670 },
           },
           {
             resolve: 'gatsby-remark-katex',
@@ -47,9 +45,7 @@ module.exports = {
           },
           {
             resolve: 'gatsby-remark-responsive-iframe',
-            options: {
-              wrapperStyle: 'margin-bottom: 1.0725rem',
-            },
+            options: { wrapperStyle: 'margin-bottom: 1.0725rem' },
           },
           { resolve: 'gatsby-remark-embed-video' },
           { resolve: 'gatsby-remark-prismjs' },
@@ -60,9 +56,7 @@ module.exports = {
     },
     {
       resolve: 'gatsby-plugin-google-analytics',
-      options: {
-        trackingId: 'UA-69543893-1',
-      },
+      options: { trackingId: 'UA-69543893-1' },
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',

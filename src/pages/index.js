@@ -11,7 +11,7 @@ class BlogIndex extends React.Component {
 
     return (
       <Container>
-        <SEO title="👨‍💻" />
+        <SEO />
         <Bio />
         <hr />
         <div style={{ marginBottom: '2rem' }}>
