@@ -10,7 +10,7 @@ const projects = {
     githubBackEnd: 'https://github.com/jonyonson/snapstock-be',
     demo: 'https://snapstockapp.com/',
     description:
-      'Snapstock is a full-stack web application that provides up-to-date business news and real-time stock data. Users can track stocks over time, save them to their watchlist and add them to their portfolio. Snapstock is built with a React front-end using TypeScript and Node.js/PostgreSQL on the backend. A separate Flask server is utilized to scrape some data not available from the external API.',
+      'Snapstock is a full-stack web application that provides up-to-date business news and real-time stock data. Users can track stocks over time by saving them to their watchlist. Snapstock is built with a React front-end using TypeScript and Node.js/PostgreSQL on the backend. A separate Flask server is utilized to scrape market index data.',
     info:
       'Snapstock is a work in progress and will contain some some bugs and placeholders.',
   },
