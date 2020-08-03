@@ -40,12 +40,6 @@ const projects = {
     description:
       'An Instagram clone built using React with search, like and comment functionality.',
   },
-  // fylo: {
-  //   name: 'Fylo Landing Page',
-  //   github: 'https://github.com/jonyonson/fylo-landing-page',
-  //   description:
-  //     'This project consisted of building a landing page for a fictional company.',
-  // },
 };
 
 class Projects extends Component {
@@ -96,13 +90,6 @@ class Projects extends Component {
                 github={projects.instagram.github}
                 description={projects.instagram.description}
               />
-              {/*
-              <Project
-                name={projects.fylo.name}
-                image={data.fylo.childImageSharp.fixed}
-                github={projects.fylo.github}
-                description={projects.fylo.description}
-              /> */}
             </Fragment>
           )}
         />
