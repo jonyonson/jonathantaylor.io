@@ -26,7 +26,7 @@ const projects = {
     github: 'https://github.com/lambda-stockly/build-stockly-frontend',
     demo: 'https://stockly.netlify.app',
     description:
-      'Stockly was built during a Lambda School build week and was a collaboration of a cross-functional team of developers. I worked as front-end developer on the project. Stockly was built with React and provides users with historical price information and analysis for any publicly traded company.',
+      "Stockly was built during a Lambda School build week and was a collaboration between a cross-functional team of developers. I worked as front-end developer on the project and utilized React and Redux. Stockly provides users with historical price information and analysis for any publicly traded company as well as sentiment analysis from recent tweets mentioning that company's stock symbol.",
   },
   restEasy: {
     name: 'Rest Easy (REST API)',
