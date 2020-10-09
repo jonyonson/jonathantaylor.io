@@ -15452,15 +15452,15 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typeface-quattrocento-sans@0.0.72:
-  version "0.0.72"
-  resolved "https://registry.yarnpkg.com/typeface-quattrocento-sans/-/typeface-quattrocento-sans-0.0.72.tgz#563dd4790ec06122eefb8cbe76d3aab91dd7ca37"
-  integrity sha512-M8hMDZ7eh4MtgDC8GsmyEyzpFp6wKoaNoldmzTgIR4gdVzGpCXJ29lBt9CB74gD/uaJOyW9p2dtMYv4lUZ7Gig==
+typeface-quattrocento-sans@1.1.13:
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/typeface-quattrocento-sans/-/typeface-quattrocento-sans-1.1.13.tgz#edc8dd3a9b6436ede3c89f30a1af23ab404cad3b"
+  integrity sha512-Q8ushXigJtYH2vlpMwVt+3c4tuSVz0OoNnWVduWOo1gwVlMF7My3Au4kuKaVJOKXItdK1ITJA46IeImotOyxxQ==
 
-typeface-work-sans@0.0.72:
-  version "0.0.72"
-  resolved "https://registry.yarnpkg.com/typeface-work-sans/-/typeface-work-sans-0.0.72.tgz#2b40abbda07e2cf6d9fbd9d334bb8c3014c80e32"
-  integrity sha512-hJa+mh217r4qlEq0zK0Aqn7chyDzJYziObsd9nokEd0lMBKbGNf/10VHS3AqeVKDye3evfTvZ11tmj5WizIJrA==
+typeface-work-sans@1.1.13:
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/typeface-work-sans/-/typeface-work-sans-1.1.13.tgz#344ac638cbebcd55611fc4c2d08c7c9b47792157"
+  integrity sha512-LA5agpsXPLWFaUB88mhxsjtwius4Eu2AHuy5gaKeRY8RMHpEzJbDCES8DWbJ/vAYOljaE1OIoKeqrFdDqjKDtQ==
 
 unbzip2-stream@^1.0.9:
   version "1.4.2"
