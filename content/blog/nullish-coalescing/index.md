@@ -3,25 +3,25 @@ title: Nullish Coalescing for JavaScript
 date: '2020-05-05'
 ---
 
-Traditionally in JavaScript, when assigning a default value, we use the `||` operator to check if the left-hand side expression can be converted to false. If this left-hand side expression is falsy, the right-hand side is returned. 
+Traditionally in JavaScript, when assigning a default value, we use the logical OR operator `||` to check if the left-hand side expression can be converted to false. If this left-hand side expression is falsy, the right-hand side is returned.
 
 ```javascript
 const props = {
-    color: ""
+  color: '',
 };
 
-const color = props.color || "#222222"; // "#222222"
+const color = props.color || '#222222'; // "#222222"
 ```
 
-This can sometimes lead to unintended consequences if we wanted certain falsy values to be accepted. 
+This can sometimes lead to unintended consequences if we wanted certain falsy values to be accepted.
 
 ```javascript
 const props = {
-    delay: 0,
-    message: "",
+  delay: 0,
+  message: '',
 };
 
-const message = props.message || "default message"; // "default message"
+const message = props.message || 'default message'; // "default message"
 const delay = props.delay || 200; // 200
 ```
 
@@ -33,16 +33,15 @@ ES2020 introduced the nullish coalescing operator to JavaScript. The nullish coa
 
 ```javascript
 const props = {
-    delay: 0,
-    message: "",
+  delay: 0,
+  message: '',
 };
 
-const message = props.message ?? "default message"; // ""
+const message = props.message ?? 'default message'; // ""
 const delay = props.delay ?? 200; // 0
 ```
 
 ### Other Resources
 
 - [tc39.es/proposal-nullish-coalescing](https://tc39.es/proposal-nullish-coalescing/)
--   [babel-plugin-proposal-nullish-coalescing-operator](https://babeljs.io/docs/en/babel-plugin-proposal-nullish-coalescing-operator)
-
+- [babel-plugin-proposal-nullish-coalescing-operator](https://babeljs.io/docs/en/babel-plugin-proposal-nullish-coalescing-operator)
