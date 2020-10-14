@@ -1,6 +1,7 @@
 ---
-title: "An Introduction to the useState() Hook"
+title: 'An Introduction to the useState() Hook'
 date: '2019-08-12'
+description: 'An introduction to React Hooks and the useState hook, which gives us the ability to manage state within a functional component.'
 ---
 
 React introduced the Hooks API as of version 16.8 which gave us the ability to utilize (or "hook into") certain features of React within a functional component that previously required the use of a class component. React provides some built-in hooks as well as the ability to create our own custom hooks. These custom hooks allow us to reuse some stateful logic between components. The focus of this post will be on the `useState` hook which allows us to make our functional components stateful.
@@ -60,6 +61,7 @@ function Theme() {
   );
 }
 ```
+
 <a class="code-sandbox-link" href="https://codesandbox.io/s/usestate-l14g6" target="_blank">💻 Try it on Code Sandbox</a>
 
 The first line within our `Theme` component example shows how we initialize a state value by calling `useState` and passing it the initial state value. We are also utilizing array destructuring to gain access to the two values returned by `useState`.
