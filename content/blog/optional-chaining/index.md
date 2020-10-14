@@ -1,6 +1,6 @@
 ---
 title: Optional Chaining for JavaScript
-date: '2020-10-13'
+date: '2020-10-14'
 ---
 
 Introduced in ES2020, the optional chaining operator, allows for a simple way to check the value of a deeply nested property within chained objects. Traditionally in JavaScript, getting the value of a deeply-nested property meant validating each reference in the chain.
