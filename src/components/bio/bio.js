@@ -1,6 +1,5 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
-// import Skills from '../skills';
 import Image from 'gatsby-image';
 import './bio.scss';
 
@@ -30,15 +29,10 @@ function Bio() {
                   👋🏻
                 </span>{' '}
                 <strong>Hi, I&#39;m Jonathan</strong>. I am a software developer
-                that enjoys solving interesting problems and making cool things
-                for the web.
-                {/* <br />
-                <br />I have experience working with various tools and
-                technologies and I enjoy learning knew things, but these are
-                some of my gotos */}
+                in Nashville 🎸 that enjoys solving interesting problems and
+                making cool things for the web.
               </p>
             </div>
-            {/* <Skills /> */}
           </>
         );
       }}
