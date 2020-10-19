@@ -7419,18 +7419,18 @@ gatsby-plugin-remove-serviceworker@1.0.0:
   resolved "https://registry.yarnpkg.com/gatsby-plugin-remove-serviceworker/-/gatsby-plugin-remove-serviceworker-1.0.0.tgz#9fb433bc8bd766e14e1d3711c4ac6f051e1dff7c"
   integrity sha1-n7QzvIvXZuFOHTcRxKxvBR4d/3w=
 
-gatsby-plugin-sass@2.3.17:
-  version "2.3.17"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sass/-/gatsby-plugin-sass-2.3.17.tgz#58c8488013c81f07f44645b6568ceda0506bd36b"
-  integrity sha512-hH73k8k4p9AJV/Zta/G9tks0v7GiXXj6qhldFEdq6ajdbgEqcLW5tsDIIV3kF3AiH77pDYXUmyDLoTS5i1CyMQ==
+gatsby-plugin-sass@2.3.18:
+  version "2.3.18"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sass/-/gatsby-plugin-sass-2.3.18.tgz#1769f7f4e7ccb04a22c597b419d90b76667260d6"
+  integrity sha512-zS4w6V2AJLMBualzSUr4wBc6Uod4ApE5os+ZUK8jT2DrDp+qhYz6WN71t9Rt+2sBFv1+mXq7tfWrcJEL2RiF+w==
   dependencies:
     "@babel/runtime" "^7.11.2"
     sass-loader "^7.3.1"
 
-gatsby-plugin-sharp@2.6.42:
-  version "2.6.42"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-2.6.42.tgz#94556e8633a7d15299d6aa8dc5e9a686af8debfb"
-  integrity sha512-uqra+GDLEfE5Kv8Th1lkQKS6FIRwPzwipoWJBogfPLTnl0L3t+ogdEhN8p5d7G6SYoaukuGrix162mbQXqASBA==
+gatsby-plugin-sharp@2.6.43:
+  version "2.6.43"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-2.6.43.tgz#dd7f4fcf848337e64a014f491318f61d530a38a8"
+  integrity sha512-/V5T8SzS/GgpQEgp34blLwzwpc+dxJJVPRXGBOZtKdcTDRAfCYuY2IuRf5FJa65lSuPRQmHdG6AoQIka/0xnWA==
   dependencies:
     "@babel/runtime" "^7.11.2"
     async "^3.2.0"
@@ -7479,10 +7479,10 @@ gatsby-plugin-use-dark-mode@1.1.2:
     prop-types "^15.7.2"
     terser "^4.0.0"
 
-gatsby-plugin-utils@^0.2.35:
-  version "0.2.35"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-0.2.35.tgz#6f2e885a88705b19c996d51411eed545f94f0163"
-  integrity sha512-vs0Tj/bCW7jzFnS/5vLstB+7fov6UhYD3uBswmi5vM8E1oDCPnjHKwxKIRW43WkADcGjurzhCMJ08LgPEIMDPg==
+gatsby-plugin-utils@^0.2.36:
+  version "0.2.36"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-0.2.36.tgz#262da01835906bf92cc1ee43d62b94803ccfba70"
+  integrity sha512-AXvWnRA53z+iTb8LyQl0vaJmea+nf4P/0NUyf4O/8XXZblBxrI4jpcWDMO3VbssXuQrve9+5OtTXaz+GJX8t6A==
   dependencies:
     joi "^17.2.1"
 
@@ -7606,10 +7606,10 @@ gatsby-remark-embed-video@3.0.10:
     remark-burger "^1.0.1"
     unist-util-visit "^2.0.2"
 
-gatsby-remark-images@3.3.35:
-  version "3.3.35"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-images/-/gatsby-remark-images-3.3.35.tgz#5d0de0533865ce090a6621e04f2df28a7d5a5363"
-  integrity sha512-7YOgAfplZt++JLI6TD9vrRcIIaWdupvQetQ6IvMYpmoBCASyHLYlGt00jg2l9hvOLh8kSCeGauBNzwvoPeSyzA==
+gatsby-remark-images@3.3.36:
+  version "3.3.36"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-images/-/gatsby-remark-images-3.3.36.tgz#f058319c8b5309427931ecfa4bfbdbeba324ade9"
+  integrity sha512-Kd3iGGOkENnILOAN0Ia1Np2ike2I6ur9kt7RyoxXPvXE+run/BVIKDBdMiXnjtA+q/z5abtLzM1DuCucuWbPEQ==
   dependencies:
     "@babel/runtime" "^7.11.2"
     chalk "^2.4.2"
@@ -7743,10 +7743,10 @@ gatsby-transformer-sharp@2.5.18:
     semver "^7.3.2"
     sharp "^0.25.4"
 
-gatsby@2.24.81:
-  version "2.24.81"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.24.81.tgz#2334e0f52a1177321ca0d7d017d49b9db2789f8f"
-  integrity sha512-0NjL4ck/BAvBduiIFTjFljqupKWwoBNdZcGbqTyZOrNHEGaGr9JwT5/3KKvKSfsNx/T/pQ6XVyoucbWN5V4FFQ==
+gatsby@2.24.82:
+  version "2.24.82"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.24.82.tgz#2db2fd022b833d8a45966b23f5910540e4966947"
+  integrity sha512-RzBm8Hh4U4PSoF0erWniD4rZYdPDPOoNTjmEdRHOn7iFUjnN+wmu+HePpKm8LHNQAiPL2krFW/F8hlgbFCTM4A==
   dependencies:
     "@babel/code-frame" "^7.10.4"
     "@babel/core" "^7.11.6"
@@ -7821,7 +7821,7 @@ gatsby@2.24.81:
     gatsby-link "^2.4.15"
     gatsby-plugin-page-creator "^2.3.33"
     gatsby-plugin-typescript "^2.4.22"
-    gatsby-plugin-utils "^0.2.35"
+    gatsby-plugin-utils "^0.2.36"
     gatsby-react-router-scroll "^3.0.14"
     gatsby-telemetry "^1.3.38"
     glob "^7.1.6"
