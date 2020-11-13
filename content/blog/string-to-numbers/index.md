@@ -1,6 +1,7 @@
 ---
 title: Converting a String to a Number in JavaScript
 date: '2019-12-01'
+tags: ['javascript']
 ---
 
 There are several ways to convert a string to a number in JavaScript. Let's examine some of these solutions and some of their caveats.
