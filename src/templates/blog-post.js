@@ -13,13 +13,14 @@ class BlogPostTemplate extends React.Component {
     const post = this.props.data.mdx;
     const { previous, next } = this.props.pageContext;
 
-    const { title, description, date, draft } = post.frontmatter;
-
+    const { title, description, date, draft, lastUpdated } = post.frontmatter;
+    console.log(lastUpdated);
     return (
       <Container>
         <SEO title={title} description={description || post.excerpt} />
         <h1>{title}</h1>
         <p style={{ display: 'block', marginTop: '-0.5rem' }}>{date}</p>
+        {lastUpdated && <p>{lastUpdated}</p>}
         {draft && <DraftAlert slug={post.slug} />}
         <MDXRenderer>{post.body}</MDXRenderer>
         <hr />
@@ -72,6 +73,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM D, YYYY")
         description
         draft
+        lastUpdated(formatString: "MMMM D, YYYY")
       }
     }
   }
