@@ -13,14 +13,7 @@ class BlogPostTemplate extends React.Component {
     const post = this.props.data.mdx;
     const { previous, next } = this.props.pageContext;
 
-    const { title, description, date, draft, lastUpdated } = post.frontmatter;
-
-    console.log('title', title);
-    console.log('description', description);
-    console.log('date', date);
-    console.log('draft', draft);
-    console.log('updated', lastUpdated);
-    console.log('POST', post);
+    const { title, description, date, draft } = post.frontmatter;
 
     return (
       <Container>
