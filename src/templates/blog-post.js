@@ -3,6 +3,7 @@ import { Link, graphql } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import SEO from '../components/seo';
 import Container from '../components/container';
+import DraftAlert from '../components/draft-alert';
 import './blog-post.scss';
 
 import 'katex/dist/katex.min.css';
@@ -11,16 +12,22 @@ class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.mdx;
     const { previous, next } = this.props.pageContext;
+
+    const { title, description, date, draft, lastUpdated } = post.frontmatter;
+
+    console.log('title', title);
+    console.log('description', description);
+    console.log('date', date);
+    console.log('draft', draft);
+    console.log('updated', lastUpdated);
+    console.log('POST', post);
+
     return (
       <Container>
-        <SEO
-          title={post.frontmatter.title}
-          description={post.frontmatter.description || post.excerpt}
-        />
-        <h1>{post.frontmatter.title}</h1>
-        <p style={{ display: 'block', marginTop: '-0.5rem' }}>
-          {post.frontmatter.date}
-        </p>
+        <SEO title={title} description={description || post.excerpt} />
+        <h1>{title}</h1>
+        <p style={{ display: 'block', marginTop: '-0.5rem' }}>{date}</p>
+        {draft && <DraftAlert slug={post.slug} />}
         <MDXRenderer>{post.body}</MDXRenderer>
         <hr />
 
@@ -66,10 +73,12 @@ export const pageQuery = graphql`
       id
       excerpt(pruneLength: 160)
       body
+      slug
       frontmatter {
         title
         date(formatString: "MMMM D, YYYY")
         description
+        draft
       }
     }
   }

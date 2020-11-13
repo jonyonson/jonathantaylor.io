@@ -15,7 +15,7 @@ class BlogIndex extends React.Component {
         <Bio />
         <hr />
         <div style={{ marginBottom: '2rem' }}>
-          <h2>Articles</h2>
+          <h2>Draft Articles</h2>
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug;
             return (
@@ -46,7 +46,7 @@ export const pageQuery = graphql`
     }
     allMdx(
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { fields: { draft: { ne: true } } }
+      filter: { fields: { draft: { eq: true } } }
     ) {
       edges {
         node {

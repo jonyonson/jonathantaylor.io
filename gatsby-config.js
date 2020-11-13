@@ -55,6 +55,12 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-draft',
+      options: {
+        nodeType: 'Mdx',
+      },
+    },
+    {
       resolve: 'gatsby-plugin-google-analytics',
       options: { trackingId: 'UA-69543893-1' },
     },
