@@ -1,11 +1,15 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
+
+// Components
 import SEO from '../components/seo';
 import Container from '../components/container';
 import DraftAlert from '../components/draft-alert';
-import './blog-post.scss';
 
+// Styles
+import styled from 'styled-components';
+import './blog-post.scss';
 import 'katex/dist/katex.min.css';
 
 class BlogPostTemplate extends React.Component {
@@ -19,8 +23,12 @@ class BlogPostTemplate extends React.Component {
       <Container>
         <SEO title={title} description={description || post.excerpt} />
         <h1>{title}</h1>
-        <p style={{ display: 'block', marginTop: '-0.5rem' }}>{date}</p>
-        {lastUpdated && <p>{lastUpdated}</p>}
+        <StyledDate>
+          <p className="published-at">{date}</p>
+          {lastUpdated && (
+            <p className="updated-at">Last updated: {lastUpdated}</p>
+          )}
+        </StyledDate>
         {draft && <DraftAlert slug={post.slug} />}
         <MDXRenderer>{post.body}</MDXRenderer>
         <hr />
@@ -53,6 +61,20 @@ class BlogPostTemplate extends React.Component {
   }
 }
 
+const StyledDate = styled.div`
+  margin-top: -0.5rem;
+  margin-bottom: 1.45rem;
+
+  .published-at {
+    display: inline;
+  }
+
+  .updated-at {
+    font-size: 0.8em;
+    font-style: italic;
+  }
+`;
+
 export default BlogPostTemplate;
 
 export const pageQuery = graphql`
@@ -73,7 +95,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM D, YYYY")
         description
         draft
-        lastUpdated(formatString: "MMMM D, YYYY")
+        lastUpdated(formatString: "MM/DD/YYYY")
       }
     }
   }
