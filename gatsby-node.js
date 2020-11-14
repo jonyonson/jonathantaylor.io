@@ -23,6 +23,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
               frontmatter {
                 title
                 tags
+                draft
               }
             }
           }
@@ -46,8 +47,20 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const posts = result.data.posts.edges;
 
   posts.forEach((post, index) => {
-    const previous = index === posts.length - 1 ? null : posts[index + 1].node;
-    const next = index === 0 ? null : posts[index - 1].node;
+    const getPreviousPost = () => {
+      return index === posts.length - 1 ? null : posts[index + 1].node;
+    };
+
+    const getNextPost = () => {
+      if (index === 0) return null;
+      return posts[index - 1].node.frontmatter.draft
+        ? null
+        : posts[index - 1].node;
+    };
+
+    const previous = getPreviousPost();
+    const next = getNextPost();
+
     createPage({
       path: post.node.fields.slug,
       component: blogPostTemplate,
