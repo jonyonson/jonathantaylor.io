@@ -29,7 +29,7 @@ export default DraftAlert;
 const Alert = styled.div`
   margin-bottom: 2rem;
   padding: 1.7rem 1rem 1rem;
-  background: ${theme.primaryDark};
+  background: ${theme.dark.primary};
   position: relative;
   color: black;
   margin-top: 2.5rem;
@@ -40,7 +40,7 @@ const Alert = styled.div`
     margin-top: 1rem;
 
     font-weight: bold;
-    color: ${theme.primaryLight};
+    color: ${theme.light.primary};
 
     svg {
       margin-right: 8px;
@@ -64,6 +64,6 @@ const Alert = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    background: ${theme.primaryLight};
+    background: ${theme.light.primary};
   }
 `;

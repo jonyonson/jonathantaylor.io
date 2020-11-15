@@ -1,4 +1,11 @@
-@import '../styles/variables';
+// @import '../styles/variables';
+
+$monospace-font-family: 'Dank Mono', Consolas, Monaco, 'Ubuntu Mono', monospace;
+$PHONE: 576px;
+$black: #393e41;
+$code-block--light: #393e41;
+$code-block--dark: #393e41;
+$line-highlight: lighten($black, 10%);
 
 $comment:      #b2b2b2;
 $char:         #d8dee9;
@@ -13,7 +20,6 @@ $function:     #79b6f2;
 $className:    #fac863;
 $method:       #6699cc;
 $operator:     #fc929e;
-$line-highlight: lighten($black, 10%);
 
 
 .gatsby-highlight {
