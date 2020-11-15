@@ -1,7 +1,10 @@
 import React from 'react';
 import { navigate } from 'gatsby';
+
+// Components
 import SEO from '../components/seo';
 import Container from '../components/container';
+
 import './contact.scss';
 
 function encode(data) {

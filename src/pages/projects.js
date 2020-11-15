@@ -1,6 +1,8 @@
 import React, { Component, Fragment } from 'react';
-import SEO from '../components/seo';
 import { StaticQuery, graphql } from 'gatsby';
+
+// Components
+import SEO from '../components/seo';
 import Project from '../components/project';
 
 const projects = {
