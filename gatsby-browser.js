@@ -1,5 +1,5 @@
 const React = require('react');
-const Layout = require('./src/components/Layout').default;
+const Layout = require('./src/components/layout').default;
 
 // eslint-disable-next-line
 exports.wrapPageElement = ({ element, props }) => (
