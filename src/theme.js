@@ -1,6 +1,4 @@
 import { lighten, darken } from 'polished';
-console.log(lighten);
-console.log(darken);
 
 // light theme
 const tartOrange = '#fb4d3d';
