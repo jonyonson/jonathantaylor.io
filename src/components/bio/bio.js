@@ -29,7 +29,7 @@ function Bio() {
                   👋🏻
                 </span>{' '}
                 <strong>Hi, I&#39;m Jonathan</strong>. I am a software developer
-                in Nashville 🎸 that enjoys solving interesting problems and
+                in Nashville, TN 🎸. I enjoy solving interesting problems and
                 making cool things for the web.
               </p>
             </div>
