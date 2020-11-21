@@ -1,6 +1,18 @@
+import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
-export const StyledBurger = styled.button`
+const Burger = ({ open, setOpen }) => {
+  return (
+    <StyledBurger open={open} onClick={() => setOpen(!open)} aria-label="menu">
+      <div />
+      <div />
+      <div />
+    </StyledBurger>
+  );
+};
+
+const StyledBurger = styled.button`
   position: ${({ open }) => (open ? 'fixed' : 'absolute')};
   top: 20px;
   right: 20px;
@@ -42,3 +54,10 @@ export const StyledBurger = styled.button`
     }
   }
 `;
+
+Burger.propTypes = {
+  open: PropTypes.bool.isRequired,
+  setOpen: PropTypes.func.isRequired,
+};
+
+export default Burger;

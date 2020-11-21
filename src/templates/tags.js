@@ -1,7 +1,5 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
-
-// Components
 import { Link, graphql } from 'gatsby';
 
 const Tags = ({ pageContext, data }) => {
@@ -11,7 +9,7 @@ const Tags = ({ pageContext, data }) => {
     totalCount === 1 ? '' : 's'
   } tagged with "${tag}"`;
   return (
-    <div>
+    <Fragment>
       <h1>{tagHeader}</h1>
       <ul>
         {edges.map(({ node }) => {
@@ -24,12 +22,8 @@ const Tags = ({ pageContext, data }) => {
           );
         })}
       </ul>
-      {/*
-              This links to a page that does not yet exist.
-              You'll come back to it!
-            */}
       <Link to="/tags">All tags</Link>
-    </div>
+    </Fragment>
   );
 };
 Tags.propTypes = {

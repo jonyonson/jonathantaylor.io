@@ -68,7 +68,7 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-plugin-sass',
     'gatsby-plugin-styled-components',
-    'gatsby-plugin-layout',
+    // 'gatsby-plugin-layout',
     'gatsby-plugin-catch-links',
     'gatsby-plugin-remove-serviceworker',
     'gatsby-plugin-react-helmet',

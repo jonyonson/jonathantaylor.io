@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
+import styled from 'styled-components';
+import theme from '../theme';
 
 // Components
 import SEO from '../components/seo';
@@ -8,9 +10,8 @@ import Container from '../components/container';
 import DraftAlert from '../components/draft-alert';
 
 // Styles
-import styled from 'styled-components';
-import './blog-post.scss';
 import 'katex/dist/katex.min.css';
+import '../styles/prism.scss';
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -18,7 +19,7 @@ class BlogPostTemplate extends React.Component {
     const { previous, next } = this.props.pageContext;
 
     const { title, description, date, draft, lastUpdated } = post.frontmatter;
-    console.log(lastUpdated);
+
     return (
       <Container>
         <SEO title={title} description={description || post.excerpt} />
@@ -33,7 +34,7 @@ class BlogPostTemplate extends React.Component {
         <MDXRenderer>{post.body}</MDXRenderer>
         <hr />
 
-        <div className="post-links">
+        <PostNav>
           <div className="post-link">
             {previous && (
               <Link to={previous.fields.slug} rel="prev">
@@ -55,7 +56,7 @@ class BlogPostTemplate extends React.Component {
               </Link>
             )}
           </div>
-        </div>
+        </PostNav>
       </Container>
     );
   }
@@ -72,6 +73,43 @@ const StyledDate = styled.div`
   .updated-at {
     font-size: 0.8em;
     font-style: italic;
+  }
+`;
+
+const PostNav = styled.div`
+  display: flex;
+  margin-bottom: 1.45rem;
+
+  .post-link {
+    width: 50%;
+    color: ${theme.light.primary};
+
+    &:first-of-type {
+      margin-right: 0.5rem;
+    }
+
+    &:last-of-type {
+      margin-left: 0.5rem;
+    }
+
+    div {
+      padding: 0.5rem;
+      &.right {
+        text-align: right;
+      }
+
+      p {
+        color: ${theme.light.bodyFont};
+        font-size: 80%;
+        margin-bottom: 0.5rem;
+      }
+
+      p:last-of-type {
+        font-size: 90%;
+        margin: 0;
+        color: inherit;
+      }
+    }
   }
 `;
 

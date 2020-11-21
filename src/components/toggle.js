@@ -4,7 +4,7 @@
  *   applied https://github.com/aaronshaf/react-toggle/pull/90
  **/
 
-import './toggle.scss';
+import '../styles/toggle.scss';
 
 import React, { PureComponent } from 'react';
 
