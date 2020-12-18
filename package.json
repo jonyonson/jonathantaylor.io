@@ -63,6 +63,7 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "volta": {
-    "node": "12.20.0"
+    "node": "12.20.0",
+    "yarn": "1.22.10"
   }
 }
