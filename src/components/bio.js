@@ -1,48 +1,31 @@
 import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
-import Image from 'gatsby-image';
 import styled from 'styled-components';
 import { widths } from '../theme';
 
-// https://www.gatsbyjs.org/docs/static-query/
-
 function Bio() {
   return (
-    <StaticQuery
-      query={bioQuery}
-      render={(data) => {
-        const { author } = data.site.siteMetadata;
-        return (
-          <StyledBio>
-            <Image
-              className="bio__avatar"
-              fixed={data.avatar.childImageSharp.fixed}
-              alt={author}
-            />
-
-            <p>
-              <span className="bio__hand" role="img" aria-label="a waving hand">
-                👋🏻
-              </span>{' '}
-              <strong>Hi, I&#39;m Jonathan</strong>. I am a software developer
-              at Ramsey Solutions in Nashville, TN 🎸. I enjoy solving
-              interesting problems and making cool things for the web.
-            </p>
-          </StyledBio>
-        );
-      }}
-    />
+    <StyledBio>
+      <p className="bio__greeting">
+        {' '}
+        <strong>Hi, I&#39;m Jonathan</strong>{' '}
+        <span className="bio__hand" role="img" aria-label="a waving hand">
+          👋🏻
+        </span>
+      </p>
+      <p>
+        I am a software developer in Nashville, Tennessee. I enjoy solving
+        interesting problems and making cool things for the web.
+      </p>
+    </StyledBio>
   );
 }
 
 const StyledBio = styled.div`
-  display: flex;
   font-size: 24px;
   line-height: 1.5;
   margin-top: 3rem;
   margin-bottom: 4rem;
   margin: 3rem 0 2rem;
-  align-items: flex-start;
 
   @media (max-width: ${widths.mobile}) {
     flex-direction: column;
@@ -73,26 +56,10 @@ const StyledBio = styled.div`
   .bio__hand {
     font-size: 26px;
   }
-`;
 
-const bioQuery = graphql`
-  query BioQuery {
-    avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
-      childImageSharp {
-        fixed(width: 125, height: 125) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-    site {
-      siteMetadata {
-        author
-        social {
-          twitter
-          github
-        }
-      }
-    }
+  .bio__greeting {
+    font-size: 28px;
+    margin-bottom: 10px;
   }
 `;
 

@@ -12,7 +12,7 @@ const projects = {
     githubBackEnd: 'https://github.com/jonyonson/snapstock-be',
     demo: 'https://snapstockapp.com/',
     description:
-      'Snapstock is a full-stack web application that provides up-to-date business news and real-time stock data. Users can track stocks over time by saving them to their watchlist. Snapstock is built with a React front-end using TypeScript and Node.js/PostgreSQL on the backend. A separate Flask server is utilized to scrape market index data.',
+      'Snapstock is a full-stack web application that provides up-to-date business news and real-time stock data. Users can track stocks over time by saving them to their watchlist. Snapstock is built with React on the front-end and Node.js/PostgreSQL on the backend. A separate Flask server is utilized to scrape market index data.',
     info:
       'Snapstock is a work in progress and will contain some some bugs and placeholders.',
   },
@@ -26,21 +26,9 @@ const projects = {
   stockly: {
     name: 'Stockly',
     github: 'https://github.com/lambda-stockly/build-stockly-frontend',
-    demo: 'https://stockly.netlify.app',
+    // demo: 'https://stockly.netlify.app',
     description:
       "Stockly was built during a Lambda School build week and was a collaboration between a cross-functional team of developers. I worked as front-end developer on the project and utilized React and Redux. Stockly provides users with historical price information and analysis for any publicly traded company as well as sentiment analysis from recent tweets mentioning that company's stock symbol.",
-  },
-  restEasy: {
-    name: 'Rest Easy (REST API)',
-    github:
-      'https://github.com/lambda-build-week-sleep-tracker/BE-Sleep-Tracker',
-    description: `Rest Easy is an application designed to allow parents to track the sleep of their children. This RESTful API was built with Node/Express, PostgreSQL and Knex.js and deployed to Heroku. `,
-  },
-  instagram: {
-    name: 'Instagram Clone',
-    github: 'https://github.com/jonyonson/instagram-clone',
-    description:
-      'An Instagram clone built using React with search, like and comment functionality.',
   },
 };
 
@@ -78,20 +66,6 @@ class Projects extends Component {
                 demo={projects.stockly.demo}
                 description={projects.stockly.description}
               />
-
-              <Project
-                name={projects.restEasy.name}
-                image={data.restEasy.childImageSharp.fixed}
-                github={projects.restEasy.github}
-                description={projects.restEasy.description}
-              />
-
-              <Project
-                name={projects.instagram.name}
-                image={data.instagram.childImageSharp.fixed}
-                github={projects.instagram.github}
-                description={projects.instagram.description}
-              />
             </Fragment>
           )}
         />
@@ -117,27 +91,6 @@ const projectQuery = graphql`
       }
     }
     wasteland: file(absolutePath: { regex: "/wasteland-on-laptop.png/" }) {
-      childImageSharp {
-        fixed(width: 340) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-    restEasy: file(absolutePath: { regex: "/rest-easy-on-laptop.png/" }) {
-      childImageSharp {
-        fixed(width: 340) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-    instagram: file(absolutePath: { regex: "/instagram-on-laptop.png/" }) {
-      childImageSharp {
-        fixed(width: 340) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-    fylo: file(absolutePath: { regex: "/fylo-on-laptop.png/" }) {
       childImageSharp {
         fixed(width: 340) {
           ...GatsbyImageSharpFixed
