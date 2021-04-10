@@ -6678,14 +6678,6 @@ gatsby-plugin-typescript@^2.12.1:
     "@babel/runtime" "^7.12.5"
     babel-plugin-remove-graphql-queries "^2.16.1"
 
-gatsby-plugin-use-dark-mode@1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-use-dark-mode/-/gatsby-plugin-use-dark-mode-1.2.0.tgz#bccec15fc136c856c7086bff981ccf0c7003a541"
-  integrity sha512-eZDy9vB8B1TYT6rBjZzo8+EeQ7EC8PVM1pfHHqgTtL2+r7cYUJhJhdwk+8Nqc8c9Z5+ntMbMWVJCmDY5A+pyNw==
-  dependencies:
-    prop-types "^15.7.2"
-    terser "^4.0.0"
-
 gatsby-plugin-utils@^0.9.0:
   version "0.9.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-0.9.0.tgz#64b35a0faaabad5b5c99ee8951a9c08cd64be289"
@@ -14188,7 +14180,7 @@ terser-webpack-plugin@^2.3.8:
     terser "^4.6.12"
     webpack-sources "^1.4.3"
 
-terser@^4.0.0, terser@^4.1.2, terser@^4.6.12:
+terser@^4.1.2, terser@^4.6.12:
   version "4.8.0"
   resolved "https://registry.yarnpkg.com/terser/-/terser-4.8.0.tgz#63056343d7c70bb29f3af665865a46fe03a0df17"
   integrity sha512-EAPipTNeWsb/3wLPeup1tVPaXfIaU68xMnVdPafIL1TV05OhASArYyIfFvnvJCNrR2NIOvDVNNTFRa+Re2MWyw==
