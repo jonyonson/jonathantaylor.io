@@ -39,7 +39,7 @@
     "react-helmet": "6.1.0",
     "react-icons": "4.2.0",
     "react-transition-group": "4.4.1",
-    "styled-components": "5.2.1",
+    "styled-components": "5.2.3",
     "typeface-quattrocento-sans": "1.1.13",
     "typeface-work-sans": "1.1.13"
   },
