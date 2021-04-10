@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet';
 import { Link, graphql } from 'gatsby';
 
 // Utilities
-import kebabCase from 'lodash.kebabCase';
+import kebabCase from 'lodash.kebabcase';
 
 const TagsPage = ({
   data: {
