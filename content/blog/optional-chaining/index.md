@@ -26,7 +26,7 @@ const homeZipCode =
 
 const workZipCode =
   user.address && user.address.work && user.address.work.zip_code;
-// udefined
+// undefined
 ```
 
 If the reference to a value deep within a chain of nested objects is `null` or `undefined`, it will throw a `TypeError`.
