@@ -78,10 +78,10 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   // Make tag pages
   tags.forEach((tag) => {
     createPage({
-      path: `/tags/${kebabCase(tag.fieldValue)}/`,
+      path: `/tags/${kebabCase(tag.value)}/`,
       component: tagTemplate,
       context: {
-        tag: tag.fieldValue,
+        tag: tag.value,
       },
     });
   });
