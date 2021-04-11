@@ -6241,7 +6241,7 @@ gatsby-plugin-catch-links@3.2.0:
     "@babel/runtime" "^7.12.5"
     escape-string-regexp "^1.0.5"
 
-gatsby-plugin-draft@^0.1.0:
+gatsby-plugin-draft@0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-draft/-/gatsby-plugin-draft-0.1.0.tgz#1a1bd7e8c333aee6d50a7d9a687466e395cb907c"
   integrity sha512-68ivdcZZDn6020iIDj66kkNtrAsg9JLEj9OyWRr/d7HME/0e2Nw+GKhXMNzcTU/t+rPyyhBnGaqrPgtj9Ghglw==
@@ -6261,7 +6261,7 @@ gatsby-plugin-google-analytics@3.2.0:
     "@babel/runtime" "^7.12.5"
     minimatch "3.0.4"
 
-gatsby-plugin-image@^1.2.1:
+gatsby-plugin-image@1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-image/-/gatsby-plugin-image-1.2.1.tgz#69f220c06593e3b35d1a3a22638d113ed9d8f368"
   integrity sha512-XXIxZdcqlI31hHd55Ba7TrXbzkYT+no3X+VOek1lTMjEuTQDnLwrpCgCBFwp/YgYNgPRV7b3QnHpjmc7sUY+Wg==
@@ -6356,7 +6356,7 @@ gatsby-plugin-sass@4.2.0:
     resolve-url-loader "^3.1.2"
     sass-loader "^10.1.1"
 
-gatsby-plugin-sharp@^3.2.1:
+gatsby-plugin-sharp@3.2.1:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-3.2.1.tgz#6c150484b9d07ccdf24adf86b92f5e3a23597bd4"
   integrity sha512-ZAEiDehEz7VRgykQSVwg0ESu9c+rA2BUfi6+VCi2ppemRezXm+jGUkSTo+WUhjiPmEhQq+IIOOWe4lpslJoZRg==
@@ -6624,7 +6624,7 @@ gatsby-transformer-remark@3.2.0:
     unist-util-select "^1.5.0"
     unist-util-visit "^1.4.1"
 
-gatsby-transformer-sharp@^3.2.0:
+gatsby-transformer-sharp@3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/gatsby-transformer-sharp/-/gatsby-transformer-sharp-3.2.0.tgz#f6b8481dfacdc1d8d27c253213982f8571af462b"
   integrity sha512-2UmkLMCuYCskuyyEqHIPfNg1svgtNxCWWCCfEnAIIhntWfX7mewdhSG7eBciFJep+CYfV6bGZLcb+sKYkb0jvg==
@@ -6638,7 +6638,7 @@ gatsby-transformer-sharp@^3.2.0:
     semver "^7.3.4"
     sharp "^0.27.0"
 
-gatsby@^3.2.1:
+gatsby@3.2.1:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-3.2.1.tgz#c1130764077e4fc7360cb6892b25e810ae53cbbf"
   integrity sha512-nakOINSniWsBPfbZE5HJOoEwC2/bBoJAYxGYNG/P7M8mM9JVbsIsnAylTe205/MsO0qpcTpqRm0usxzyvF3yYw==
