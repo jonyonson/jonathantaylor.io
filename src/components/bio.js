@@ -14,7 +14,7 @@ function Bio() {
       </p>
       <p>
         I am a software developer in Nashville, Tennessee. I enjoy solving
-        interesting problems and making cool things for the web.
+        interesting problems and building cool things.
       </p>
     </StyledBio>
   );
