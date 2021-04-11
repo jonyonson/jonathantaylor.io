@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 import styled from 'styled-components';
 import { GoMarkGithub as GithubIcon } from 'react-icons/go';
 import { FaLink } from 'react-icons/fa';
@@ -17,11 +17,10 @@ function Project(props) {
         demo={props.demo}
         viewport={'small'}
       />
-      <Image
+      <GatsbyImage
+        image={props.image}
         className="screenshot"
-        fixed={props.image}
-        alt={`${props.name} Screen Shot`}
-      />
+        alt={`${props.name} Screen Shot`} />
       <div className="info">
         <div>
           <h3 className="title">{props.name}</h3>

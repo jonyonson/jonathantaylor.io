@@ -43,7 +43,7 @@ class Projects extends Component {
             <Fragment>
               <Project
                 name={projects.snapstock.name}
-                image={data.snapstock.childImageSharp.fixed}
+                image={data.snapstock.childImageSharp.gatsbyImageData}
                 github={projects.snapstock.github}
                 githubBackEnd={projects.snapstock.githubBackEnd}
                 demo={projects.snapstock.demo}
@@ -53,7 +53,7 @@ class Projects extends Component {
 
               <Project
                 name={projects.wasteland.name}
-                image={data.wasteland.childImageSharp.fixed}
+                image={data.wasteland.childImageSharp.gatsbyImageData}
                 github={projects.wasteland.github}
                 demo={projects.wasteland.demo}
                 description={projects.wasteland.description}
@@ -61,7 +61,7 @@ class Projects extends Component {
 
               <Project
                 name={projects.stockly.name}
-                image={data.stockly.childImageSharp.fixed}
+                image={data.stockly.childImageSharp.gatsbyImageData}
                 github={projects.stockly.github}
                 demo={projects.stockly.demo}
                 description={projects.stockly.description}
@@ -74,30 +74,23 @@ class Projects extends Component {
   }
 }
 
-const projectQuery = graphql`
-  query ProjectQuery {
-    snapstock: file(absolutePath: { regex: "/snapstock.png/" }) {
-      childImageSharp {
-        fixed(width: 340) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-    stockly: file(absolutePath: { regex: "/stockly-on-laptop.png/" }) {
-      childImageSharp {
-        fixed(width: 340) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-    wasteland: file(absolutePath: { regex: "/wasteland-on-laptop.png/" }) {
-      childImageSharp {
-        fixed(width: 340) {
-          ...GatsbyImageSharpFixed
-        }
-      }
+const projectQuery = graphql`query ProjectQuery {
+  snapstock: file(absolutePath: {regex: "/snapstock.png/"}) {
+    childImageSharp {
+      gatsbyImageData(width: 340, layout: FIXED)
     }
   }
+  stockly: file(absolutePath: {regex: "/stockly-on-laptop.png/"}) {
+    childImageSharp {
+      gatsbyImageData(width: 340, layout: FIXED)
+    }
+  }
+  wasteland: file(absolutePath: {regex: "/wasteland-on-laptop.png/"}) {
+    childImageSharp {
+      gatsbyImageData(width: 340, layout: FIXED)
+    }
+  }
+}
 `;
 
 export default Projects;
