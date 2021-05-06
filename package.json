@@ -30,7 +30,7 @@
     "gatsby-source-filesystem": "3.4.0",
     "gatsby-transformer-remark": "4.1.0",
     "gatsby-transformer-sharp": "3.4.0",
-    "katex": "0.13.5",
+    "katex": "0.13.7",
     "lodash.kebabcase": "4.1.1",
     "node-sass": "5.0.0",
     "polished": "4.1.2",
