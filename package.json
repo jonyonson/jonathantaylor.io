@@ -52,7 +52,7 @@
     "eslint-plugin-react": "7.23.2",
     "eslint-webpack-plugin": "2.5.4",
     "gatsby-plugin-eslint": "3.0.0",
-    "prettier": "2.2.1"
+    "prettier": "2.3.2"
   },
   "license": "MIT",
   "scripts": {
