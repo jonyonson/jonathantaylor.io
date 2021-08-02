@@ -6680,12 +6680,12 @@ gatsby-plugin-catch-links@3.9.0:
     "@babel/runtime" "^7.14.0"
     escape-string-regexp "^1.0.5"
 
-gatsby-plugin-draft@0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-draft/-/gatsby-plugin-draft-0.1.0.tgz#1a1bd7e8c333aee6d50a7d9a687466e395cb907c"
-  integrity sha512-68ivdcZZDn6020iIDj66kkNtrAsg9JLEj9OyWRr/d7HME/0e2Nw+GKhXMNzcTU/t+rPyyhBnGaqrPgtj9Ghglw==
+gatsby-plugin-draft@0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-draft/-/gatsby-plugin-draft-0.2.0.tgz#fbfbb5c7bf7acf42dcf5f98375df21e45594dead"
+  integrity sha512-xDYLDIngc6hGLVo4ddzl0MstBobWLaCNLUKzCnwuoWiNRfAso6qucABGqBdj2htOwELw3tb8BQOn+EmgKH9+Jg==
   dependencies:
-    moment-timezone "^0.5.23"
+    moment-timezone "^0.5.33"
 
 gatsby-plugin-eslint@3.0.0:
   version "3.0.0"
@@ -10286,7 +10286,7 @@ mkdirp@^1.0.3, mkdirp@^1.0.4:
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-1.0.4.tgz#3eb5ed62622756d79a5f0e2a221dfebad75c2f7e"
   integrity sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==
 
-moment-timezone@^0.5.23:
+moment-timezone@^0.5.33:
   version "0.5.33"
   resolved "https://registry.yarnpkg.com/moment-timezone/-/moment-timezone-0.5.33.tgz#b252fd6bb57f341c9b59a5ab61a8e51a73bbd22c"
   integrity sha512-PTc2vcT8K9J5/9rDEPe5czSIKgLoGsH8UNpA4qZTVw0Vd/Uz19geE9abbIOQKaAQFcnQ3v5YEXrbSc5BpshH+w==
