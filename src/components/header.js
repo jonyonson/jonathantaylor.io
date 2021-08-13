@@ -32,9 +32,9 @@ function Header() {
 
         <div>
           <nav className="header__nav">
-            <Link className="header__nav-link" to="/projects">
+            {/* <Link className="header__nav-link" to="/projects">
               Projects
-            </Link>
+            </Link> */}
 
             <Link className="header__nav-link" to="/contact">
               Contact
