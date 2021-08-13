@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { FaGithub, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa';
 import styled from 'styled-components';
 import theme from '../theme';
 
@@ -13,7 +13,10 @@ class Footer extends Component {
             <a href="https://github.com/jonyonson">
               <FaGithub size={24} />
             </a>
-            <a className="ml" href="https://twitter.com/jonyonson">
+            <a href="https://www.linkedin.com/in/jonathan-craig-taylor">
+              <FaLinkedin size={24} />
+            </a>
+            <a href="https://twitter.com/jonyonson">
               <FaTwitter size={24} />
             </a>
           </div>
