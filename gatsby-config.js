@@ -64,6 +64,7 @@ module.exports = {
       resolve: 'gatsby-plugin-google-analytics',
       options: { trackingId: 'UA-69543893-1' },
     },
+    'gatsby-plugin-netlify',
     'gatsby-plugin-image',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
