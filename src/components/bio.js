@@ -13,7 +13,7 @@ function Bio() {
         </span>
       </p>
       <p>
-        I am a software developer in Nashville, Tennessee. I enjoy solving
+        I am a software engineer in Nashville, Tennessee. I enjoy solving
         interesting problems and building cool things.
       </p>
     </StyledBio>

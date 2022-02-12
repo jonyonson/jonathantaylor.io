@@ -13,15 +13,14 @@ const projects = {
     demo: 'https://snapstockapp.com/',
     description:
       'Snapstock is a full-stack web application that provides up-to-date business news and real-time stock data. Users can track stocks over time by saving them to their watchlist. Snapstock is built with React on the front-end and Node.js/PostgreSQL on the backend. A separate Flask server is utilized to scrape market index data.',
-    info:
-      'Snapstock is a work in progress and will contain some some bugs and placeholders.',
+    info: 'Snapstock is a work in progress and will contain some some bugs and placeholders.',
   },
   wasteland: {
     name: 'Digital Wasteland',
     github: 'https://github.com/django-adventure',
     demo: 'https://wasteland.netlify.com/',
     description:
-      'Digital Wasteland is a take on the early text based multi-user dungeon games. It consists of 100 procedurally generated rooms that the player can traverse while interacting with other players through live chat (and other shenanigans). The project was a collaboration with three other developers. Tech stack includes Django and PostgreSQL on the backend and a React front-end. Pusher was used for the realtime communication and player awareness.',
+      'Digital Wasteland is a take on the early text based multi-user dungeon games. It consists of 100 procedurally generated rooms that the player can traverse while interacting with other players through live chat (and other shenanigans). The project was a collaboration with three other developers. Tech stack includes Django and PostgreSQL on the backend and a React front-end. Pusher was used for the realtime communication and multi-player location awareness.',
   },
   stockly: {
     name: 'Stockly',
@@ -74,23 +73,24 @@ class Projects extends Component {
   }
 }
 
-const projectQuery = graphql`query ProjectQuery {
-  snapstock: file(absolutePath: {regex: "/snapstock.png/"}) {
-    childImageSharp {
-      gatsbyImageData(width: 340, layout: FIXED)
+const projectQuery = graphql`
+  query ProjectQuery {
+    snapstock: file(absolutePath: { regex: "/snapstock.png/" }) {
+      childImageSharp {
+        gatsbyImageData(width: 340, layout: FIXED)
+      }
+    }
+    stockly: file(absolutePath: { regex: "/stockly-on-laptop.png/" }) {
+      childImageSharp {
+        gatsbyImageData(width: 340, layout: FIXED)
+      }
+    }
+    wasteland: file(absolutePath: { regex: "/wasteland-on-laptop.png/" }) {
+      childImageSharp {
+        gatsbyImageData(width: 340, layout: FIXED)
+      }
     }
   }
-  stockly: file(absolutePath: {regex: "/stockly-on-laptop.png/"}) {
-    childImageSharp {
-      gatsbyImageData(width: 340, layout: FIXED)
-    }
-  }
-  wasteland: file(absolutePath: {regex: "/wasteland-on-laptop.png/"}) {
-    childImageSharp {
-      gatsbyImageData(width: 340, layout: FIXED)
-    }
-  }
-}
 `;
 
 export default Projects;
