@@ -816,8 +816,7 @@ const GlobalStyles = createGlobalStyle`
     div p {
       color: ${theme.dark.bodyFont};
     }
-}
-
+  }
 `;
 
 export default GlobalStyles;
