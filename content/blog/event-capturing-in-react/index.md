@@ -2,6 +2,7 @@
 title: Event Bubbling and Capturing in React  
 date: '2022-02-12'
 tags: ['javascript', 'react']
+draft: false
 ---
 
 By default, React event handlers are triggered by an event in the bubbling phase. This means that events are handled by the innermost element and propagated to outer elements. However, in some cases, you may want to trigger event handlers in the capturing phase. In React, a click event is triggered using capture with `onClickCapture`.
