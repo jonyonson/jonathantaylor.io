@@ -41,7 +41,7 @@
     "react-icons": "4.3.1",
     "react-transition-group": "4.4.2",
     "sass": "1.49.7",
-    "styled-components": "5.3.0",
+    "styled-components": "5.3.11",
     "typeface-quattrocento-sans": "1.1.13",
     "typeface-work-sans": "1.1.13"
   },
