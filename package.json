@@ -46,7 +46,7 @@
     "typeface-work-sans": "1.1.13"
   },
   "devDependencies": {
-    "babel-eslint": "10.1.0",
+    "@babel/eslint-parser": "7.11.0",
     "eslint": "7.32.0",
     "eslint-loader": "4.0.2",
     "eslint-plugin-import": "2.25.4",
